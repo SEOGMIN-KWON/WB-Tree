@@ -1,0 +1,1587 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDR	bitmap.h	31;"	d
+ASSIST_UNLINK	skiplist.h	/^	ASSIST_UNLINK,$/;"	e	enum:unlink
+BITMAP_H	bitmap.h	2;"	d
+BITOP_ADDR	bitmap.h	30;"	d
+BITS_PER_BYTE	bitmap.h	21;"	d
+BITS_PER_LONG	bitmap.h	22;"	d
+BITS_TO_LONGS	bitmap.h	25;"	d
+BTREE_ASSERT	btree.h	68;"	d
+BTREE_ASSERT	btree.h	76;"	d
+BTREE_ASSERT	btree_bitmap.h	67;"	d
+BTREE_ASSERT	btree_bitmap.h	75;"	d
+BTREE_ASSERT	btree_bitmap_noslotuse.h	67;"	d
+BTREE_ASSERT	btree_bitmap_noslotuse.h	75;"	d
+BTREE_ASSERT	btree_bitmap_outoforder.h	68;"	d
+BTREE_ASSERT	btree_bitmap_outoforder.h	76;"	d
+BTREE_FRIENDS	btree.h	87;"	d
+BTREE_FRIENDS	btree_bitmap.h	86;"	d
+BTREE_FRIENDS	btree_bitmap_noslotuse.h	86;"	d
+BTREE_FRIENDS	btree_bitmap_outoforder.h	87;"	d
+BTREE_MAX	btree.h	81;"	d
+BTREE_MAX	btree_bitmap.h	80;"	d
+BTREE_MAX	btree_bitmap_noslotuse.h	80;"	d
+BTREE_MAX	btree_bitmap_outoforder.h	81;"	d
+BTREE_PRINT	btree.h	65;"	d
+BTREE_PRINT	btree.h	73;"	d
+BTREE_PRINT	btree_bitmap.h	64;"	d
+BTREE_PRINT	btree_bitmap.h	72;"	d
+BTREE_PRINT	btree_bitmap_noslotuse.h	64;"	d
+BTREE_PRINT	btree_bitmap_noslotuse.h	72;"	d
+BTREE_PRINT	btree_bitmap_outoforder.h	65;"	d
+BTREE_PRINT	btree_bitmap_outoforder.h	73;"	d
+BtreeMap	speedtest.cc	/^        explicit BtreeMap(unsigned int n)$/;"	f	class:TestFactory_Map::BtreeMap
+BtreeMap	speedtest.cc	/^    class BtreeMap$/;"	c	class:TestFactory_Map	file:
+CAS_EXPECT_DOES_NOT_EXIST	skiplist.h	26;"	d
+CAS_EXPECT_EXISTS	skiplist.h	27;"	d
+CAS_EXPECT_WHATEVER	skiplist.h	28;"	d
+DECLARE_BITMAP	bitmap.h	27;"	d
+DIV_ROUND_UP	bitmap.h	24;"	d
+DONT_UNLINK	skiplist.h	/^	DONT_UNLINK$/;"	e	enum:unlink
+EXPECT_FALSE	skiplist.h	24;"	d
+EXPECT_TRUE	skiplist.h	23;"	d
+FORCE_UNLINK	skiplist.h	/^	FORCE_UNLINK,$/;"	e	enum:unlink
+GET_NODE	skiplist.h	48;"	d
+HAS_MARK	skiplist.h	47;"	d
+HEAD_COUNT	skiplist.h	35;"	d
+HWEIGHT	const_hweight.h	41;"	d
+HWEIGHT16	const_hweight.h	34;"	d
+HWEIGHT32	const_hweight.h	35;"	d
+HWEIGHT64	const_hweight.h	36;"	d
+HWEIGHT8	const_hweight.h	33;"	d
+HashMap	speedtest.cc	/^    typedef TestClass<__gnu_cxx::hash_multimap<unsigned int, unsigned int> > HashMap;$/;"	t	class:TestFactory_Map	file:
+IS_TAGGED	skiplist.h	37;"	d
+MARK_NODE	skiplist.h	46;"	d
+MAX_LEVELS	skiplist.h	34;"	d
+NVRAM_LEN	btree.h	55;"	d
+NVRAM_LEN	btree_bitmap.h	54;"	d
+NVRAM_LEN	btree_bitmap_noslotuse.h	54;"	d
+NVRAM_LEN	btree_bitmap_outoforder.h	55;"	d
+PMEM_LEN	skiplist.h	40;"	d
+PROBILITY	skiplist.h	19;"	d
+SPAN_TH	skiplist.h	20;"	d
+STRIP_MARK	skiplist.h	49;"	d
+STRIP_TAG	skiplist.h	38;"	d
+STX_SKIPLIST_HEADER	skiplist.h	2;"	d
+STX_STX_BTREE_H_HEADER	btree.h	33;"	d
+STX_STX_BTREE_H_HEADER	btree_bitmap.h	33;"	d
+STX_STX_BTREE_H_HEADER	btree_bitmap_noslotuse.h	33;"	d
+STX_STX_BTREE_H_HEADER	btree_bitmap_outoforder.h	33;"	d
+STX_STX_BTREE_MULTIMAP_H_HEADER	btree_multimap.h	33;"	d
+STX_STX_SKIPLIST_MULTIMAP_H_HEADER	skiplist_multimap.h	2;"	d
+SYNC_ADD	skiplist.h	31;"	d
+SYNC_CAS	skiplist.h	30;"	d
+SYNC_FETCH_AND_OR	skiplist.h	32;"	d
+SYNC_SWAP	skiplist.h	29;"	d
+SkiplistMap	speedtest.cc	/^		explicit SkiplistMap(unsigned int n)$/;"	f	class:TestFactory_Map::SkiplistMap
+SkiplistMap	speedtest.cc	/^	class SkiplistMap$/;"	c	class:TestFactory_Map	file:
+StdMap	speedtest.cc	/^    typedef TestClass<std::multimap<unsigned int, unsigned int> > StdMap;$/;"	t	class:TestFactory_Map	file:
+TAG_VALUE	skiplist.h	36;"	d
+TestFactory_Map	speedtest.cc	/^class TestFactory_Map$/;"	c	file:
+Test_Map_Find	speedtest.cc	/^    explicit Test_Map_Find(unsigned int items)$/;"	f	class:Test_Map_Find
+Test_Map_Find	speedtest.cc	/^class Test_Map_Find$/;"	c	file:
+Test_Map_Insert	speedtest.cc	/^    explicit Test_Map_Insert(unsigned int) { }$/;"	f	class:Test_Map_Insert
+Test_Map_Insert	speedtest.cc	/^class Test_Map_Insert$/;"	c	file:
+Test_Map_InsertFindDelete	speedtest.cc	/^    explicit Test_Map_InsertFindDelete(unsigned int) { }$/;"	f	class:Test_Map_InsertFindDelete
+Test_Map_InsertFindDelete	speedtest.cc	/^class Test_Map_InsertFindDelete$/;"	c	file:
+Test_Set_Find	speedtest.cc	/^		explicit Test_Set_Find(unsigned int items)$/;"	f	class:Test_Set_Find
+Test_Set_Find	speedtest.cc	/^class Test_Set_Find$/;"	c	file:
+Test_Set_Insert	speedtest.cc	/^		explicit Test_Set_Insert(unsigned int) { }$/;"	f	class:Test_Set_Insert
+Test_Set_Insert	speedtest.cc	/^class Test_Set_Insert$/;"	c	file:
+Test_Set_InsertFindDelete	speedtest.cc	/^		explicit Test_Set_InsertFindDelete(unsigned int) { }$/;"	f	class:Test_Set_InsertFindDelete
+Test_Set_InsertFindDelete	speedtest.cc	/^class Test_Set_InsertFindDelete$/;"	c	file:
+USING_NVRAM	nv_backend.h	3;"	d
+_ASM_GENERIC_BITOPS_CONST_HWEIGHT_H_	const_hweight.h	2;"	d
+_BITOPS_LONG_SHIFT	bitmap.h	23;"	d
+_NV_BACKEND_H	nv_backend.h	2;"	d
+__clear_bit	bitmap.h	/^static inline void __clear_bit(long nr, volatile unsigned long *addr)$/;"	f
+__const_hweight16	bitmap.h	17;"	d
+__const_hweight16	const_hweight.h	18;"	d
+__const_hweight32	bitmap.h	18;"	d
+__const_hweight32	const_hweight.h	19;"	d
+__const_hweight64	bitmap.h	19;"	d
+__const_hweight64	const_hweight.h	20;"	d
+__const_hweight8	bitmap.h	6;"	d
+__const_hweight8	const_hweight.h	7;"	d
+__ffs	bitmap.h	/^static inline unsigned long __ffs(unsigned long word)$/;"	f
+__ffz	bitmap.h	/^static inline unsigned long __ffz(unsigned long word)$/;"	f
+__fls	bitmap.h	/^static inline unsigned long __fls(unsigned long word)$/;"	f
+__set_bit	bitmap.h	/^static inline void __set_bit(long nr, volatile unsigned long *addr)$/;"	f
+_mm_clwb	nv_backend.h	17;"	d
+alloc_type	btree.h	/^        typedef typename _Alloc::template rebind<inner_node>::other alloc_type;$/;"	t	struct:stx::btree::inner_node
+alloc_type	btree.h	/^        typedef typename _Alloc::template rebind<leaf_node>::other alloc_type;$/;"	t	struct:stx::btree::leaf_node
+alloc_type	btree_bitmap.h	/^						 typedef typename _Alloc::template rebind<inner_node>::other alloc_type;$/;"	t	struct:stx::btree::inner_node
+alloc_type	btree_bitmap.h	/^						 typedef typename _Alloc::template rebind<leaf_node>::other alloc_type;$/;"	t	struct:stx::btree::leaf_node
+alloc_type	btree_bitmap_noslotuse.h	/^						 typedef typename _Alloc::template rebind<inner_node>::other alloc_type;$/;"	t	struct:stx::btree::inner_node
+alloc_type	btree_bitmap_noslotuse.h	/^						 typedef typename _Alloc::template rebind<leaf_node>::other alloc_type;$/;"	t	struct:stx::btree::leaf_node
+alloc_type	btree_bitmap_outoforder.h	/^        typedef typename _Alloc::template rebind<inner_node>::other alloc_type;$/;"	t	struct:stx::btree::inner_node
+alloc_type	btree_bitmap_outoforder.h	/^        typedef typename _Alloc::template rebind<leaf_node>::other alloc_type;$/;"	t	struct:stx::btree::leaf_node
+allocate_inner	btree.h	/^    inline inner_node * allocate_inner(unsigned short level)$/;"	f	class:stx::btree
+allocate_inner	btree_bitmap.h	/^							 inline inner_node * allocate_inner(unsigned short level)$/;"	f	class:stx::btree
+allocate_inner	btree_bitmap_noslotuse.h	/^							 inline inner_node * allocate_inner(unsigned short level)$/;"	f	class:stx::btree
+allocate_inner	btree_bitmap_outoforder.h	/^    inline inner_node * allocate_inner(unsigned short level)$/;"	f	class:stx::btree
+allocate_leaf	btree.h	/^    inline leaf_node * allocate_leaf()$/;"	f	class:stx::btree
+allocate_leaf	btree_bitmap.h	/^							 inline leaf_node * allocate_leaf()$/;"	f	class:stx::btree
+allocate_leaf	btree_bitmap_noslotuse.h	/^							 inline leaf_node * allocate_leaf()$/;"	f	class:stx::btree
+allocate_leaf	btree_bitmap_outoforder.h	/^    inline leaf_node * allocate_leaf()$/;"	f	class:stx::btree
+allocator_type	btree.h	/^    typedef _Alloc allocator_type;$/;"	t	class:stx::btree
+allocator_type	btree_bitmap.h	/^						 typedef _Alloc allocator_type;$/;"	t	class:stx::btree
+allocator_type	btree_bitmap_noslotuse.h	/^						 typedef _Alloc allocator_type;$/;"	t	class:stx::btree
+allocator_type	btree_bitmap_outoforder.h	/^    typedef _Alloc allocator_type;$/;"	t	class:stx::btree
+allocator_type	btree_multimap.h	/^    typedef _Alloc allocator_type;$/;"	t	class:stx::btree_multimap
+allocator_type	skiplist_multimap.h	/^	typedef _Alloc allocator_type;$/;"	t	class:stx::skiplist_multimap
+allow_duplicates	btree.h	/^        bool           allow_duplicates;$/;"	m	struct:stx::btree::dump_header
+allow_duplicates	btree.h	/^    static const bool allow_duplicates = _Duplicates;$/;"	m	class:stx::btree
+allow_duplicates	btree_bitmap.h	/^								 bool           allow_duplicates;$/;"	m	struct:stx::btree::dump_header
+allow_duplicates	btree_bitmap.h	/^						 static const bool allow_duplicates = _Duplicates;$/;"	m	class:stx::btree
+allow_duplicates	btree_bitmap_noslotuse.h	/^								 bool           allow_duplicates;$/;"	m	struct:stx::btree::dump_header
+allow_duplicates	btree_bitmap_noslotuse.h	/^						 static const bool allow_duplicates = _Duplicates;$/;"	m	class:stx::btree
+allow_duplicates	btree_bitmap_outoforder.h	/^        bool           allow_duplicates;$/;"	m	struct:stx::btree::dump_header
+allow_duplicates	btree_bitmap_outoforder.h	/^    static const bool allow_duplicates = _Duplicates;$/;"	m	class:stx::btree
+allow_duplicates	btree_multimap.h	/^    static const bool allow_duplicates = btree_impl::allow_duplicates;$/;"	m	class:stx::btree_multimap
+avgfill_leaves	btree.h	/^        inline double               avgfill_leaves() const$/;"	f	struct:stx::btree::tree_stats
+avgfill_leaves	btree_bitmap.h	/^								 inline double               avgfill_leaves() const$/;"	f	struct:stx::btree::tree_stats
+avgfill_leaves	btree_bitmap_noslotuse.h	/^								 inline double               avgfill_leaves() const$/;"	f	struct:stx::btree::tree_stats
+avgfill_leaves	btree_bitmap_outoforder.h	/^        inline double               avgfill_leaves() const$/;"	f	struct:stx::btree::tree_stats
+begin	btree.h	/^    inline const_iterator begin() const$/;"	f	class:stx::btree
+begin	btree.h	/^    inline iterator begin()$/;"	f	class:stx::btree
+begin	btree_bitmap.h	/^							 inline const_iterator begin() const$/;"	f	class:stx::btree
+begin	btree_bitmap.h	/^							 inline iterator begin()$/;"	f	class:stx::btree
+begin	btree_bitmap_noslotuse.h	/^							 inline const_iterator begin() const$/;"	f	class:stx::btree
+begin	btree_bitmap_noslotuse.h	/^							 inline iterator begin()$/;"	f	class:stx::btree
+begin	btree_bitmap_outoforder.h	/^    inline const_iterator begin() const$/;"	f	class:stx::btree
+begin	btree_bitmap_outoforder.h	/^    inline iterator begin()$/;"	f	class:stx::btree
+begin	btree_multimap.h	/^    inline const_iterator begin() const$/;"	f	class:stx::btree_multimap
+begin	btree_multimap.h	/^    inline iterator begin()$/;"	f	class:stx::btree_multimap
+binsearch_threshold	btree.h	/^    static const size_t binsearch_threshold = 256;$/;"	m	class:stx::btree_default_map_traits
+binsearch_threshold	btree.h	/^    static const size_t binsearch_threshold = 64;$/;"	m	class:stx::btree_default_set_traits
+binsearch_threshold	btree_bitmap.h	/^				static const size_t binsearch_threshold = 256;$/;"	m	class:stx::btree_default_map_traits
+binsearch_threshold	btree_bitmap.h	/^				static const size_t binsearch_threshold = 256;$/;"	m	class:stx::btree_default_set_traits
+binsearch_threshold	btree_bitmap_noslotuse.h	/^				static const size_t binsearch_threshold = 256;$/;"	m	class:stx::btree_default_map_traits
+binsearch_threshold	btree_bitmap_noslotuse.h	/^				static const size_t binsearch_threshold = 256;$/;"	m	class:stx::btree_default_set_traits
+binsearch_threshold	btree_bitmap_outoforder.h	/^    static const size_t binsearch_threshold = 256;$/;"	m	class:stx::btree_default_map_traits
+binsearch_threshold	btree_bitmap_outoforder.h	/^    static const size_t binsearch_threshold = 64;$/;"	m	class:stx::btree_default_set_traits
+binsearch_threshold	speedtest.cc	/^		static const size_t binsearch_threshold = 256 * 1024 * 1024; \/\/ never$/;"	m	class:btree_traits_speed	file:
+bitmap_clear	btree.h	/^		void bitmap_clear(long index) $/;"	f	struct:stx::btree::leaf_node
+bitmap_clear	btree_bitmap.h	/^						 void bitmap_clear(long index) $/;"	f	struct:stx::btree::leaf_node
+bitmap_clear	btree_bitmap_noslotuse.h	/^						 void bitmap_clear(long index) $/;"	f	struct:stx::btree::leaf_node
+bitmap_clear	btree_bitmap_outoforder.h	/^		void bitmap_clear(long index) $/;"	f	struct:stx::btree::leaf_node
+bitmap_clear	skiplist.h	/^					inline void bitmap_clear(long index) $/;"	f	struct:stx::skiplist::nvram_node
+bitmap_get	btree.h	/^		int bitmap_get(long index) const$/;"	f	struct:stx::btree::leaf_node
+bitmap_get	btree_bitmap.h	/^						 int bitmap_get(long index)$/;"	f	struct:stx::btree::leaf_node
+bitmap_get	btree_bitmap_noslotuse.h	/^						 int bitmap_get(long index)$/;"	f	struct:stx::btree::leaf_node
+bitmap_get	btree_bitmap_outoforder.h	/^		int bitmap_get(long index)$/;"	f	struct:stx::btree::leaf_node
+bitmap_get	skiplist.h	/^					inline int bitmap_get(long index)$/;"	f	struct:stx::skiplist::nvram_node
+bitmap_set	btree.h	/^		void bitmap_set(long index)$/;"	f	struct:stx::btree::leaf_node
+bitmap_set	btree_bitmap.h	/^						 void bitmap_set(long index)$/;"	f	struct:stx::btree::leaf_node
+bitmap_set	btree_bitmap_noslotuse.h	/^						 void bitmap_set(long index)$/;"	f	struct:stx::btree::leaf_node
+bitmap_set	btree_bitmap_outoforder.h	/^		void bitmap_set(long index)$/;"	f	struct:stx::btree::leaf_node
+bitmap_set	skiplist.h	/^					inline void bitmap_set(long index)$/;"	f	struct:stx::skiplist::nvram_node
+bs	btree.h	/^		unsigned long bs[BITS_TO_LONGS(leafslotmax)];$/;"	m	struct:stx::btree::leaf_node
+bs	btree_bitmap.h	/^						 unsigned long bs[BITS_TO_LONGS(leafslotmax)];$/;"	m	struct:stx::btree::leaf_node
+bs	btree_bitmap_noslotuse.h	/^						 unsigned long bs[BITS_TO_LONGS(leafslotmax)];$/;"	m	struct:stx::btree::leaf_node
+bs	btree_bitmap_outoforder.h	/^		unsigned long bs[BITS_TO_LONGS(leafslotmax)];$/;"	m	struct:stx::btree::leaf_node
+bs	skiplist.h	/^					unsigned long bs[BITS_TO_LONGS(leafslotmax)] ;$/;"	m	struct:stx::skiplist::nvram_node
+btree	btree.h	/^    explicit inline btree(const allocator_type& alloc = allocator_type())$/;"	f	class:stx::btree
+btree	btree.h	/^    explicit inline btree(const key_compare& kcf,$/;"	f	class:stx::btree
+btree	btree.h	/^    inline btree(InputIterator first, InputIterator last, const key_compare& kcf,$/;"	f	class:stx::btree
+btree	btree.h	/^    inline btree(InputIterator first, InputIterator last,$/;"	f	class:stx::btree
+btree	btree.h	/^    inline btree(const btree& other)$/;"	f	class:stx::btree
+btree	btree.h	/^class btree$/;"	c	namespace:stx
+btree	btree_bitmap.h	/^								 inline btree(InputIterator first, InputIterator last, const key_compare& kcf,$/;"	f	class:stx::btree
+btree	btree_bitmap.h	/^								 inline btree(InputIterator first, InputIterator last,$/;"	f	class:stx::btree
+btree	btree_bitmap.h	/^							 explicit inline btree(const allocator_type& alloc = allocator_type())$/;"	f	class:stx::btree
+btree	btree_bitmap.h	/^							 explicit inline btree(const key_compare& kcf,$/;"	f	class:stx::btree
+btree	btree_bitmap.h	/^							 inline btree(const btree& other)$/;"	f	class:stx::btree
+btree	btree_bitmap.h	/^				 class btree$/;"	c	namespace:stx
+btree	btree_bitmap_noslotuse.h	/^								 inline btree(InputIterator first, InputIterator last, const key_compare& kcf,$/;"	f	class:stx::btree
+btree	btree_bitmap_noslotuse.h	/^								 inline btree(InputIterator first, InputIterator last,$/;"	f	class:stx::btree
+btree	btree_bitmap_noslotuse.h	/^							 explicit inline btree(const allocator_type& alloc = allocator_type())$/;"	f	class:stx::btree
+btree	btree_bitmap_noslotuse.h	/^							 explicit inline btree(const key_compare& kcf,$/;"	f	class:stx::btree
+btree	btree_bitmap_noslotuse.h	/^							 inline btree(const btree& other)$/;"	f	class:stx::btree
+btree	btree_bitmap_noslotuse.h	/^				 class btree$/;"	c	namespace:stx
+btree	btree_bitmap_outoforder.h	/^    explicit inline btree(const allocator_type& alloc = allocator_type())$/;"	f	class:stx::btree
+btree	btree_bitmap_outoforder.h	/^    explicit inline btree(const key_compare& kcf,$/;"	f	class:stx::btree
+btree	btree_bitmap_outoforder.h	/^    inline btree(InputIterator first, InputIterator last, const key_compare& kcf,$/;"	f	class:stx::btree
+btree	btree_bitmap_outoforder.h	/^    inline btree(InputIterator first, InputIterator last,$/;"	f	class:stx::btree
+btree	btree_bitmap_outoforder.h	/^    inline btree(const btree& other)$/;"	f	class:stx::btree
+btree	btree_bitmap_outoforder.h	/^class btree$/;"	c	namespace:stx
+btree_default_map_traits	btree.h	/^class btree_default_map_traits$/;"	c	namespace:stx
+btree_default_map_traits	btree_bitmap.h	/^		class btree_default_map_traits$/;"	c	namespace:stx
+btree_default_map_traits	btree_bitmap_noslotuse.h	/^		class btree_default_map_traits$/;"	c	namespace:stx
+btree_default_map_traits	btree_bitmap_outoforder.h	/^class btree_default_map_traits$/;"	c	namespace:stx
+btree_default_set_traits	btree.h	/^class btree_default_set_traits$/;"	c	namespace:stx
+btree_default_set_traits	btree_bitmap.h	/^		class btree_default_set_traits$/;"	c	namespace:stx
+btree_default_set_traits	btree_bitmap_noslotuse.h	/^		class btree_default_set_traits$/;"	c	namespace:stx
+btree_default_set_traits	btree_bitmap_outoforder.h	/^class btree_default_set_traits$/;"	c	namespace:stx
+btree_fixmerge	btree.h	/^        btree_fixmerge = 4$/;"	e	enum:stx::btree::result_flags_t
+btree_fixmerge	btree_bitmap.h	/^								 btree_fixmerge = 4$/;"	e	enum:stx::btree::result_flags_t
+btree_fixmerge	btree_bitmap_noslotuse.h	/^								 btree_fixmerge = 4$/;"	e	enum:stx::btree::result_flags_t
+btree_fixmerge	btree_bitmap_outoforder.h	/^        btree_fixmerge = 4$/;"	e	enum:stx::btree::result_flags_t
+btree_impl	btree_multimap.h	/^                       traits, true, allocator_type, false> btree_impl;$/;"	t	class:stx::btree_multimap
+btree_multimap	btree_multimap.h	/^    explicit inline btree_multimap(const allocator_type& alloc = allocator_type())$/;"	f	class:stx::btree_multimap
+btree_multimap	btree_multimap.h	/^    explicit inline btree_multimap(const key_compare& kcf,$/;"	f	class:stx::btree_multimap
+btree_multimap	btree_multimap.h	/^    inline btree_multimap(InputIterator first, InputIterator last, const key_compare& kcf,$/;"	f	class:stx::btree_multimap
+btree_multimap	btree_multimap.h	/^    inline btree_multimap(InputIterator first, InputIterator last,$/;"	f	class:stx::btree_multimap
+btree_multimap	btree_multimap.h	/^    inline btree_multimap(const btree_multimap& other)$/;"	f	class:stx::btree_multimap
+btree_multimap	btree_multimap.h	/^class btree_multimap$/;"	c	namespace:stx
+btree_not_found	btree.h	/^        btree_not_found = 1,$/;"	e	enum:stx::btree::result_flags_t
+btree_not_found	btree_bitmap.h	/^								 btree_not_found = 1,$/;"	e	enum:stx::btree::result_flags_t
+btree_not_found	btree_bitmap_noslotuse.h	/^								 btree_not_found = 1,$/;"	e	enum:stx::btree::result_flags_t
+btree_not_found	btree_bitmap_outoforder.h	/^        btree_not_found = 1,$/;"	e	enum:stx::btree::result_flags_t
+btree_ok	btree.h	/^        btree_ok = 0,$/;"	e	enum:stx::btree::result_flags_t
+btree_ok	btree_bitmap.h	/^								 btree_ok = 0,$/;"	e	enum:stx::btree::result_flags_t
+btree_ok	btree_bitmap_noslotuse.h	/^								 btree_ok = 0,$/;"	e	enum:stx::btree::result_flags_t
+btree_ok	btree_bitmap_outoforder.h	/^        btree_ok = 0,$/;"	e	enum:stx::btree::result_flags_t
+btree_pair_to_value	btree.h	/^    struct btree_pair_to_value$/;"	s	class:stx::btree
+btree_pair_to_value	btree.h	/^    struct btree_pair_to_value<value_type, value_type>$/;"	s	class:stx::btree
+btree_pair_to_value	btree_bitmap.h	/^								 struct btree_pair_to_value$/;"	s	class:stx::btree
+btree_pair_to_value	btree_bitmap.h	/^								 struct btree_pair_to_value<value_type, value_type>$/;"	s	class:stx::btree
+btree_pair_to_value	btree_bitmap_noslotuse.h	/^								 struct btree_pair_to_value$/;"	s	class:stx::btree
+btree_pair_to_value	btree_bitmap_noslotuse.h	/^								 struct btree_pair_to_value<value_type, value_type>$/;"	s	class:stx::btree
+btree_pair_to_value	btree_bitmap_outoforder.h	/^    struct btree_pair_to_value$/;"	s	class:stx::btree
+btree_pair_to_value	btree_bitmap_outoforder.h	/^    struct btree_pair_to_value<value_type, value_type>$/;"	s	class:stx::btree
+btree_range	speedtest.cc	/^class btree_range$/;"	c	file:
+btree_range	speedtest.cc	/^class btree_range<functional, Low, Low>$/;"	c	file:
+btree_traits_speed	speedtest.cc	/^class btree_traits_speed : stx::btree_default_set_traits<unsigned int>$/;"	c	file:
+btree_update_lastkey	btree.h	/^        btree_update_lastkey = 2,$/;"	e	enum:stx::btree::result_flags_t
+btree_update_lastkey	btree_bitmap.h	/^								 btree_update_lastkey = 2,$/;"	e	enum:stx::btree::result_flags_t
+btree_update_lastkey	btree_bitmap_noslotuse.h	/^								 btree_update_lastkey = 2,$/;"	e	enum:stx::btree::result_flags_t
+btree_update_lastkey	btree_bitmap_outoforder.h	/^        btree_update_lastkey = 2,$/;"	e	enum:stx::btree::result_flags_t
+bulk_load	btree.h	/^    void bulk_load(Iterator ibegin, Iterator iend)$/;"	f	class:stx::btree
+bulk_load	btree_bitmap.h	/^								 void bulk_load(Iterator ibegin, Iterator iend)$/;"	f	class:stx::btree
+bulk_load	btree_bitmap_noslotuse.h	/^								 void bulk_load(Iterator ibegin, Iterator iend)$/;"	f	class:stx::btree
+bulk_load	btree_bitmap_outoforder.h	/^    void bulk_load(Iterator ibegin, Iterator iend)$/;"	f	class:stx::btree
+bulk_load	btree_multimap.h	/^    inline void bulk_load(Iterator first, Iterator last)$/;"	f	class:stx::btree_multimap
+call_testrunner	speedtest.cc	/^void TestFactory_Map<TestClass>::call_testrunner($/;"	f	class:TestFactory_Map
+childid	btree.h	/^        node     * childid[innerslotmax + 1];$/;"	m	struct:stx::btree::inner_node
+childid	btree_bitmap.h	/^						 node     * childid[innerslotmax + 1];$/;"	m	struct:stx::btree::inner_node
+childid	btree_bitmap_noslotuse.h	/^						 node     * childid[innerslotmax + 1];$/;"	m	struct:stx::btree::inner_node
+childid	btree_bitmap_outoforder.h	/^        node     * childid[innerslotmax + 1];$/;"	m	struct:stx::btree::inner_node
+clear	btree.h	/^    void clear()$/;"	f	class:stx::btree
+clear	btree_bitmap.h	/^							 void clear()$/;"	f	class:stx::btree
+clear	btree_bitmap_noslotuse.h	/^							 void clear()$/;"	f	class:stx::btree
+clear	btree_bitmap_outoforder.h	/^    void clear()$/;"	f	class:stx::btree
+clear	btree_multimap.h	/^    void clear()$/;"	f	class:stx::btree_multimap
+clear_recursive	btree.h	/^    void clear_recursive(node* n)$/;"	f	class:stx::btree
+clear_recursive	btree_bitmap.h	/^							 void clear_recursive(node* n)$/;"	f	class:stx::btree
+clear_recursive	btree_bitmap_noslotuse.h	/^							 void clear_recursive(node* n)$/;"	f	class:stx::btree
+clear_recursive	btree_bitmap_outoforder.h	/^    void clear_recursive(node* n)$/;"	f	class:stx::btree
+clflush	nv_backend.h	/^inline void clflush(volatile void *p) $/;"	f
+const_iterator	btree.h	/^        inline const_iterator()$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree.h	/^        inline const_iterator(const const_reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree.h	/^        inline const_iterator(const iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree.h	/^        inline const_iterator(const reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree.h	/^        inline const_iterator(const typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree.h	/^    class const_iterator$/;"	c	class:stx::btree
+const_iterator	btree_bitmap.h	/^										 inline const_iterator()$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap.h	/^										 inline const_iterator(const const_reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap.h	/^										 inline const_iterator(const iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap.h	/^										 inline const_iterator(const reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap.h	/^										 inline const_iterator(const typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap.h	/^							 class const_iterator$/;"	c	class:stx::btree
+const_iterator	btree_bitmap_noslotuse.h	/^										 inline const_iterator()$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap_noslotuse.h	/^										 inline const_iterator(const const_reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap_noslotuse.h	/^										 inline const_iterator(const iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap_noslotuse.h	/^										 inline const_iterator(const reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap_noslotuse.h	/^										 inline const_iterator(const typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap_noslotuse.h	/^							 class const_iterator$/;"	c	class:stx::btree
+const_iterator	btree_bitmap_outoforder.h	/^        inline const_iterator()$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap_outoforder.h	/^        inline const_iterator(const const_reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap_outoforder.h	/^        inline const_iterator(const iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap_outoforder.h	/^        inline const_iterator(const reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap_outoforder.h	/^        inline const_iterator(const typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::const_iterator
+const_iterator	btree_bitmap_outoforder.h	/^    class const_iterator$/;"	c	class:stx::btree
+const_iterator	btree_multimap.h	/^    typedef typename btree_impl::const_iterator const_iterator;$/;"	t	class:stx::btree_multimap
+const_reverse_iterator	btree.h	/^        inline const_reverse_iterator()$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree.h	/^        inline const_reverse_iterator(const const_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree.h	/^        inline const_reverse_iterator(const iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree.h	/^        inline const_reverse_iterator(const reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree.h	/^        inline const_reverse_iterator(const typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree.h	/^    class const_reverse_iterator$/;"	c	class:stx::btree
+const_reverse_iterator	btree_bitmap.h	/^										 inline const_reverse_iterator()$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap.h	/^										 inline const_reverse_iterator(const const_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap.h	/^										 inline const_reverse_iterator(const iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap.h	/^										 inline const_reverse_iterator(const reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap.h	/^										 inline const_reverse_iterator(const typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap.h	/^							 class const_reverse_iterator$/;"	c	class:stx::btree
+const_reverse_iterator	btree_bitmap_noslotuse.h	/^										 inline const_reverse_iterator()$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap_noslotuse.h	/^										 inline const_reverse_iterator(const const_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap_noslotuse.h	/^										 inline const_reverse_iterator(const iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap_noslotuse.h	/^										 inline const_reverse_iterator(const reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap_noslotuse.h	/^										 inline const_reverse_iterator(const typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap_noslotuse.h	/^							 class const_reverse_iterator$/;"	c	class:stx::btree
+const_reverse_iterator	btree_bitmap_outoforder.h	/^        inline const_reverse_iterator()$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap_outoforder.h	/^        inline const_reverse_iterator(const const_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap_outoforder.h	/^        inline const_reverse_iterator(const iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap_outoforder.h	/^        inline const_reverse_iterator(const reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap_outoforder.h	/^        inline const_reverse_iterator(const typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::const_reverse_iterator
+const_reverse_iterator	btree_bitmap_outoforder.h	/^    class const_reverse_iterator$/;"	c	class:stx::btree
+const_reverse_iterator	btree_multimap.h	/^    typedef typename btree_impl::const_reverse_iterator const_reverse_iterator;$/;"	t	class:stx::btree_multimap
+const_test_bit	bitmap.h	/^static inline bool const_test_bit(long nr, const volatile unsigned long *addr)$/;"	f
+copy_recursive	btree.h	/^    struct node * copy_recursive(const node* n)$/;"	f	class:stx::btree
+copy_recursive	btree_bitmap.h	/^							 struct node * copy_recursive(const node* n)$/;"	f	class:stx::btree
+copy_recursive	btree_bitmap_noslotuse.h	/^							 struct node * copy_recursive(const node* n)$/;"	f	class:stx::btree
+copy_recursive	btree_bitmap_outoforder.h	/^    struct node * copy_recursive(const node* n)$/;"	f	class:stx::btree
+count	btree.h	/^		inline long count() const$/;"	f	struct:stx::btree::leaf_node
+count	btree.h	/^    size_type count(const key_type& key) const$/;"	f	class:stx::btree
+count	btree_bitmap.h	/^							 size_type count(const key_type& key) const$/;"	f	class:stx::btree
+count	btree_bitmap.h	/^						 inline long count()$/;"	f	struct:stx::btree::leaf_node
+count	btree_bitmap_noslotuse.h	/^							 size_type count(const key_type& key) const$/;"	f	class:stx::btree
+count	btree_bitmap_noslotuse.h	/^						 inline long count()$/;"	f	struct:stx::btree::leaf_node
+count	btree_bitmap_outoforder.h	/^		inline long count()$/;"	f	struct:stx::btree::leaf_node
+count	btree_bitmap_outoforder.h	/^    size_type count(const key_type& key) const$/;"	f	class:stx::btree
+count	btree_multimap.h	/^    size_type count(const key_type& key) const$/;"	f	class:stx::btree_multimap
+count	skiplist.h	/^					inline long count() const$/;"	f	struct:stx::skiplist::nvram_node
+current_levels	skiplist.h	/^					int current_levels[HEAD_COUNT];$/;"	m	struct:stx::skiplist::sl
+currnode	btree.h	/^        const typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::const_iterator
+currnode	btree.h	/^        const typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::const_reverse_iterator
+currnode	btree.h	/^        typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::iterator
+currnode	btree.h	/^        typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::reverse_iterator
+currnode	btree_bitmap.h	/^									 const typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::const_iterator
+currnode	btree_bitmap.h	/^									 const typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::const_reverse_iterator
+currnode	btree_bitmap.h	/^									 typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::iterator
+currnode	btree_bitmap.h	/^									 typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::reverse_iterator
+currnode	btree_bitmap_noslotuse.h	/^									 const typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::const_iterator
+currnode	btree_bitmap_noslotuse.h	/^									 const typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::const_reverse_iterator
+currnode	btree_bitmap_noslotuse.h	/^									 typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::iterator
+currnode	btree_bitmap_noslotuse.h	/^									 typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::reverse_iterator
+currnode	btree_bitmap_outoforder.h	/^        const typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::const_iterator
+currnode	btree_bitmap_outoforder.h	/^        const typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::const_reverse_iterator
+currnode	btree_bitmap_outoforder.h	/^        typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::iterator
+currnode	btree_bitmap_outoforder.h	/^        typename btree::leaf_node * currnode;$/;"	m	class:stx::btree::reverse_iterator
+currslot	btree.h	/^        unsigned short currslot;$/;"	m	class:stx::btree::const_iterator
+currslot	btree.h	/^        unsigned short currslot;$/;"	m	class:stx::btree::const_reverse_iterator
+currslot	btree.h	/^        unsigned short currslot;$/;"	m	class:stx::btree::iterator
+currslot	btree.h	/^        unsigned short currslot;$/;"	m	class:stx::btree::reverse_iterator
+currslot	btree_bitmap.h	/^									 unsigned short currslot;$/;"	m	class:stx::btree::const_iterator
+currslot	btree_bitmap.h	/^									 unsigned short currslot;$/;"	m	class:stx::btree::const_reverse_iterator
+currslot	btree_bitmap.h	/^									 unsigned short currslot;$/;"	m	class:stx::btree::iterator
+currslot	btree_bitmap.h	/^									 unsigned short currslot;$/;"	m	class:stx::btree::reverse_iterator
+currslot	btree_bitmap_noslotuse.h	/^									 unsigned short currslot;$/;"	m	class:stx::btree::const_iterator
+currslot	btree_bitmap_noslotuse.h	/^									 unsigned short currslot;$/;"	m	class:stx::btree::const_reverse_iterator
+currslot	btree_bitmap_noslotuse.h	/^									 unsigned short currslot;$/;"	m	class:stx::btree::iterator
+currslot	btree_bitmap_noslotuse.h	/^									 unsigned short currslot;$/;"	m	class:stx::btree::reverse_iterator
+currslot	btree_bitmap_outoforder.h	/^        unsigned short currslot;$/;"	m	class:stx::btree::const_iterator
+currslot	btree_bitmap_outoforder.h	/^        unsigned short currslot;$/;"	m	class:stx::btree::const_reverse_iterator
+currslot	btree_bitmap_outoforder.h	/^        unsigned short currslot;$/;"	m	class:stx::btree::iterator
+currslot	btree_bitmap_outoforder.h	/^        unsigned short currslot;$/;"	m	class:stx::btree::reverse_iterator
+data	btree.h	/^        inline const data_type & data() const$/;"	f	class:stx::btree::const_iterator
+data	btree.h	/^        inline const data_type & data() const$/;"	f	class:stx::btree::const_reverse_iterator
+data	btree.h	/^        inline data_type & data() const$/;"	f	class:stx::btree::iterator
+data	btree.h	/^        inline data_type & data() const$/;"	f	class:stx::btree::reverse_iterator
+data	btree_bitmap.h	/^										 inline const data_type & data() const$/;"	f	class:stx::btree::const_iterator
+data	btree_bitmap.h	/^										 inline const data_type & data() const$/;"	f	class:stx::btree::const_reverse_iterator
+data	btree_bitmap.h	/^										 inline data_type & data() const$/;"	f	class:stx::btree::iterator
+data	btree_bitmap.h	/^										 inline data_type & data() const$/;"	f	class:stx::btree::reverse_iterator
+data	btree_bitmap_noslotuse.h	/^										 inline const data_type & data() const$/;"	f	class:stx::btree::const_iterator
+data	btree_bitmap_noslotuse.h	/^										 inline const data_type & data() const$/;"	f	class:stx::btree::const_reverse_iterator
+data	btree_bitmap_noslotuse.h	/^										 inline data_type & data() const$/;"	f	class:stx::btree::iterator
+data	btree_bitmap_noslotuse.h	/^										 inline data_type & data() const$/;"	f	class:stx::btree::reverse_iterator
+data	btree_bitmap_outoforder.h	/^        inline const data_type & data() const$/;"	f	class:stx::btree::const_iterator
+data	btree_bitmap_outoforder.h	/^        inline const data_type & data() const$/;"	f	class:stx::btree::const_reverse_iterator
+data	btree_bitmap_outoforder.h	/^        inline data_type & data() const$/;"	f	class:stx::btree::iterator
+data	btree_bitmap_outoforder.h	/^        inline data_type & data() const$/;"	f	class:stx::btree::reverse_iterator
+data_copy	btree.h	/^    static OutputIterator data_copy(InputIterator first, InputIterator last,$/;"	f	class:stx::btree
+data_copy	btree_bitmap.h	/^								 static OutputIterator data_copy(InputIterator first, InputIterator last,$/;"	f	class:stx::btree
+data_copy	btree_bitmap_noslotuse.h	/^								 static OutputIterator data_copy(InputIterator first, InputIterator last,$/;"	f	class:stx::btree
+data_copy	btree_bitmap_outoforder.h	/^    static OutputIterator data_copy(InputIterator first, InputIterator last,$/;"	f	class:stx::btree
+data_copy_backward	btree.h	/^    static OutputIterator data_copy_backward(InputIterator first, InputIterator last,$/;"	f	class:stx::btree
+data_copy_backward	btree_bitmap.h	/^								 static OutputIterator data_copy_backward(InputIterator first, InputIterator last,$/;"	f	class:stx::btree
+data_copy_backward	btree_bitmap_noslotuse.h	/^								 static OutputIterator data_copy_backward(InputIterator first, InputIterator last,$/;"	f	class:stx::btree
+data_copy_backward	btree_bitmap_outoforder.h	/^    static OutputIterator data_copy_backward(InputIterator first, InputIterator last,$/;"	f	class:stx::btree
+data_type	btree.h	/^        typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::const_iterator
+data_type	btree.h	/^        typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::const_reverse_iterator
+data_type	btree.h	/^        typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::iterator
+data_type	btree.h	/^        typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::reverse_iterator
+data_type	btree.h	/^    typedef _Data data_type;$/;"	t	class:stx::btree
+data_type	btree_bitmap.h	/^									 typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::const_iterator
+data_type	btree_bitmap.h	/^									 typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::const_reverse_iterator
+data_type	btree_bitmap.h	/^									 typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::iterator
+data_type	btree_bitmap.h	/^									 typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::reverse_iterator
+data_type	btree_bitmap.h	/^						 typedef _Data data_type;$/;"	t	class:stx::btree
+data_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::const_iterator
+data_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::const_reverse_iterator
+data_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::iterator
+data_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::reverse_iterator
+data_type	btree_bitmap_noslotuse.h	/^						 typedef _Data data_type;$/;"	t	class:stx::btree
+data_type	btree_bitmap_outoforder.h	/^        typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::const_iterator
+data_type	btree_bitmap_outoforder.h	/^        typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::const_reverse_iterator
+data_type	btree_bitmap_outoforder.h	/^        typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::iterator
+data_type	btree_bitmap_outoforder.h	/^        typedef typename btree::data_type data_type;$/;"	t	class:stx::btree::reverse_iterator
+data_type	btree_bitmap_outoforder.h	/^    typedef _Data data_type;$/;"	t	class:stx::btree
+data_type	btree_multimap.h	/^    typedef _Data data_type;$/;"	t	class:stx::btree_multimap
+data_type	skiplist_multimap.h	/^	typedef std::pair<key_type, value_type> data_type;$/;"	t	class:stx::skiplist_multimap
+data_type_size	btree.h	/^        unsigned short data_type_size;$/;"	m	struct:stx::btree::dump_header
+data_type_size	btree_bitmap.h	/^								 unsigned short data_type_size;$/;"	m	struct:stx::btree::dump_header
+data_type_size	btree_bitmap_noslotuse.h	/^								 unsigned short data_type_size;$/;"	m	struct:stx::btree::dump_header
+data_type_size	btree_bitmap_outoforder.h	/^        unsigned short data_type_size;$/;"	m	struct:stx::btree::dump_header
+datatype	skiplist.h	/^				typedef struct datatype {$/;"	s	class:stx::skiplist
+datatype_t	skiplist.h	/^				}datatype_t;$/;"	t	class:stx::skiplist	typeref:struct:stx::skiplist::datatype
+debug	btree.h	/^    static const bool debug = false;$/;"	m	class:stx::btree_default_map_traits
+debug	btree.h	/^    static const bool debug = false;$/;"	m	class:stx::btree_default_set_traits
+debug	btree.h	/^    static const bool debug = traits::debug;$/;"	m	class:stx::btree
+debug	btree_bitmap.h	/^							 static const bool debug = traits::debug;$/;"	m	class:stx::btree
+debug	btree_bitmap.h	/^				static const bool debug = false;$/;"	m	class:stx::btree_default_map_traits
+debug	btree_bitmap.h	/^				static const bool debug = false;$/;"	m	class:stx::btree_default_set_traits
+debug	btree_bitmap_noslotuse.h	/^							 static const bool debug = traits::debug;$/;"	m	class:stx::btree
+debug	btree_bitmap_noslotuse.h	/^				static const bool debug = false;$/;"	m	class:stx::btree_default_map_traits
+debug	btree_bitmap_noslotuse.h	/^				static const bool debug = false;$/;"	m	class:stx::btree_default_set_traits
+debug	btree_bitmap_outoforder.h	/^    static const bool debug = false;$/;"	m	class:stx::btree_default_map_traits
+debug	btree_bitmap_outoforder.h	/^    static const bool debug = false;$/;"	m	class:stx::btree_default_set_traits
+debug	btree_bitmap_outoforder.h	/^    static const bool debug = traits::debug;$/;"	m	class:stx::btree
+debug	btree_multimap.h	/^    static const bool debug = btree_impl::debug;$/;"	m	class:stx::btree_multimap
+debug	skiplist.h	/^			static const bool debug = false;$/;"	m	class:stx::skiplist_default_set_traits
+debug	speedtest.cc	/^		static const bool debug = false;$/;"	m	class:btree_traits_speed	file:
+difference_type	btree.h	/^        typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::const_iterator
+difference_type	btree.h	/^        typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::const_reverse_iterator
+difference_type	btree.h	/^        typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::iterator
+difference_type	btree.h	/^        typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::reverse_iterator
+difference_type	btree_bitmap.h	/^									 typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::const_iterator
+difference_type	btree_bitmap.h	/^									 typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::const_reverse_iterator
+difference_type	btree_bitmap.h	/^									 typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::iterator
+difference_type	btree_bitmap.h	/^									 typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::reverse_iterator
+difference_type	btree_bitmap_noslotuse.h	/^									 typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::const_iterator
+difference_type	btree_bitmap_noslotuse.h	/^									 typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::const_reverse_iterator
+difference_type	btree_bitmap_noslotuse.h	/^									 typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::iterator
+difference_type	btree_bitmap_noslotuse.h	/^									 typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::reverse_iterator
+difference_type	btree_bitmap_outoforder.h	/^        typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::const_iterator
+difference_type	btree_bitmap_outoforder.h	/^        typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::const_reverse_iterator
+difference_type	btree_bitmap_outoforder.h	/^        typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::iterator
+difference_type	btree_bitmap_outoforder.h	/^        typedef ptrdiff_t difference_type;$/;"	t	class:stx::btree::reverse_iterator
+dnode_init	skiplist.h	/^				void dnode_init(dnode_t *item, int num_levels, key_type max = 0, key_type min = ULLONG_MAX, key_type sum = 0, nvnode_t *leaf= NULL){$/;"	f	class:stx::skiplist
+dnode_t	skiplist.h	/^				} dnode_t;$/;"	t	class:stx::skiplist	typeref:struct:stx::skiplist::dram_node
+dnodes_poll_alloc	skiplist.h	/^				void dnodes_poll_alloc(skiplist_t *sl)$/;"	f	class:stx::skiplist
+dnodes_pool	skiplist.h	/^					char *dnodes_pool;$/;"	m	struct:stx::skiplist::sl
+dram_node	skiplist.h	/^				typedef struct dram_node {$/;"	s	class:stx::skiplist
+dump	btree.h	/^    void dump(std::ostream& os) const$/;"	f	class:stx::btree
+dump	btree_bitmap.h	/^							 void dump(std::ostream& os) const$/;"	f	class:stx::btree
+dump	btree_bitmap_noslotuse.h	/^							 void dump(std::ostream& os) const$/;"	f	class:stx::btree
+dump	btree_bitmap_outoforder.h	/^    void dump(std::ostream& os) const$/;"	f	class:stx::btree
+dump	btree_multimap.h	/^    void dump(std::ostream& os) const$/;"	f	class:stx::btree_multimap
+dump_header	btree.h	/^    struct dump_header$/;"	s	class:stx::btree
+dump_header	btree_bitmap.h	/^							 struct dump_header$/;"	s	class:stx::btree
+dump_header	btree_bitmap_noslotuse.h	/^							 struct dump_header$/;"	s	class:stx::btree
+dump_header	btree_bitmap_outoforder.h	/^    struct dump_header$/;"	s	class:stx::btree
+dump_node	btree.h	/^    void dump_node(std::ostream& os, const node* n) const$/;"	f	class:stx::btree
+dump_node	btree_bitmap.h	/^							 void dump_node(std::ostream& os, const node* n) const$/;"	f	class:stx::btree
+dump_node	btree_bitmap_noslotuse.h	/^							 void dump_node(std::ostream& os, const node* n) const$/;"	f	class:stx::btree
+dump_node	btree_bitmap_outoforder.h	/^    void dump_node(std::ostream& os, const node* n) const$/;"	f	class:stx::btree
+empty	btree.h	/^    inline bool empty() const$/;"	f	class:stx::btree
+empty	btree_bitmap.h	/^							 inline bool empty() const$/;"	f	class:stx::btree
+empty	btree_bitmap_noslotuse.h	/^							 inline bool empty() const$/;"	f	class:stx::btree
+empty	btree_bitmap_outoforder.h	/^    inline bool empty() const$/;"	f	class:stx::btree
+empty	btree_multimap.h	/^    inline bool empty() const$/;"	f	class:stx::btree_multimap
+empty_struct	skiplist_multimap.h	/^	struct empty_struct$/;"	s	class:stx::skiplist_multimap
+empty_type	skiplist_multimap.h	/^	typedef struct empty_struct empty_type;$/;"	t	class:stx::skiplist_multimap	typeref:struct:stx::skiplist_multimap::empty_struct
+end	btree.h	/^    inline const_iterator end() const$/;"	f	class:stx::btree
+end	btree.h	/^    inline iterator end()$/;"	f	class:stx::btree
+end	btree_bitmap.h	/^							 inline const_iterator end() const$/;"	f	class:stx::btree
+end	btree_bitmap.h	/^							 inline iterator end()$/;"	f	class:stx::btree
+end	btree_bitmap_noslotuse.h	/^							 inline const_iterator end() const$/;"	f	class:stx::btree
+end	btree_bitmap_noslotuse.h	/^							 inline iterator end()$/;"	f	class:stx::btree
+end	btree_bitmap_outoforder.h	/^    inline const_iterator end() const$/;"	f	class:stx::btree
+end	btree_bitmap_outoforder.h	/^    inline iterator end()$/;"	f	class:stx::btree
+end	btree_multimap.h	/^    inline const_iterator end() const$/;"	f	class:stx::btree_multimap
+end	btree_multimap.h	/^    inline iterator end()$/;"	f	class:stx::btree_multimap
+entry_t	skiplist.h	/^				}entry_t;$/;"	t	class:stx::skiplist	typeref:struct:stx::skiplist::kv_entry
+equal_range	btree.h	/^    inline std::pair<const_iterator, const_iterator> equal_range(const key_type& key) const$/;"	f	class:stx::btree
+equal_range	btree.h	/^    inline std::pair<iterator, iterator> equal_range(const key_type& key)$/;"	f	class:stx::btree
+equal_range	btree_bitmap.h	/^							 inline std::pair<const_iterator, const_iterator> equal_range(const key_type& key) const$/;"	f	class:stx::btree
+equal_range	btree_bitmap.h	/^							 inline std::pair<iterator, iterator> equal_range(const key_type& key)$/;"	f	class:stx::btree
+equal_range	btree_bitmap_noslotuse.h	/^							 inline std::pair<const_iterator, const_iterator> equal_range(const key_type& key) const$/;"	f	class:stx::btree
+equal_range	btree_bitmap_noslotuse.h	/^							 inline std::pair<iterator, iterator> equal_range(const key_type& key)$/;"	f	class:stx::btree
+equal_range	btree_bitmap_outoforder.h	/^    inline std::pair<const_iterator, const_iterator> equal_range(const key_type& key) const$/;"	f	class:stx::btree
+equal_range	btree_bitmap_outoforder.h	/^    inline std::pair<iterator, iterator> equal_range(const key_type& key)$/;"	f	class:stx::btree
+equal_range	btree_multimap.h	/^    inline std::pair<const_iterator, const_iterator> equal_range(const key_type& key) const$/;"	f	class:stx::btree_multimap
+equal_range	btree_multimap.h	/^    inline std::pair<iterator, iterator> equal_range(const key_type& key)$/;"	f	class:stx::btree_multimap
+erase	btree.h	/^    size_type erase(const key_type& key)$/;"	f	class:stx::btree
+erase	btree.h	/^    void erase(iterator \/* first *\/, iterator \/* last *\/)$/;"	f	class:stx::btree
+erase	btree.h	/^    void erase(iterator iter)$/;"	f	class:stx::btree
+erase	btree_bitmap.h	/^							 size_type erase(const key_type& key)$/;"	f	class:stx::btree
+erase	btree_bitmap.h	/^							 void erase(iterator \/* first *\/, iterator \/* last *\/)$/;"	f	class:stx::btree
+erase	btree_bitmap.h	/^							 void erase(iterator iter)$/;"	f	class:stx::btree
+erase	btree_bitmap_noslotuse.h	/^							 size_type erase(const key_type& key)$/;"	f	class:stx::btree
+erase	btree_bitmap_noslotuse.h	/^							 void erase(iterator \/* first *\/, iterator \/* last *\/)$/;"	f	class:stx::btree
+erase	btree_bitmap_noslotuse.h	/^							 void erase(iterator iter)$/;"	f	class:stx::btree
+erase	btree_bitmap_outoforder.h	/^    size_type erase(const key_type& key)$/;"	f	class:stx::btree
+erase	btree_bitmap_outoforder.h	/^    void erase(iterator \/* first *\/, iterator \/* last *\/)$/;"	f	class:stx::btree
+erase	btree_bitmap_outoforder.h	/^    void erase(iterator iter)$/;"	f	class:stx::btree
+erase	btree_multimap.h	/^    size_type erase(const key_type& key)$/;"	f	class:stx::btree_multimap
+erase	btree_multimap.h	/^    void erase(iterator \/* first *\/, iterator \/* last *\/)$/;"	f	class:stx::btree_multimap
+erase	btree_multimap.h	/^    void erase(iterator iter)$/;"	f	class:stx::btree_multimap
+erase_iter_descend	btree.h	/^    result_t erase_iter_descend(const iterator& iter,$/;"	f	class:stx::btree
+erase_iter_descend	btree_bitmap.h	/^							 result_t erase_iter_descend(const iterator& iter,$/;"	f	class:stx::btree
+erase_iter_descend	btree_bitmap_noslotuse.h	/^							 result_t erase_iter_descend(const iterator& iter,$/;"	f	class:stx::btree
+erase_iter_descend	btree_bitmap_outoforder.h	/^    result_t erase_iter_descend(const iterator& iter,$/;"	f	class:stx::btree
+erase_one	btree.h	/^    bool erase_one(const key_type& key)$/;"	f	class:stx::btree
+erase_one	btree_bitmap.h	/^							 bool erase_one(const key_type& key)$/;"	f	class:stx::btree
+erase_one	btree_bitmap_noslotuse.h	/^							 bool erase_one(const key_type& key)$/;"	f	class:stx::btree
+erase_one	btree_bitmap_outoforder.h	/^    bool erase_one(const key_type& key)$/;"	f	class:stx::btree
+erase_one	btree_multimap.h	/^    bool erase_one(const key_type& key)$/;"	f	class:stx::btree_multimap
+erase_one_descend	btree.h	/^    result_t erase_one_descend(const key_type& key,$/;"	f	class:stx::btree
+erase_one_descend	btree_bitmap.h	/^							 result_t erase_one_descend(const key_type& key,$/;"	f	class:stx::btree
+erase_one_descend	btree_bitmap_noslotuse.h	/^							 result_t erase_one_descend(const key_type& key,$/;"	f	class:stx::btree
+erase_one_descend	btree_bitmap_outoforder.h	/^    result_t erase_one_descend(const key_type& key,$/;"	f	class:stx::btree
+exists	btree.h	/^    bool exists(const key_type& key) const$/;"	f	class:stx::btree
+exists	btree_bitmap.h	/^							 bool exists(const key_type& key) const$/;"	f	class:stx::btree
+exists	btree_bitmap_noslotuse.h	/^							 bool exists(const key_type& key) const$/;"	f	class:stx::btree
+exists	btree_bitmap_outoforder.h	/^    bool exists(const key_type& key) const$/;"	f	class:stx::btree
+exists	btree_multimap.h	/^    bool exists(const key_type& key) const$/;"	f	class:stx::btree_multimap
+fill	btree.h	/^        inline void    fill()$/;"	f	struct:stx::btree::dump_header
+fill	btree_bitmap.h	/^								 inline void    fill()$/;"	f	struct:stx::btree::dump_header
+fill	btree_bitmap_noslotuse.h	/^								 inline void    fill()$/;"	f	struct:stx::btree::dump_header
+fill	btree_bitmap_outoforder.h	/^        inline void    fill()$/;"	f	struct:stx::btree::dump_header
+find	btree.h	/^    const_iterator find(const key_type& key) const$/;"	f	class:stx::btree
+find	btree.h	/^    iterator find(const key_type& key)$/;"	f	class:stx::btree
+find	btree_bitmap.h	/^							 const_iterator find(const key_type& key) const$/;"	f	class:stx::btree
+find	btree_bitmap.h	/^							 iterator find(const key_type& key)$/;"	f	class:stx::btree
+find	btree_bitmap_noslotuse.h	/^							 const_iterator find(const key_type& key) const$/;"	f	class:stx::btree
+find	btree_bitmap_noslotuse.h	/^							 iterator find(const key_type& key)$/;"	f	class:stx::btree
+find	btree_bitmap_outoforder.h	/^    const_iterator find(const key_type& key) const$/;"	f	class:stx::btree
+find	btree_bitmap_outoforder.h	/^    iterator find(const key_type& key)$/;"	f	class:stx::btree
+find	btree_multimap.h	/^    const_iterator find(const key_type& key) const$/;"	f	class:stx::btree_multimap
+find	btree_multimap.h	/^    iterator find(const key_type& key)$/;"	f	class:stx::btree_multimap
+find	skiplist_multimap.h	/^		inline value_type find(const key_type &key)$/;"	f	class:stx::skiplist_multimap
+find_index_node_lookup	skiplist.h	/^				dnode_t *find_index_node_lookup(skiplist_t *sl, key_type key) {$/;"	f	class:stx::skiplist
+find_inode_build	skiplist.h	/^				dnode_t  *find_inode_build(dnode_t **preds, bool *is_full, skiplist_t *sl, key_type key) {$/;"	f	class:stx::skiplist
+find_lower	btree.h	/^    inline int find_lower(const node_type* n, const key_type& key) const$/;"	f	class:stx::btree
+find_lower	btree_bitmap.h	/^								 inline int find_lower(const node_type* n, const key_type& key) const$/;"	f	class:stx::btree
+find_lower	btree_bitmap_noslotuse.h	/^								 inline int find_lower(const node_type* n, const key_type& key) const$/;"	f	class:stx::btree
+find_lower	btree_bitmap_outoforder.h	/^    inline int find_lower(const node_type* n, const key_type& key) const$/;"	f	class:stx::btree
+find_lower_org	btree.h	/^    inline int find_lower_org(const leaf_node* n, const key_type& key) const$/;"	f	class:stx::btree
+find_lower_org	btree_bitmap_outoforder.h	/^    inline int find_lower_org(const leaf_node* n, const key_type& key) const$/;"	f	class:stx::btree
+find_upper	btree.h	/^    inline int find_upper(const node_type* n, const key_type& key) const$/;"	f	class:stx::btree
+find_upper	btree_bitmap.h	/^								 inline int find_upper(const node_type* n, const key_type& key) const$/;"	f	class:stx::btree
+find_upper	btree_bitmap_noslotuse.h	/^								 inline int find_upper(const node_type* n, const key_type& key) const$/;"	f	class:stx::btree
+find_upper	btree_bitmap_outoforder.h	/^    inline int find_upper(const node_type* n, const key_type& key) const$/;"	f	class:stx::btree
+flags	btree.h	/^        result_flags_t flags;$/;"	m	struct:stx::btree::result_t
+flags	btree_bitmap.h	/^								 result_flags_t flags;$/;"	m	struct:stx::btree::result_t
+flags	btree_bitmap_noslotuse.h	/^								 result_flags_t flags;$/;"	m	struct:stx::btree::result_t
+flags	btree_bitmap_outoforder.h	/^        result_flags_t flags;$/;"	m	struct:stx::btree::result_t
+free_node	btree.h	/^    inline void free_node(node* n)$/;"	f	class:stx::btree
+free_node	btree_bitmap.h	/^							 inline void free_node(node* n)$/;"	f	class:stx::btree
+free_node	btree_bitmap_noslotuse.h	/^							 inline void free_node(node* n)$/;"	f	class:stx::btree
+free_node	btree_bitmap_outoforder.h	/^    inline void free_node(node* n)$/;"	f	class:stx::btree
+get	skiplist.h	/^					value_type get(key_type key) {$/;"	f	struct:stx::skiplist::nvram_node
+get_allocator	btree.h	/^    allocator_type get_allocator() const$/;"	f	class:stx::btree
+get_allocator	btree_bitmap.h	/^							 allocator_type get_allocator() const$/;"	f	class:stx::btree
+get_allocator	btree_bitmap_noslotuse.h	/^							 allocator_type get_allocator() const$/;"	f	class:stx::btree
+get_allocator	btree_bitmap_outoforder.h	/^    allocator_type get_allocator() const$/;"	f	class:stx::btree
+get_allocator	btree_multimap.h	/^    allocator_type get_allocator() const$/;"	f	class:stx::btree_multimap
+get_dnode	skiplist.h	/^				dnode_t *get_dnode(skiplist_t *sl) $/;"	f	class:stx::skiplist
+get_first_free_bit	btree.h	/^		long get_first_free_bit()$/;"	f	struct:stx::btree::leaf_node
+get_first_free_bit	btree_bitmap.h	/^						 long get_first_free_bit()$/;"	f	struct:stx::btree::leaf_node
+get_first_free_bit	btree_bitmap_noslotuse.h	/^						 long get_first_free_bit()$/;"	f	struct:stx::btree::leaf_node
+get_first_free_bit	btree_bitmap_outoforder.h	/^		long get_first_free_bit()$/;"	f	struct:stx::btree::leaf_node
+get_first_free_bit	skiplist.h	/^					inline long get_first_free_bit()$/;"	f	struct:stx::skiplist::nvram_node
+get_first_set_bit	btree.h	/^		long get_first_set_bit()$/;"	f	struct:stx::btree::leaf_node
+get_first_set_bit	btree_bitmap.h	/^						 long get_first_set_bit()$/;"	f	struct:stx::btree::leaf_node
+get_first_set_bit	btree_bitmap_noslotuse.h	/^						 long get_first_set_bit()$/;"	f	struct:stx::btree::leaf_node
+get_first_set_bit	btree_bitmap_outoforder.h	/^		long get_first_set_bit()$/;"	f	struct:stx::btree::leaf_node
+get_first_set_bit	skiplist.h	/^					inline long get_first_set_bit()$/;"	f	struct:stx::skiplist::nvram_node
+get_last_set_bit	btree.h	/^		long get_last_set_bit()$/;"	f	struct:stx::btree::leaf_node
+get_last_set_bit	btree_bitmap.h	/^						 long get_last_set_bit()$/;"	f	struct:stx::btree::leaf_node
+get_last_set_bit	btree_bitmap_noslotuse.h	/^						 long get_last_set_bit()$/;"	f	struct:stx::btree::leaf_node
+get_last_set_bit	btree_bitmap_outoforder.h	/^		long get_last_set_bit()$/;"	f	struct:stx::btree::leaf_node
+get_last_set_bit	skiplist.h	/^					inline long get_last_set_bit()$/;"	f	struct:stx::skiplist::nvram_node
+get_split_key	skiplist.h	/^				inline key_type get_split_key(dnode_t *index_node)$/;"	f	class:stx::skiplist
+get_stats	btree.h	/^    inline const struct tree_stats & get_stats() const$/;"	f	class:stx::btree
+get_stats	btree_bitmap.h	/^							 inline const struct tree_stats & get_stats() const$/;"	f	class:stx::btree
+get_stats	btree_bitmap_noslotuse.h	/^							 inline const struct tree_stats & get_stats() const$/;"	f	class:stx::btree
+get_stats	btree_bitmap_outoforder.h	/^    inline const struct tree_stats & get_stats() const$/;"	f	class:stx::btree
+get_stats	btree_multimap.h	/^    inline const tree_stats & get_stats() const$/;"	f	class:stx::btree_multimap
+has	btree.h	/^        inline bool    has(result_flags_t f) const$/;"	f	struct:stx::btree::result_t
+has	btree_bitmap.h	/^								 inline bool    has(result_flags_t f) const$/;"	f	struct:stx::btree::result_t
+has	btree_bitmap_noslotuse.h	/^								 inline bool    has(result_flags_t f) const$/;"	f	struct:stx::btree::result_t
+has	btree_bitmap_outoforder.h	/^        inline bool    has(result_flags_t f) const$/;"	f	struct:stx::btree::result_t
+heads	skiplist.h	/^					dnode_t *heads[HEAD_COUNT];$/;"	m	struct:stx::skiplist::sl
+hweight16	const_hweight.h	26;"	d
+hweight32	const_hweight.h	27;"	d
+hweight64	const_hweight.h	28;"	d
+hweight8	const_hweight.h	25;"	d
+hweight_long	bitmap.h	/^static inline unsigned long hweight_long(unsigned long w)$/;"	f
+inner_node	btree.h	/^        inline inner_node(const node& top)$/;"	f	struct:stx::btree::inner_node
+inner_node	btree.h	/^        inline inner_node(const unsigned short l)$/;"	f	struct:stx::btree::inner_node
+inner_node	btree.h	/^    struct inner_node : public node$/;"	s	class:stx::btree
+inner_node	btree_bitmap.h	/^							 struct inner_node : public node$/;"	s	class:stx::btree
+inner_node	btree_bitmap.h	/^						 inline inner_node(const node& top)$/;"	f	struct:stx::btree::inner_node
+inner_node	btree_bitmap.h	/^						 inline inner_node(const unsigned short l)$/;"	f	struct:stx::btree::inner_node
+inner_node	btree_bitmap_noslotuse.h	/^							 struct inner_node : public node$/;"	s	class:stx::btree
+inner_node	btree_bitmap_noslotuse.h	/^						 inline inner_node(const node& top)$/;"	f	struct:stx::btree::inner_node
+inner_node	btree_bitmap_noslotuse.h	/^						 inline inner_node(const unsigned short l)$/;"	f	struct:stx::btree::inner_node
+inner_node	btree_bitmap_outoforder.h	/^        inline inner_node(const node& top)$/;"	f	struct:stx::btree::inner_node
+inner_node	btree_bitmap_outoforder.h	/^        inline inner_node(const unsigned short l)$/;"	f	struct:stx::btree::inner_node
+inner_node	btree_bitmap_outoforder.h	/^    struct inner_node : public node$/;"	s	class:stx::btree
+inner_node_allocator	btree.h	/^    typename inner_node::alloc_type inner_node_allocator()$/;"	f	class:stx::btree
+inner_node_allocator	btree_bitmap.h	/^							 typename inner_node::alloc_type inner_node_allocator()$/;"	f	class:stx::btree
+inner_node_allocator	btree_bitmap_noslotuse.h	/^							 typename inner_node::alloc_type inner_node_allocator()$/;"	f	class:stx::btree
+inner_node_allocator	btree_bitmap_outoforder.h	/^    typename inner_node::alloc_type inner_node_allocator()$/;"	f	class:stx::btree
+innernodes	btree.h	/^        size_type                   innernodes;$/;"	m	struct:stx::btree::tree_stats
+innernodes	btree_bitmap.h	/^								 size_type                   innernodes;$/;"	m	struct:stx::btree::tree_stats
+innernodes	btree_bitmap_noslotuse.h	/^								 size_type                   innernodes;$/;"	m	struct:stx::btree::tree_stats
+innernodes	btree_bitmap_outoforder.h	/^        size_type                   innernodes;$/;"	m	struct:stx::btree::tree_stats
+innerslotmax	btree.h	/^    static const unsigned short innerslotmax = traits::innerslots;$/;"	m	class:stx::btree
+innerslotmax	btree_bitmap.h	/^							 static const unsigned short innerslotmax = traits::innerslots;$/;"	m	class:stx::btree
+innerslotmax	btree_bitmap_noslotuse.h	/^							 static const unsigned short innerslotmax = traits::innerslots;$/;"	m	class:stx::btree
+innerslotmax	btree_bitmap_outoforder.h	/^    static const unsigned short innerslotmax = traits::innerslots;$/;"	m	class:stx::btree
+innerslotmax	btree_multimap.h	/^    static const unsigned short innerslotmax = btree_impl::innerslotmax;$/;"	m	class:stx::btree_multimap
+innerslots	btree.h	/^        static const unsigned short innerslots = self_type::innerslotmax;$/;"	m	struct:stx::btree::tree_stats
+innerslots	btree.h	/^        unsigned short innerslots;$/;"	m	struct:stx::btree::dump_header
+innerslots	btree.h	/^    static const int innerslots = BTREE_MAX(8, 256 \/ (sizeof(_Key) + sizeof(void*)));$/;"	m	class:stx::btree_default_map_traits
+innerslots	btree.h	/^    static const int innerslots = BTREE_MAX(8, 256 \/ (sizeof(_Key) + sizeof(void*)));$/;"	m	class:stx::btree_default_set_traits
+innerslots	btree_bitmap.h	/^								 static const unsigned short innerslots = self_type::innerslotmax;$/;"	m	struct:stx::btree::tree_stats
+innerslots	btree_bitmap.h	/^								 unsigned short innerslots;$/;"	m	struct:stx::btree::dump_header
+innerslots	btree_bitmap.h	/^				static const int innerslots = BTREE_MAX(8, 256 \/ (sizeof(_Key) + sizeof(void*)));$/;"	m	class:stx::btree_default_map_traits
+innerslots	btree_bitmap.h	/^				static const int innerslots = BTREE_MAX(8, 256 \/ (sizeof(_Key) + sizeof(void*)));$/;"	m	class:stx::btree_default_set_traits
+innerslots	btree_bitmap_noslotuse.h	/^								 static const unsigned short innerslots = self_type::innerslotmax;$/;"	m	struct:stx::btree::tree_stats
+innerslots	btree_bitmap_noslotuse.h	/^								 unsigned short innerslots;$/;"	m	struct:stx::btree::dump_header
+innerslots	btree_bitmap_noslotuse.h	/^				static const int innerslots = BTREE_MAX(8, 256 \/ (sizeof(_Key) + sizeof(void*)));$/;"	m	class:stx::btree_default_map_traits
+innerslots	btree_bitmap_noslotuse.h	/^				static const int innerslots = BTREE_MAX(8, 256 \/ (sizeof(_Key) + sizeof(void*)));$/;"	m	class:stx::btree_default_set_traits
+innerslots	btree_bitmap_outoforder.h	/^        static const unsigned short innerslots = self_type::innerslotmax;$/;"	m	struct:stx::btree::tree_stats
+innerslots	btree_bitmap_outoforder.h	/^        unsigned short innerslots;$/;"	m	struct:stx::btree::dump_header
+innerslots	btree_bitmap_outoforder.h	/^    static const int innerslots = BTREE_MAX(8, 256 \/ (sizeof(_Key) + sizeof(void*)));$/;"	m	class:stx::btree_default_map_traits
+innerslots	btree_bitmap_outoforder.h	/^    static const int innerslots = BTREE_MAX(8, 256 \/ (sizeof(_Key) + sizeof(void*)));$/;"	m	class:stx::btree_default_set_traits
+innerslots	speedtest.cc	/^		static const int innerslots = _leafslots;$/;"	m	class:btree_traits_speed	file:
+insert	btree.h	/^    inline iterator insert(iterator \/* hint *\/, const pair_type& x)$/;"	f	class:stx::btree
+insert	btree.h	/^    inline std::pair<iterator, bool> insert(const key_type& key, const data_type& data)$/;"	f	class:stx::btree
+insert	btree.h	/^    inline std::pair<iterator, bool> insert(const pair_type& x)$/;"	f	class:stx::btree
+insert	btree.h	/^    inline void insert(InputIterator first, InputIterator last)$/;"	f	class:stx::btree
+insert	btree_bitmap.h	/^								 inline void insert(InputIterator first, InputIterator last)$/;"	f	class:stx::btree
+insert	btree_bitmap.h	/^							 inline iterator insert(iterator \/* hint *\/, const pair_type& x)$/;"	f	class:stx::btree
+insert	btree_bitmap.h	/^							 inline std::pair<iterator, bool> insert(const key_type& key, const data_type& data)$/;"	f	class:stx::btree
+insert	btree_bitmap.h	/^							 inline std::pair<iterator, bool> insert(const pair_type& x)$/;"	f	class:stx::btree
+insert	btree_bitmap_noslotuse.h	/^								 inline void insert(InputIterator first, InputIterator last)$/;"	f	class:stx::btree
+insert	btree_bitmap_noslotuse.h	/^							 inline iterator insert(iterator \/* hint *\/, const pair_type& x)$/;"	f	class:stx::btree
+insert	btree_bitmap_noslotuse.h	/^							 inline std::pair<iterator, bool> insert(const key_type& key, const data_type& data)$/;"	f	class:stx::btree
+insert	btree_bitmap_noslotuse.h	/^							 inline std::pair<iterator, bool> insert(const pair_type& x)$/;"	f	class:stx::btree
+insert	btree_bitmap_outoforder.h	/^    inline iterator insert(iterator \/* hint *\/, const pair_type& x)$/;"	f	class:stx::btree
+insert	btree_bitmap_outoforder.h	/^    inline std::pair<iterator, bool> insert(const key_type& key, const data_type& data)$/;"	f	class:stx::btree
+insert	btree_bitmap_outoforder.h	/^    inline std::pair<iterator, bool> insert(const pair_type& x)$/;"	f	class:stx::btree
+insert	btree_bitmap_outoforder.h	/^    inline void insert(InputIterator first, InputIterator last)$/;"	f	class:stx::btree
+insert	btree_multimap.h	/^    inline iterator insert(const key_type& key, const data_type& data)$/;"	f	class:stx::btree_multimap
+insert	btree_multimap.h	/^    inline iterator insert(const value_type& x)$/;"	f	class:stx::btree_multimap
+insert	btree_multimap.h	/^    inline iterator insert(iterator hint, const value_type& x)$/;"	f	class:stx::btree_multimap
+insert	btree_multimap.h	/^    inline void insert(InputIterator first, InputIterator last)$/;"	f	class:stx::btree_multimap
+insert	skiplist_multimap.h	/^		inline value_type insert(const data_type& x)$/;"	f	class:stx::skiplist_multimap
+insert	skiplist_multimap.h	/^		inline value_type insert(const key_type &key, const value_type &value)$/;"	f	class:stx::skiplist_multimap
+insert2	btree.h	/^    inline iterator insert2(iterator \/* hint *\/, const key_type& key, const data_type& data)$/;"	f	class:stx::btree
+insert2	btree.h	/^    inline std::pair<iterator, bool> insert2(const key_type& key, const data_type& data)$/;"	f	class:stx::btree
+insert2	btree_bitmap.h	/^							 inline iterator insert2(iterator \/* hint *\/, const key_type& key, const data_type& data)$/;"	f	class:stx::btree
+insert2	btree_bitmap.h	/^							 inline std::pair<iterator, bool> insert2(const key_type& key, const data_type& data)$/;"	f	class:stx::btree
+insert2	btree_bitmap_noslotuse.h	/^							 inline iterator insert2(iterator \/* hint *\/, const key_type& key, const data_type& data)$/;"	f	class:stx::btree
+insert2	btree_bitmap_noslotuse.h	/^							 inline std::pair<iterator, bool> insert2(const key_type& key, const data_type& data)$/;"	f	class:stx::btree
+insert2	btree_bitmap_outoforder.h	/^    inline iterator insert2(iterator \/* hint *\/, const key_type& key, const data_type& data)$/;"	f	class:stx::btree
+insert2	btree_bitmap_outoforder.h	/^    inline std::pair<iterator, bool> insert2(const key_type& key, const data_type& data)$/;"	f	class:stx::btree
+insert2	btree_multimap.h	/^    inline iterator insert2(const key_type& key, const data_type& data)$/;"	f	class:stx::btree_multimap
+insert2	btree_multimap.h	/^    inline iterator insert2(iterator hint, const key_type& key, const data_type& data)$/;"	f	class:stx::btree_multimap
+insert_descend	btree.h	/^    std::pair<iterator, bool> insert_descend(node* n,$/;"	f	class:stx::btree
+insert_descend	btree_bitmap.h	/^							 std::pair<iterator, bool> insert_descend(node* n,$/;"	f	class:stx::btree
+insert_descend	btree_bitmap_noslotuse.h	/^							 std::pair<iterator, bool> insert_descend(node* n,$/;"	f	class:stx::btree
+insert_descend	btree_bitmap_outoforder.h	/^    std::pair<iterator, bool> insert_descend(node* n,$/;"	f	class:stx::btree
+insert_start	btree.h	/^    std::pair<iterator, bool> insert_start(const key_type& key, const data_type& value)$/;"	f	class:stx::btree
+insert_start	btree_bitmap.h	/^							 std::pair<iterator, bool> insert_start(const key_type& key, const data_type& value)$/;"	f	class:stx::btree
+insert_start	btree_bitmap_noslotuse.h	/^							 std::pair<iterator, bool> insert_start(const key_type& key, const data_type& value)$/;"	f	class:stx::btree
+insert_start	btree_bitmap_outoforder.h	/^    std::pair<iterator, bool> insert_start(const key_type& key, const data_type& value)$/;"	f	class:stx::btree
+is_head	skiplist.h	/^					bool is_head;$/;"	m	struct:stx::skiplist::dram_node
+isfew	btree.h	/^        inline bool isfew() const$/;"	f	struct:stx::btree::inner_node
+isfew	btree.h	/^        inline bool isfew() const$/;"	f	struct:stx::btree::leaf_node
+isfew	btree_bitmap.h	/^						 inline bool isfew() const$/;"	f	struct:stx::btree::inner_node
+isfew	btree_bitmap.h	/^						 inline bool isfew() const$/;"	f	struct:stx::btree::leaf_node
+isfew	btree_bitmap_noslotuse.h	/^						 inline bool isfew() const$/;"	f	struct:stx::btree::inner_node
+isfew	btree_bitmap_noslotuse.h	/^						 inline bool isfew() const$/;"	f	struct:stx::btree::leaf_node
+isfew	btree_bitmap_outoforder.h	/^        inline bool isfew() const$/;"	f	struct:stx::btree::inner_node
+isfew	btree_bitmap_outoforder.h	/^        inline bool isfew() const$/;"	f	struct:stx::btree::leaf_node
+isfull	btree.h	/^        inline bool isfull() const$/;"	f	struct:stx::btree::inner_node
+isfull	btree.h	/^        inline bool isfull() const$/;"	f	struct:stx::btree::leaf_node
+isfull	btree_bitmap.h	/^						 inline bool isfull() const$/;"	f	struct:stx::btree::inner_node
+isfull	btree_bitmap.h	/^						 inline bool isfull() const$/;"	f	struct:stx::btree::leaf_node
+isfull	btree_bitmap_noslotuse.h	/^						 inline bool isfull() const$/;"	f	struct:stx::btree::inner_node
+isfull	btree_bitmap_noslotuse.h	/^						 inline bool isfull() const$/;"	f	struct:stx::btree::leaf_node
+isfull	btree_bitmap_outoforder.h	/^        inline bool isfull() const$/;"	f	struct:stx::btree::inner_node
+isfull	btree_bitmap_outoforder.h	/^        inline bool isfull() const$/;"	f	struct:stx::btree::leaf_node
+isfull	skiplist.h	/^					inline bool isfull() const$/;"	f	struct:stx::skiplist::nvram_node
+isleafnode	btree.h	/^        inline bool isleafnode() const$/;"	f	struct:stx::btree::node
+isleafnode	btree_bitmap.h	/^								 inline bool    isleafnode() const$/;"	f	struct:stx::btree::node
+isleafnode	btree_bitmap_noslotuse.h	/^								 inline bool    isleafnode() const$/;"	f	struct:stx::btree::node
+isleafnode	btree_bitmap_outoforder.h	/^        inline bool isleafnode() const$/;"	f	struct:stx::btree::node
+isunderflow	btree.h	/^        inline bool isunderflow() const$/;"	f	struct:stx::btree::inner_node
+isunderflow	btree.h	/^        inline bool isunderflow() const$/;"	f	struct:stx::btree::leaf_node
+isunderflow	btree_bitmap.h	/^						 inline bool isunderflow() const$/;"	f	struct:stx::btree::inner_node
+isunderflow	btree_bitmap.h	/^						 inline bool isunderflow() const$/;"	f	struct:stx::btree::leaf_node
+isunderflow	btree_bitmap_noslotuse.h	/^						 inline bool isunderflow() const$/;"	f	struct:stx::btree::inner_node
+isunderflow	btree_bitmap_noslotuse.h	/^						 inline bool isunderflow() const$/;"	f	struct:stx::btree::leaf_node
+isunderflow	btree_bitmap_outoforder.h	/^        inline bool isunderflow() const$/;"	f	struct:stx::btree::inner_node
+isunderflow	btree_bitmap_outoforder.h	/^        inline bool isunderflow() const$/;"	f	struct:stx::btree::leaf_node
+itemcount	btree.h	/^        size_type                   itemcount;$/;"	m	struct:stx::btree::tree_stats
+itemcount	btree.h	/^        size_type      itemcount;$/;"	m	struct:stx::btree::dump_header
+itemcount	btree_bitmap.h	/^								 size_type                   itemcount;$/;"	m	struct:stx::btree::tree_stats
+itemcount	btree_bitmap.h	/^								 size_type      itemcount;$/;"	m	struct:stx::btree::dump_header
+itemcount	btree_bitmap_noslotuse.h	/^								 size_type                   itemcount;$/;"	m	struct:stx::btree::tree_stats
+itemcount	btree_bitmap_noslotuse.h	/^								 size_type      itemcount;$/;"	m	struct:stx::btree::dump_header
+itemcount	btree_bitmap_outoforder.h	/^        size_type                   itemcount;$/;"	m	struct:stx::btree::tree_stats
+itemcount	btree_bitmap_outoforder.h	/^        size_type      itemcount;$/;"	m	struct:stx::btree::dump_header
+iterator	btree.h	/^        inline iterator()$/;"	f	class:stx::btree::iterator
+iterator	btree.h	/^        inline iterator(const reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::iterator
+iterator	btree.h	/^        inline iterator(typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::iterator
+iterator	btree.h	/^    class iterator$/;"	c	class:stx::btree
+iterator	btree_bitmap.h	/^										 inline iterator()$/;"	f	class:stx::btree::iterator
+iterator	btree_bitmap.h	/^										 inline iterator(const reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::iterator
+iterator	btree_bitmap.h	/^										 inline iterator(typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::iterator
+iterator	btree_bitmap.h	/^							 class iterator$/;"	c	class:stx::btree
+iterator	btree_bitmap_noslotuse.h	/^										 inline iterator()$/;"	f	class:stx::btree::iterator
+iterator	btree_bitmap_noslotuse.h	/^										 inline iterator(const reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::iterator
+iterator	btree_bitmap_noslotuse.h	/^										 inline iterator(typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::iterator
+iterator	btree_bitmap_noslotuse.h	/^							 class iterator$/;"	c	class:stx::btree
+iterator	btree_bitmap_outoforder.h	/^        inline iterator()$/;"	f	class:stx::btree::iterator
+iterator	btree_bitmap_outoforder.h	/^        inline iterator(const reverse_iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::iterator
+iterator	btree_bitmap_outoforder.h	/^        inline iterator(typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::iterator
+iterator	btree_bitmap_outoforder.h	/^    class iterator$/;"	c	class:stx::btree
+iterator	btree_multimap.h	/^    typedef typename btree_impl::iterator iterator;$/;"	t	class:stx::btree_multimap
+iterator	skiplist_multimap.h	/^	typedef typename skiplist_impl::sl_iter iterator;$/;"	t	class:stx::skiplist_multimap
+iterator_category	btree.h	/^        typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::const_iterator
+iterator_category	btree.h	/^        typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::const_reverse_iterator
+iterator_category	btree.h	/^        typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::iterator
+iterator_category	btree.h	/^        typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::reverse_iterator
+iterator_category	btree_bitmap.h	/^									 typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::const_iterator
+iterator_category	btree_bitmap.h	/^									 typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::const_reverse_iterator
+iterator_category	btree_bitmap.h	/^									 typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::iterator
+iterator_category	btree_bitmap.h	/^									 typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::reverse_iterator
+iterator_category	btree_bitmap_noslotuse.h	/^									 typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::const_iterator
+iterator_category	btree_bitmap_noslotuse.h	/^									 typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::const_reverse_iterator
+iterator_category	btree_bitmap_noslotuse.h	/^									 typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::iterator
+iterator_category	btree_bitmap_noslotuse.h	/^									 typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::reverse_iterator
+iterator_category	btree_bitmap_outoforder.h	/^        typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::const_iterator
+iterator_category	btree_bitmap_outoforder.h	/^        typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::const_reverse_iterator
+iterator_category	btree_bitmap_outoforder.h	/^        typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::iterator
+iterator_category	btree_bitmap_outoforder.h	/^        typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:stx::btree::reverse_iterator
+key	btree.h	/^        inline const key_type & key() const$/;"	f	class:stx::btree::const_iterator
+key	btree.h	/^        inline const key_type & key() const$/;"	f	class:stx::btree::const_reverse_iterator
+key	btree.h	/^        inline const key_type & key() const$/;"	f	class:stx::btree::iterator
+key	btree.h	/^        inline const key_type & key() const$/;"	f	class:stx::btree::reverse_iterator
+key	btree_bitmap.h	/^										 inline const key_type & key() const$/;"	f	class:stx::btree::const_iterator
+key	btree_bitmap.h	/^										 inline const key_type & key() const$/;"	f	class:stx::btree::const_reverse_iterator
+key	btree_bitmap.h	/^										 inline const key_type & key() const$/;"	f	class:stx::btree::iterator
+key	btree_bitmap.h	/^										 inline const key_type & key() const$/;"	f	class:stx::btree::reverse_iterator
+key	btree_bitmap_noslotuse.h	/^										 inline const key_type & key() const$/;"	f	class:stx::btree::const_iterator
+key	btree_bitmap_noslotuse.h	/^										 inline const key_type & key() const$/;"	f	class:stx::btree::const_reverse_iterator
+key	btree_bitmap_noslotuse.h	/^										 inline const key_type & key() const$/;"	f	class:stx::btree::iterator
+key	btree_bitmap_noslotuse.h	/^										 inline const key_type & key() const$/;"	f	class:stx::btree::reverse_iterator
+key	btree_bitmap_outoforder.h	/^        inline const key_type & key() const$/;"	f	class:stx::btree::const_iterator
+key	btree_bitmap_outoforder.h	/^        inline const key_type & key() const$/;"	f	class:stx::btree::const_reverse_iterator
+key	btree_bitmap_outoforder.h	/^        inline const key_type & key() const$/;"	f	class:stx::btree::iterator
+key	btree_bitmap_outoforder.h	/^        inline const key_type & key() const$/;"	f	class:stx::btree::reverse_iterator
+key	skiplist.h	/^					key_type key;$/;"	m	struct:stx::skiplist::kv_entry
+key_comp	btree.h	/^        key_compare key_comp;$/;"	m	class:stx::btree::value_compare
+key_comp	btree.h	/^    inline key_compare key_comp() const$/;"	f	class:stx::btree
+key_comp	btree_bitmap.h	/^									 key_compare key_comp;$/;"	m	class:stx::btree::value_compare
+key_comp	btree_bitmap.h	/^							 inline key_compare key_comp() const$/;"	f	class:stx::btree
+key_comp	btree_bitmap_noslotuse.h	/^									 key_compare key_comp;$/;"	m	class:stx::btree::value_compare
+key_comp	btree_bitmap_noslotuse.h	/^							 inline key_compare key_comp() const$/;"	f	class:stx::btree
+key_comp	btree_bitmap_outoforder.h	/^        key_compare key_comp;$/;"	m	class:stx::btree::value_compare
+key_comp	btree_bitmap_outoforder.h	/^    inline key_compare key_comp() const$/;"	f	class:stx::btree
+key_comp	btree_multimap.h	/^    inline key_compare key_comp() const$/;"	f	class:stx::btree_multimap
+key_compare	btree.h	/^    typedef _Compare key_compare;$/;"	t	class:stx::btree
+key_compare	btree_bitmap.h	/^						 typedef _Compare key_compare;$/;"	t	class:stx::btree
+key_compare	btree_bitmap_noslotuse.h	/^						 typedef _Compare key_compare;$/;"	t	class:stx::btree
+key_compare	btree_bitmap_outoforder.h	/^    typedef _Compare key_compare;$/;"	t	class:stx::btree
+key_compare	btree_multimap.h	/^    typedef _Compare key_compare;$/;"	t	class:stx::btree_multimap
+key_compare	skiplist_multimap.h	/^	typedef _Compare key_compare;$/;"	t	class:stx::skiplist_multimap
+key_equal	btree.h	/^    inline bool key_equal(const key_type& a, const key_type& b) const$/;"	f	class:stx::btree
+key_equal	btree_bitmap.h	/^							 inline bool key_equal(const key_type& a, const key_type& b) const$/;"	f	class:stx::btree
+key_equal	btree_bitmap_noslotuse.h	/^							 inline bool key_equal(const key_type& a, const key_type& b) const$/;"	f	class:stx::btree
+key_equal	btree_bitmap_outoforder.h	/^    inline bool key_equal(const key_type& a, const key_type& b) const$/;"	f	class:stx::btree
+key_greater	btree.h	/^    inline bool key_greater(const key_type& a, const key_type& b) const$/;"	f	class:stx::btree
+key_greater	btree_bitmap.h	/^							 inline bool key_greater(const key_type& a, const key_type& b) const$/;"	f	class:stx::btree
+key_greater	btree_bitmap_noslotuse.h	/^							 inline bool key_greater(const key_type& a, const key_type& b) const$/;"	f	class:stx::btree
+key_greater	btree_bitmap_outoforder.h	/^    inline bool key_greater(const key_type& a, const key_type& b) const$/;"	f	class:stx::btree
+key_greaterequal	btree.h	/^    inline bool key_greaterequal(const key_type& a, const key_type b) const$/;"	f	class:stx::btree
+key_greaterequal	btree_bitmap.h	/^							 inline bool key_greaterequal(const key_type& a, const key_type b) const$/;"	f	class:stx::btree
+key_greaterequal	btree_bitmap_noslotuse.h	/^							 inline bool key_greaterequal(const key_type& a, const key_type b) const$/;"	f	class:stx::btree
+key_greaterequal	btree_bitmap_outoforder.h	/^    inline bool key_greaterequal(const key_type& a, const key_type b) const$/;"	f	class:stx::btree
+key_less	btree.h	/^    inline bool key_less(const key_type& a, const key_type b) const$/;"	f	class:stx::btree
+key_less	btree_bitmap.h	/^							 inline bool key_less(const key_type& a, const key_type b) const$/;"	f	class:stx::btree
+key_less	btree_bitmap_noslotuse.h	/^							 inline bool key_less(const key_type& a, const key_type b) const$/;"	f	class:stx::btree
+key_less	btree_bitmap_outoforder.h	/^    inline bool key_less(const key_type& a, const key_type b) const$/;"	f	class:stx::btree
+key_lessequal	btree.h	/^    inline bool key_lessequal(const key_type& a, const key_type b) const$/;"	f	class:stx::btree
+key_lessequal	btree_bitmap.h	/^							 inline bool key_lessequal(const key_type& a, const key_type b) const$/;"	f	class:stx::btree
+key_lessequal	btree_bitmap_noslotuse.h	/^							 inline bool key_lessequal(const key_type& a, const key_type b) const$/;"	f	class:stx::btree
+key_lessequal	btree_bitmap_outoforder.h	/^    inline bool key_lessequal(const key_type& a, const key_type b) const$/;"	f	class:stx::btree
+key_type	btree.h	/^        typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::const_iterator
+key_type	btree.h	/^        typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::const_reverse_iterator
+key_type	btree.h	/^        typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::iterator
+key_type	btree.h	/^        typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::reverse_iterator
+key_type	btree.h	/^    typedef _Key key_type;$/;"	t	class:stx::btree
+key_type	btree_bitmap.h	/^									 typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::const_iterator
+key_type	btree_bitmap.h	/^									 typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::const_reverse_iterator
+key_type	btree_bitmap.h	/^									 typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::iterator
+key_type	btree_bitmap.h	/^									 typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::reverse_iterator
+key_type	btree_bitmap.h	/^						 typedef _Key key_type;$/;"	t	class:stx::btree
+key_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::const_iterator
+key_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::const_reverse_iterator
+key_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::iterator
+key_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::reverse_iterator
+key_type	btree_bitmap_noslotuse.h	/^						 typedef _Key key_type;$/;"	t	class:stx::btree
+key_type	btree_bitmap_outoforder.h	/^        typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::const_iterator
+key_type	btree_bitmap_outoforder.h	/^        typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::const_reverse_iterator
+key_type	btree_bitmap_outoforder.h	/^        typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::iterator
+key_type	btree_bitmap_outoforder.h	/^        typedef typename btree::key_type key_type;$/;"	t	class:stx::btree::reverse_iterator
+key_type	btree_bitmap_outoforder.h	/^    typedef _Key key_type;$/;"	t	class:stx::btree
+key_type	btree_multimap.h	/^    typedef _Key key_type;$/;"	t	class:stx::btree_multimap
+key_type	skiplist.h	/^				typedef _Key key_type;$/;"	t	class:stx::skiplist
+key_type	skiplist_multimap.h	/^	typedef _Key key_type;$/;"	t	class:stx::skiplist_multimap
+key_type_size	btree.h	/^        unsigned short key_type_size;$/;"	m	struct:stx::btree::dump_header
+key_type_size	btree_bitmap.h	/^								 unsigned short key_type_size;$/;"	m	struct:stx::btree::dump_header
+key_type_size	btree_bitmap_noslotuse.h	/^								 unsigned short key_type_size;$/;"	m	struct:stx::btree::dump_header
+key_type_size	btree_bitmap_outoforder.h	/^        unsigned short key_type_size;$/;"	m	struct:stx::btree::dump_header
+kv_entry	skiplist.h	/^				typedef struct kv_entry$/;"	s	class:stx::skiplist
+lastkey	btree.h	/^        key_type       lastkey;$/;"	m	struct:stx::btree::result_t
+lastkey	btree_bitmap.h	/^								 key_type       lastkey;$/;"	m	struct:stx::btree::result_t
+lastkey	btree_bitmap_noslotuse.h	/^								 key_type       lastkey;$/;"	m	struct:stx::btree::result_t
+lastkey	btree_bitmap_outoforder.h	/^        key_type       lastkey;$/;"	m	struct:stx::btree::result_t
+leaf_find_lower	btree.h	/^    inline int leaf_find_lower(const leaf_node* n, const key_type& key) const$/;"	f	class:stx::btree
+leaf_find_lower	btree_bitmap.h	/^								 inline int leaf_find_lower(const leaf_node *n, const key_type& key) const$/;"	f	class:stx::btree
+leaf_find_lower	btree_bitmap_noslotuse.h	/^								 inline int leaf_find_lower(const leaf_node *n, const key_type& key) const$/;"	f	class:stx::btree
+leaf_find_lower	btree_bitmap_outoforder.h	/^    inline int leaf_find_lower(const leaf_node* n, const key_type& key) const$/;"	f	class:stx::btree
+leaf_find_value	btree.h	/^	inline int leaf_find_value(const leaf_node *n, const key_type& key)const$/;"	f	class:stx::btree
+leaf_node	btree.h	/^        inline leaf_node()$/;"	f	struct:stx::btree::leaf_node
+leaf_node	btree.h	/^        inline leaf_node(const node& top)$/;"	f	struct:stx::btree::leaf_node
+leaf_node	btree.h	/^    struct leaf_node : public node$/;"	s	class:stx::btree
+leaf_node	btree_bitmap.h	/^							 struct leaf_node : public node$/;"	s	class:stx::btree
+leaf_node	btree_bitmap.h	/^						 inline leaf_node()$/;"	f	struct:stx::btree::leaf_node
+leaf_node	btree_bitmap.h	/^						 inline leaf_node(const node& top)$/;"	f	struct:stx::btree::leaf_node
+leaf_node	btree_bitmap_noslotuse.h	/^							 struct leaf_node : public node$/;"	s	class:stx::btree
+leaf_node	btree_bitmap_noslotuse.h	/^						 inline leaf_node()$/;"	f	struct:stx::btree::leaf_node
+leaf_node	btree_bitmap_noslotuse.h	/^						 inline leaf_node(const node& top)$/;"	f	struct:stx::btree::leaf_node
+leaf_node	btree_bitmap_outoforder.h	/^        inline leaf_node()$/;"	f	struct:stx::btree::leaf_node
+leaf_node	btree_bitmap_outoforder.h	/^        inline leaf_node(const node& top)$/;"	f	struct:stx::btree::leaf_node
+leaf_node	btree_bitmap_outoforder.h	/^    struct leaf_node : public node$/;"	s	class:stx::btree
+leaf_node_allocator	btree.h	/^    typename leaf_node::alloc_type leaf_node_allocator()$/;"	f	class:stx::btree
+leaf_node_allocator	btree_bitmap.h	/^							 typename leaf_node::alloc_type leaf_node_allocator()$/;"	f	class:stx::btree
+leaf_node_allocator	btree_bitmap_noslotuse.h	/^							 typename leaf_node::alloc_type leaf_node_allocator()$/;"	f	class:stx::btree
+leaf_node_allocator	btree_bitmap_outoforder.h	/^    typename leaf_node::alloc_type leaf_node_allocator()$/;"	f	class:stx::btree
+leafslotmax	btree.h	/^    static const unsigned short leafslotmax = traits::leafslots;$/;"	m	class:stx::btree
+leafslotmax	btree_bitmap.h	/^							 static const unsigned short leafslotmax = traits::leafslots;$/;"	m	class:stx::btree
+leafslotmax	btree_bitmap_noslotuse.h	/^							 static const unsigned short leafslotmax = traits::leafslots;$/;"	m	class:stx::btree
+leafslotmax	btree_bitmap_outoforder.h	/^    static const unsigned short leafslotmax = traits::leafslots;$/;"	m	class:stx::btree
+leafslotmax	btree_multimap.h	/^    static const unsigned short leafslotmax = btree_impl::leafslotmax;$/;"	m	class:stx::btree_multimap
+leafslotmax	skiplist.h	/^				static const unsigned long leafslotmax = traits::leafslots;$/;"	m	class:stx::skiplist
+leafslots	btree.h	/^        static const unsigned short leafslots = self_type::leafslotmax;$/;"	m	struct:stx::btree::tree_stats
+leafslots	btree.h	/^        unsigned short leafslots;$/;"	m	struct:stx::btree::dump_header
+leafslots	btree.h	/^    static const int leafslots = BTREE_MAX(8, 256 \/ (sizeof(_Key) + sizeof(_Data)));$/;"	m	class:stx::btree_default_map_traits
+leafslots	btree.h	/^    static const int leafslots = BTREE_MAX(8, 256 \/ (sizeof(_Key)));$/;"	m	class:stx::btree_default_set_traits
+leafslots	btree_bitmap.h	/^								 static const unsigned short leafslots = self_type::leafslotmax;$/;"	m	struct:stx::btree::tree_stats
+leafslots	btree_bitmap.h	/^								 unsigned short leafslots;$/;"	m	struct:stx::btree::dump_header
+leafslots	btree_bitmap.h	/^				static const int leafslots = BTREE_MAX(8, 256 \/ (sizeof(_Key) + sizeof(_Data)));$/;"	m	class:stx::btree_default_map_traits
+leafslots	btree_bitmap.h	/^				static const int leafslots = BTREE_MAX(8, 256 \/ (sizeof(_Key)));$/;"	m	class:stx::btree_default_set_traits
+leafslots	btree_bitmap_noslotuse.h	/^								 static const unsigned short leafslots = self_type::leafslotmax;$/;"	m	struct:stx::btree::tree_stats
+leafslots	btree_bitmap_noslotuse.h	/^								 unsigned short leafslots;$/;"	m	struct:stx::btree::dump_header
+leafslots	btree_bitmap_noslotuse.h	/^				static const int leafslots = BTREE_MAX(8, 256 \/ (sizeof(_Key) + sizeof(_Data)));$/;"	m	class:stx::btree_default_map_traits
+leafslots	btree_bitmap_noslotuse.h	/^				static const int leafslots = BTREE_MAX(8, 256 \/ (sizeof(_Key)));$/;"	m	class:stx::btree_default_set_traits
+leafslots	btree_bitmap_outoforder.h	/^        static const unsigned short leafslots = self_type::leafslotmax;$/;"	m	struct:stx::btree::tree_stats
+leafslots	btree_bitmap_outoforder.h	/^        unsigned short leafslots;$/;"	m	struct:stx::btree::dump_header
+leafslots	btree_bitmap_outoforder.h	/^    static const int leafslots = BTREE_MAX(8, 256 \/ (sizeof(_Key) + sizeof(_Data)));$/;"	m	class:stx::btree_default_map_traits
+leafslots	btree_bitmap_outoforder.h	/^    static const int leafslots = BTREE_MAX(8, 256 \/ (sizeof(_Key)));$/;"	m	class:stx::btree_default_set_traits
+leafslots	skiplist.h	/^			static const int leafslots = 256;$/;"	m	class:stx::skiplist_default_set_traits
+leafslots	speedtest.cc	/^		static const int leafslots = _innerslots;$/;"	m	class:btree_traits_speed	file:
+leafslots	speedtest.cc	/^		static const int leafslots = _leafslots;$/;"	m	class:skiplist_traits_speed	file:
+leaves	btree.h	/^        size_type                   leaves;$/;"	m	struct:stx::btree::tree_stats
+leaves	btree_bitmap.h	/^								 size_type                   leaves;$/;"	m	struct:stx::btree::tree_stats
+leaves	btree_bitmap_noslotuse.h	/^								 size_type                   leaves;$/;"	m	struct:stx::btree::tree_stats
+leaves	btree_bitmap_outoforder.h	/^        size_type                   leaves;$/;"	m	struct:stx::btree::tree_stats
+level	btree.h	/^        unsigned short level;$/;"	m	struct:stx::btree::node
+level	btree_bitmap.h	/^								 unsigned short level;$/;"	m	struct:stx::btree::node
+level	btree_bitmap_noslotuse.h	/^								 unsigned short level;$/;"	m	struct:stx::btree::node
+level	btree_bitmap_outoforder.h	/^        unsigned short level;$/;"	m	struct:stx::btree::node
+list	skiplist_multimap.h	/^		skiplist_impl list;$/;"	m	class:stx::skiplist_multimap
+lower_bound	btree.h	/^    const_iterator lower_bound(const key_type& key) const$/;"	f	class:stx::btree
+lower_bound	btree.h	/^    iterator lower_bound(const key_type& key)$/;"	f	class:stx::btree
+lower_bound	btree_bitmap.h	/^							 const_iterator lower_bound(const key_type& key) const$/;"	f	class:stx::btree
+lower_bound	btree_bitmap.h	/^							 iterator lower_bound(const key_type& key)$/;"	f	class:stx::btree
+lower_bound	btree_bitmap_noslotuse.h	/^							 const_iterator lower_bound(const key_type& key) const$/;"	f	class:stx::btree
+lower_bound	btree_bitmap_noslotuse.h	/^							 iterator lower_bound(const key_type& key)$/;"	f	class:stx::btree
+lower_bound	btree_bitmap_outoforder.h	/^    const_iterator lower_bound(const key_type& key) const$/;"	f	class:stx::btree
+lower_bound	btree_bitmap_outoforder.h	/^    iterator lower_bound(const key_type& key)$/;"	f	class:stx::btree
+lower_bound	btree_multimap.h	/^    const_iterator lower_bound(const key_type& key) const$/;"	f	class:stx::btree_multimap
+lower_bound	btree_multimap.h	/^    iterator lower_bound(const key_type& key)$/;"	f	class:stx::btree_multimap
+m_allocator	btree.h	/^    allocator_type m_allocator;$/;"	m	class:stx::btree
+m_allocator	btree_bitmap.h	/^							 allocator_type m_allocator;$/;"	m	class:stx::btree
+m_allocator	btree_bitmap_noslotuse.h	/^							 allocator_type m_allocator;$/;"	m	class:stx::btree
+m_allocator	btree_bitmap_outoforder.h	/^    allocator_type m_allocator;$/;"	m	class:stx::btree
+m_headleaf	btree.h	/^    leaf_node* m_headleaf;$/;"	m	class:stx::btree
+m_headleaf	btree_bitmap.h	/^							 leaf_node* m_headleaf;$/;"	m	class:stx::btree
+m_headleaf	btree_bitmap_noslotuse.h	/^							 leaf_node* m_headleaf;$/;"	m	class:stx::btree
+m_headleaf	btree_bitmap_outoforder.h	/^    leaf_node* m_headleaf;$/;"	m	class:stx::btree
+m_key_less	btree.h	/^    key_compare m_key_less;$/;"	m	class:stx::btree
+m_key_less	btree_bitmap.h	/^							 key_compare m_key_less;$/;"	m	class:stx::btree
+m_key_less	btree_bitmap_noslotuse.h	/^							 key_compare m_key_less;$/;"	m	class:stx::btree
+m_key_less	btree_bitmap_outoforder.h	/^    key_compare m_key_less;$/;"	m	class:stx::btree
+m_root	btree.h	/^    node* m_root;$/;"	m	class:stx::btree
+m_root	btree_bitmap.h	/^							 node* m_root;$/;"	m	class:stx::btree
+m_root	btree_bitmap_noslotuse.h	/^							 node* m_root;$/;"	m	class:stx::btree
+m_root	btree_bitmap_outoforder.h	/^    node* m_root;$/;"	m	class:stx::btree
+m_stats	btree.h	/^    tree_stats m_stats;$/;"	m	class:stx::btree
+m_stats	btree_bitmap.h	/^							 tree_stats m_stats;$/;"	m	class:stx::btree
+m_stats	btree_bitmap_noslotuse.h	/^							 tree_stats m_stats;$/;"	m	class:stx::btree
+m_stats	btree_bitmap_outoforder.h	/^    tree_stats m_stats;$/;"	m	class:stx::btree
+m_tailleaf	btree.h	/^    leaf_node* m_tailleaf;$/;"	m	class:stx::btree
+m_tailleaf	btree_bitmap.h	/^							 leaf_node* m_tailleaf;$/;"	m	class:stx::btree
+m_tailleaf	btree_bitmap_noslotuse.h	/^							 leaf_node* m_tailleaf;$/;"	m	class:stx::btree
+m_tailleaf	btree_bitmap_outoforder.h	/^    leaf_node* m_tailleaf;$/;"	m	class:stx::btree
+main	speedtest.cc	/^int main()$/;"	f
+map	speedtest.cc	/^    MapType map;$/;"	m	class:Test_Map_Find	file:
+markable_t	skiplist.h	/^typedef size_t markable_t;$/;"	t
+max	skiplist.h	/^					key_type max;  \/\/max key in its data node$/;"	m	struct:stx::skiplist::dram_node
+max_nodeslots	speedtest.cc	/^static const int max_nodeslots = 256;$/;"	v	file:
+max_size	btree.h	/^    inline size_type max_size() const$/;"	f	class:stx::btree
+max_size	btree_bitmap.h	/^							 inline size_type max_size() const$/;"	f	class:stx::btree
+max_size	btree_bitmap_noslotuse.h	/^							 inline size_type max_size() const$/;"	f	class:stx::btree
+max_size	btree_bitmap_outoforder.h	/^    inline size_type max_size() const$/;"	f	class:stx::btree
+max_size	btree_multimap.h	/^    inline size_type max_size() const$/;"	f	class:stx::btree_multimap
+maxitems	speedtest.cc	/^static const unsigned int maxitems = 5120000 * 5;$/;"	v	file:
+maxslot	speedtest.cc	/^static const unsigned int maxslot = 64;$/;"	v	file:
+mb	nv_backend.h	14;"	d
+merge_inner	btree.h	/^    static result_t merge_inner(inner_node* left, inner_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+merge_inner	btree_bitmap.h	/^							 static result_t merge_inner(inner_node* left, inner_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+merge_inner	btree_bitmap_noslotuse.h	/^							 static result_t merge_inner(inner_node* left, inner_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+merge_inner	btree_bitmap_outoforder.h	/^    static result_t merge_inner(inner_node* left, inner_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+merge_leaves	btree.h	/^    result_t merge_leaves(leaf_node* left, leaf_node* right, inner_node* parent)$/;"	f	class:stx::btree
+merge_leaves	btree_bitmap.h	/^							 result_t merge_leaves(leaf_node* left, leaf_node* right, inner_node* parent)$/;"	f	class:stx::btree
+merge_leaves	btree_bitmap_noslotuse.h	/^							 result_t merge_leaves(leaf_node* left, leaf_node* right, inner_node* parent)$/;"	f	class:stx::btree
+merge_leaves	btree_bitmap_outoforder.h	/^    result_t merge_leaves(leaf_node* left, leaf_node* right, inner_node* parent)$/;"	f	class:stx::btree
+min	skiplist.h	/^					key_type min; \/\/minimum key in its data node$/;"	m	struct:stx::skiplist::dram_node
+min_nodeslots	speedtest.cc	/^static const int min_nodeslots = 4;$/;"	v	file:
+mininnerslots	btree.h	/^    static const unsigned short mininnerslots = (innerslotmax \/ 2);$/;"	m	class:stx::btree
+mininnerslots	btree_bitmap.h	/^							 static const unsigned short mininnerslots = (innerslotmax \/ 2);$/;"	m	class:stx::btree
+mininnerslots	btree_bitmap_noslotuse.h	/^							 static const unsigned short mininnerslots = (innerslotmax \/ 2);$/;"	m	class:stx::btree
+mininnerslots	btree_bitmap_outoforder.h	/^    static const unsigned short mininnerslots = (innerslotmax \/ 2);$/;"	m	class:stx::btree
+mininnerslots	btree_multimap.h	/^    static const unsigned short mininnerslots = btree_impl::mininnerslots;$/;"	m	class:stx::btree_multimap
+minitems	speedtest.cc	/^static const unsigned int minitems = 5120000 * 5 ;$/;"	v	file:
+minleafslots	btree.h	/^    static const unsigned short minleafslots = (leafslotmax \/ 2);$/;"	m	class:stx::btree
+minleafslots	btree_bitmap.h	/^							 static const unsigned short minleafslots = (leafslotmax \/ 2);$/;"	m	class:stx::btree
+minleafslots	btree_bitmap_noslotuse.h	/^							 static const unsigned short minleafslots = (leafslotmax \/ 2);$/;"	m	class:stx::btree
+minleafslots	btree_bitmap_outoforder.h	/^    static const unsigned short minleafslots = (leafslotmax \/ 2);$/;"	m	class:stx::btree
+minleafslots	btree_multimap.h	/^    static const unsigned short minleafslots = btree_impl::minleafslots;$/;"	m	class:stx::btree_multimap
+next	skiplist.h	/^					dnode_t *next;$/;"	m	struct:stx::skiplist::sl_iter
+next	skiplist.h	/^					struct dram_node *next[MAX_LEVELS];$/;"	m	struct:stx::skiplist::dram_node	typeref:struct:stx::skiplist::dram_node::dram_node
+next	skiplist.h	/^					struct nvram_node *next;$/;"	m	struct:stx::skiplist::nvram_node	typeref:struct:stx::skiplist::nvram_node::nvram_node
+nextleaf	btree.h	/^        leaf_node * nextleaf;$/;"	m	struct:stx::btree::leaf_node
+nextleaf	btree_bitmap.h	/^						 leaf_node * nextleaf;$/;"	m	struct:stx::btree::leaf_node
+nextleaf	btree_bitmap_noslotuse.h	/^						 leaf_node * nextleaf;$/;"	m	struct:stx::btree::leaf_node
+nextleaf	btree_bitmap_outoforder.h	/^        leaf_node * nextleaf;$/;"	m	struct:stx::btree::leaf_node
+node	btree.h	/^        inline node(const unsigned short l, const unsigned short s = 0)$/;"	f	struct:stx::btree::node
+node	btree.h	/^    struct node$/;"	s	class:stx::btree
+node	btree_bitmap.h	/^								 inline node(const unsigned short l, const unsigned short s = 0)$/;"	f	struct:stx::btree::node
+node	btree_bitmap.h	/^							 struct node$/;"	s	class:stx::btree
+node	btree_bitmap_noslotuse.h	/^								 inline node(const unsigned short l, const unsigned short s = 0)$/;"	f	struct:stx::btree::node
+node	btree_bitmap_noslotuse.h	/^							 struct node$/;"	s	class:stx::btree
+node	btree_bitmap_outoforder.h	/^        inline node(const unsigned short l, const unsigned short s = 0)$/;"	f	struct:stx::btree::node
+node	btree_bitmap_outoforder.h	/^    struct node$/;"	s	class:stx::btree
+nodes	btree.h	/^        inline size_type            nodes() const$/;"	f	struct:stx::btree::tree_stats
+nodes	btree_bitmap.h	/^								 inline size_type            nodes() const$/;"	f	struct:stx::btree::tree_stats
+nodes	btree_bitmap_noslotuse.h	/^								 inline size_type            nodes() const$/;"	f	struct:stx::btree::tree_stats
+nodes	btree_bitmap_outoforder.h	/^        inline size_type            nodes() const$/;"	f	struct:stx::btree::tree_stats
+num_levels	skiplist.h	/^					unsigned num_levels;$/;"	m	struct:stx::skiplist::dram_node
+nv_create	nv_backend.h	/^VMEM *nv_create(const char *dir, size_t size){$/;"	f
+nv_destroy	nv_backend.h	/^void nv_destroy(VMEM *vmp)$/;"	f
+nv_flush	nv_backend.h	/^void nv_flush(char *ptr, size_t size) {$/;"	f
+nv_free	nv_backend.h	/^void nv_free(VMEM *vmp, char *ptr)$/;"	f
+nv_malloc	nv_backend.h	/^void *nv_malloc(size_t length, VMEM *vmp = NULL) {$/;"	f
+nv_memcpy	nv_backend.h	/^void *nv_memcpy(void *dest, const void *src, size_t num)$/;"	f
+nv_node	skiplist.h	/^					nvnode_t *nv_node;$/;"	m	struct:stx::skiplist::dram_node
+nvbitmap_count	btree.h	/^	unsigned long long nvbitmap_count;$/;"	m	class:stx::btree
+nvbitmap_count	btree_bitmap_outoforder.h	/^	unsigned long long nvbitmap_count;$/;"	m	class:stx::btree
+nventry_count	btree.h	/^	unsigned long long nventry_count;$/;"	m	class:stx::btree
+nventry_count	btree_bitmap_outoforder.h	/^	unsigned long long nventry_count;$/;"	m	class:stx::btree
+nvleaf_alloc	btree.h	/^	inline leaf_node *nvleaf_alloc(VMEM *vmp)$/;"	f	class:stx::btree
+nvleaf_alloc	btree_bitmap.h	/^							 inline leaf_node *nvleaf_alloc(VMEM *vmp)$/;"	f	class:stx::btree
+nvleaf_alloc	btree_bitmap_noslotuse.h	/^							 inline leaf_node *nvleaf_alloc(VMEM *vmp)$/;"	f	class:stx::btree
+nvleaf_alloc	btree_bitmap_outoforder.h	/^	inline leaf_node *nvleaf_alloc(VMEM *vmp)$/;"	f	class:stx::btree
+nvnode_alloc	skiplist.h	/^				nvnode_t *nvnode_alloc(skiplist_t *sl){$/;"	f	class:stx::skiplist
+nvnode_count	btree.h	/^	unsigned long long nvnode_count;$/;"	m	class:stx::btree
+nvnode_count	btree_bitmap_outoforder.h	/^	unsigned long long nvnode_count;$/;"	m	class:stx::btree
+nvnode_flush	skiplist.h	/^				int nvnode_flush(nvnode_t *nv_node)$/;"	f	class:stx::skiplist
+nvnode_t	skiplist.h	/^				}nvnode_t;$/;"	t	class:stx::skiplist	typeref:struct:stx::skiplist::nvram_node
+nvram_node	skiplist.h	/^				typedef struct nvram_node {$/;"	s	class:stx::skiplist
+operator !=	btree.h	/^        inline bool operator != (const const_iterator& x) const$/;"	f	class:stx::btree::const_iterator
+operator !=	btree.h	/^        inline bool operator != (const const_reverse_iterator& x) const$/;"	f	class:stx::btree::const_reverse_iterator
+operator !=	btree.h	/^        inline bool operator != (const iterator& x) const$/;"	f	class:stx::btree::iterator
+operator !=	btree.h	/^        inline bool operator != (const reverse_iterator& x) const$/;"	f	class:stx::btree::reverse_iterator
+operator !=	btree.h	/^    inline bool operator != (const self_type& other) const$/;"	f	class:stx::btree
+operator !=	btree_bitmap.h	/^										 inline bool operator != (const const_iterator& x) const$/;"	f	class:stx::btree::const_iterator
+operator !=	btree_bitmap.h	/^										 inline bool operator != (const const_reverse_iterator& x) const$/;"	f	class:stx::btree::const_reverse_iterator
+operator !=	btree_bitmap.h	/^										 inline bool operator != (const iterator& x) const$/;"	f	class:stx::btree::iterator
+operator !=	btree_bitmap.h	/^										 inline bool operator != (const reverse_iterator& x) const$/;"	f	class:stx::btree::reverse_iterator
+operator !=	btree_bitmap.h	/^							 inline bool operator != (const self_type& other) const$/;"	f	class:stx::btree
+operator !=	btree_bitmap_noslotuse.h	/^										 inline bool operator != (const const_iterator& x) const$/;"	f	class:stx::btree::const_iterator
+operator !=	btree_bitmap_noslotuse.h	/^										 inline bool operator != (const const_reverse_iterator& x) const$/;"	f	class:stx::btree::const_reverse_iterator
+operator !=	btree_bitmap_noslotuse.h	/^										 inline bool operator != (const iterator& x) const$/;"	f	class:stx::btree::iterator
+operator !=	btree_bitmap_noslotuse.h	/^										 inline bool operator != (const reverse_iterator& x) const$/;"	f	class:stx::btree::reverse_iterator
+operator !=	btree_bitmap_noslotuse.h	/^							 inline bool operator != (const self_type& other) const$/;"	f	class:stx::btree
+operator !=	btree_bitmap_outoforder.h	/^        inline bool operator != (const const_iterator& x) const$/;"	f	class:stx::btree::const_iterator
+operator !=	btree_bitmap_outoforder.h	/^        inline bool operator != (const const_reverse_iterator& x) const$/;"	f	class:stx::btree::const_reverse_iterator
+operator !=	btree_bitmap_outoforder.h	/^        inline bool operator != (const iterator& x) const$/;"	f	class:stx::btree::iterator
+operator !=	btree_bitmap_outoforder.h	/^        inline bool operator != (const reverse_iterator& x) const$/;"	f	class:stx::btree::reverse_iterator
+operator !=	btree_bitmap_outoforder.h	/^    inline bool operator != (const self_type& other) const$/;"	f	class:stx::btree
+operator !=	btree_multimap.h	/^    inline bool operator != (const self_type& other) const$/;"	f	class:stx::btree_multimap
+operator ()	btree.h	/^        inline bool operator () (const value_type& x, const value_type& y) const$/;"	f	class:stx::btree::value_compare
+operator ()	btree.h	/^        inline value_type operator () (const pair_type& p) const$/;"	f	struct:stx::btree::btree_pair_to_value
+operator ()	btree.h	/^        inline value_type operator () (pair_type& p) const$/;"	f	struct:stx::btree::btree_pair_to_value
+operator ()	btree_bitmap.h	/^									 inline bool operator () (const value_type& x, const value_type& y) const$/;"	f	class:stx::btree::value_compare
+operator ()	btree_bitmap.h	/^									 inline value_type operator () (const pair_type& p) const$/;"	f	struct:stx::btree::btree_pair_to_value
+operator ()	btree_bitmap.h	/^									 inline value_type operator () (pair_type& p) const$/;"	f	struct:stx::btree::btree_pair_to_value
+operator ()	btree_bitmap_noslotuse.h	/^									 inline bool operator () (const value_type& x, const value_type& y) const$/;"	f	class:stx::btree::value_compare
+operator ()	btree_bitmap_noslotuse.h	/^									 inline value_type operator () (const pair_type& p) const$/;"	f	struct:stx::btree::btree_pair_to_value
+operator ()	btree_bitmap_noslotuse.h	/^									 inline value_type operator () (pair_type& p) const$/;"	f	struct:stx::btree::btree_pair_to_value
+operator ()	btree_bitmap_outoforder.h	/^        inline bool operator () (const value_type& x, const value_type& y) const$/;"	f	class:stx::btree::value_compare
+operator ()	btree_bitmap_outoforder.h	/^        inline value_type operator () (const pair_type& p) const$/;"	f	struct:stx::btree::btree_pair_to_value
+operator ()	btree_bitmap_outoforder.h	/^        inline value_type operator () (pair_type& p) const$/;"	f	struct:stx::btree::btree_pair_to_value
+operator ()	speedtest.cc	/^    void operator () (std::ostream& os, unsigned int items)$/;"	f	class:btree_range
+operator *	btree.h	/^        inline reference operator * () const$/;"	f	class:stx::btree::const_iterator
+operator *	btree.h	/^        inline reference operator * () const$/;"	f	class:stx::btree::const_reverse_iterator
+operator *	btree.h	/^        inline reference operator * () const$/;"	f	class:stx::btree::iterator
+operator *	btree.h	/^        inline reference operator * () const$/;"	f	class:stx::btree::reverse_iterator
+operator *	btree_bitmap.h	/^										 inline reference operator * () const$/;"	f	class:stx::btree::const_iterator
+operator *	btree_bitmap.h	/^										 inline reference operator * () const$/;"	f	class:stx::btree::const_reverse_iterator
+operator *	btree_bitmap.h	/^										 inline reference operator * () const$/;"	f	class:stx::btree::iterator
+operator *	btree_bitmap.h	/^										 inline reference operator * () const$/;"	f	class:stx::btree::reverse_iterator
+operator *	btree_bitmap_noslotuse.h	/^										 inline reference operator * () const$/;"	f	class:stx::btree::const_iterator
+operator *	btree_bitmap_noslotuse.h	/^										 inline reference operator * () const$/;"	f	class:stx::btree::const_reverse_iterator
+operator *	btree_bitmap_noslotuse.h	/^										 inline reference operator * () const$/;"	f	class:stx::btree::iterator
+operator *	btree_bitmap_noslotuse.h	/^										 inline reference operator * () const$/;"	f	class:stx::btree::reverse_iterator
+operator *	btree_bitmap_outoforder.h	/^        inline reference operator * () const$/;"	f	class:stx::btree::const_iterator
+operator *	btree_bitmap_outoforder.h	/^        inline reference operator * () const$/;"	f	class:stx::btree::const_reverse_iterator
+operator *	btree_bitmap_outoforder.h	/^        inline reference operator * () const$/;"	f	class:stx::btree::iterator
+operator *	btree_bitmap_outoforder.h	/^        inline reference operator * () const$/;"	f	class:stx::btree::reverse_iterator
+operator ++	btree.h	/^        inline const_iterator operator ++ (int)$/;"	f	class:stx::btree::const_iterator
+operator ++	btree.h	/^        inline const_iterator& operator ++ ()$/;"	f	class:stx::btree::const_iterator
+operator ++	btree.h	/^        inline const_reverse_iterator operator ++ (int)$/;"	f	class:stx::btree::const_reverse_iterator
+operator ++	btree.h	/^        inline const_reverse_iterator& operator ++ ()$/;"	f	class:stx::btree::const_reverse_iterator
+operator ++	btree.h	/^        inline iterator operator ++ (int)$/;"	f	class:stx::btree::iterator
+operator ++	btree.h	/^        inline iterator& operator ++ ()$/;"	f	class:stx::btree::iterator
+operator ++	btree.h	/^        inline reverse_iterator operator ++ (int)$/;"	f	class:stx::btree::reverse_iterator
+operator ++	btree.h	/^        inline reverse_iterator& operator ++ ()$/;"	f	class:stx::btree::reverse_iterator
+operator ++	btree_bitmap.h	/^										 inline const_iterator operator ++ (int)$/;"	f	class:stx::btree::const_iterator
+operator ++	btree_bitmap.h	/^										 inline const_iterator& operator ++ ()$/;"	f	class:stx::btree::const_iterator
+operator ++	btree_bitmap.h	/^										 inline const_reverse_iterator operator ++ (int)$/;"	f	class:stx::btree::const_reverse_iterator
+operator ++	btree_bitmap.h	/^										 inline const_reverse_iterator& operator ++ ()$/;"	f	class:stx::btree::const_reverse_iterator
+operator ++	btree_bitmap.h	/^										 inline iterator operator ++ (int)$/;"	f	class:stx::btree::iterator
+operator ++	btree_bitmap.h	/^										 inline iterator& operator ++ ()$/;"	f	class:stx::btree::iterator
+operator ++	btree_bitmap.h	/^										 inline reverse_iterator operator ++ (int)$/;"	f	class:stx::btree::reverse_iterator
+operator ++	btree_bitmap.h	/^										 inline reverse_iterator& operator ++ ()$/;"	f	class:stx::btree::reverse_iterator
+operator ++	btree_bitmap_noslotuse.h	/^										 inline const_iterator operator ++ (int)$/;"	f	class:stx::btree::const_iterator
+operator ++	btree_bitmap_noslotuse.h	/^										 inline const_iterator& operator ++ ()$/;"	f	class:stx::btree::const_iterator
+operator ++	btree_bitmap_noslotuse.h	/^										 inline const_reverse_iterator operator ++ (int)$/;"	f	class:stx::btree::const_reverse_iterator
+operator ++	btree_bitmap_noslotuse.h	/^										 inline const_reverse_iterator& operator ++ ()$/;"	f	class:stx::btree::const_reverse_iterator
+operator ++	btree_bitmap_noslotuse.h	/^										 inline iterator operator ++ (int)$/;"	f	class:stx::btree::iterator
+operator ++	btree_bitmap_noslotuse.h	/^										 inline iterator& operator ++ ()$/;"	f	class:stx::btree::iterator
+operator ++	btree_bitmap_noslotuse.h	/^										 inline reverse_iterator operator ++ (int)$/;"	f	class:stx::btree::reverse_iterator
+operator ++	btree_bitmap_noslotuse.h	/^										 inline reverse_iterator& operator ++ ()$/;"	f	class:stx::btree::reverse_iterator
+operator ++	btree_bitmap_outoforder.h	/^        inline const_iterator operator ++ (int)$/;"	f	class:stx::btree::const_iterator
+operator ++	btree_bitmap_outoforder.h	/^        inline const_iterator& operator ++ ()$/;"	f	class:stx::btree::const_iterator
+operator ++	btree_bitmap_outoforder.h	/^        inline const_reverse_iterator operator ++ (int)$/;"	f	class:stx::btree::const_reverse_iterator
+operator ++	btree_bitmap_outoforder.h	/^        inline const_reverse_iterator& operator ++ ()$/;"	f	class:stx::btree::const_reverse_iterator
+operator ++	btree_bitmap_outoforder.h	/^        inline iterator operator ++ (int)$/;"	f	class:stx::btree::iterator
+operator ++	btree_bitmap_outoforder.h	/^        inline iterator& operator ++ ()$/;"	f	class:stx::btree::iterator
+operator ++	btree_bitmap_outoforder.h	/^        inline reverse_iterator operator ++ (int)$/;"	f	class:stx::btree::reverse_iterator
+operator ++	btree_bitmap_outoforder.h	/^        inline reverse_iterator& operator ++ ()$/;"	f	class:stx::btree::reverse_iterator
+operator --	btree.h	/^        inline const_iterator operator -- (int)$/;"	f	class:stx::btree::const_iterator
+operator --	btree.h	/^        inline const_iterator& operator -- ()$/;"	f	class:stx::btree::const_iterator
+operator --	btree.h	/^        inline const_reverse_iterator operator -- (int)$/;"	f	class:stx::btree::const_reverse_iterator
+operator --	btree.h	/^        inline const_reverse_iterator& operator -- ()$/;"	f	class:stx::btree::const_reverse_iterator
+operator --	btree.h	/^        inline iterator operator -- (int)$/;"	f	class:stx::btree::iterator
+operator --	btree.h	/^        inline iterator& operator -- ()$/;"	f	class:stx::btree::iterator
+operator --	btree.h	/^        inline reverse_iterator operator -- (int)$/;"	f	class:stx::btree::reverse_iterator
+operator --	btree.h	/^        inline reverse_iterator& operator -- ()$/;"	f	class:stx::btree::reverse_iterator
+operator --	btree_bitmap.h	/^										 inline const_iterator operator -- (int)$/;"	f	class:stx::btree::const_iterator
+operator --	btree_bitmap.h	/^										 inline const_iterator& operator -- ()$/;"	f	class:stx::btree::const_iterator
+operator --	btree_bitmap.h	/^										 inline const_reverse_iterator operator -- (int)$/;"	f	class:stx::btree::const_reverse_iterator
+operator --	btree_bitmap.h	/^										 inline const_reverse_iterator& operator -- ()$/;"	f	class:stx::btree::const_reverse_iterator
+operator --	btree_bitmap.h	/^										 inline iterator operator -- (int)$/;"	f	class:stx::btree::iterator
+operator --	btree_bitmap.h	/^										 inline iterator& operator -- ()$/;"	f	class:stx::btree::iterator
+operator --	btree_bitmap.h	/^										 inline reverse_iterator operator -- (int)$/;"	f	class:stx::btree::reverse_iterator
+operator --	btree_bitmap.h	/^										 inline reverse_iterator& operator -- ()$/;"	f	class:stx::btree::reverse_iterator
+operator --	btree_bitmap_noslotuse.h	/^										 inline const_iterator operator -- (int)$/;"	f	class:stx::btree::const_iterator
+operator --	btree_bitmap_noslotuse.h	/^										 inline const_iterator& operator -- ()$/;"	f	class:stx::btree::const_iterator
+operator --	btree_bitmap_noslotuse.h	/^										 inline const_reverse_iterator operator -- (int)$/;"	f	class:stx::btree::const_reverse_iterator
+operator --	btree_bitmap_noslotuse.h	/^										 inline const_reverse_iterator& operator -- ()$/;"	f	class:stx::btree::const_reverse_iterator
+operator --	btree_bitmap_noslotuse.h	/^										 inline iterator operator -- (int)$/;"	f	class:stx::btree::iterator
+operator --	btree_bitmap_noslotuse.h	/^										 inline iterator& operator -- ()$/;"	f	class:stx::btree::iterator
+operator --	btree_bitmap_noslotuse.h	/^										 inline reverse_iterator operator -- (int)$/;"	f	class:stx::btree::reverse_iterator
+operator --	btree_bitmap_noslotuse.h	/^										 inline reverse_iterator& operator -- ()$/;"	f	class:stx::btree::reverse_iterator
+operator --	btree_bitmap_outoforder.h	/^        inline const_iterator operator -- (int)$/;"	f	class:stx::btree::const_iterator
+operator --	btree_bitmap_outoforder.h	/^        inline const_iterator& operator -- ()$/;"	f	class:stx::btree::const_iterator
+operator --	btree_bitmap_outoforder.h	/^        inline const_reverse_iterator operator -- (int)$/;"	f	class:stx::btree::const_reverse_iterator
+operator --	btree_bitmap_outoforder.h	/^        inline const_reverse_iterator& operator -- ()$/;"	f	class:stx::btree::const_reverse_iterator
+operator --	btree_bitmap_outoforder.h	/^        inline iterator operator -- (int)$/;"	f	class:stx::btree::iterator
+operator --	btree_bitmap_outoforder.h	/^        inline iterator& operator -- ()$/;"	f	class:stx::btree::iterator
+operator --	btree_bitmap_outoforder.h	/^        inline reverse_iterator operator -- (int)$/;"	f	class:stx::btree::reverse_iterator
+operator --	btree_bitmap_outoforder.h	/^        inline reverse_iterator& operator -- ()$/;"	f	class:stx::btree::reverse_iterator
+operator ->	btree.h	/^        inline pointer operator -> () const$/;"	f	class:stx::btree::const_iterator
+operator ->	btree.h	/^        inline pointer operator -> () const$/;"	f	class:stx::btree::const_reverse_iterator
+operator ->	btree.h	/^        inline pointer operator -> () const$/;"	f	class:stx::btree::iterator
+operator ->	btree.h	/^        inline pointer operator -> () const$/;"	f	class:stx::btree::reverse_iterator
+operator ->	btree_bitmap.h	/^										 inline pointer operator -> () const$/;"	f	class:stx::btree::const_iterator
+operator ->	btree_bitmap.h	/^										 inline pointer operator -> () const$/;"	f	class:stx::btree::const_reverse_iterator
+operator ->	btree_bitmap.h	/^										 inline pointer operator -> () const$/;"	f	class:stx::btree::iterator
+operator ->	btree_bitmap.h	/^										 inline pointer operator -> () const$/;"	f	class:stx::btree::reverse_iterator
+operator ->	btree_bitmap_noslotuse.h	/^										 inline pointer operator -> () const$/;"	f	class:stx::btree::const_iterator
+operator ->	btree_bitmap_noslotuse.h	/^										 inline pointer operator -> () const$/;"	f	class:stx::btree::const_reverse_iterator
+operator ->	btree_bitmap_noslotuse.h	/^										 inline pointer operator -> () const$/;"	f	class:stx::btree::iterator
+operator ->	btree_bitmap_noslotuse.h	/^										 inline pointer operator -> () const$/;"	f	class:stx::btree::reverse_iterator
+operator ->	btree_bitmap_outoforder.h	/^        inline pointer operator -> () const$/;"	f	class:stx::btree::const_iterator
+operator ->	btree_bitmap_outoforder.h	/^        inline pointer operator -> () const$/;"	f	class:stx::btree::const_reverse_iterator
+operator ->	btree_bitmap_outoforder.h	/^        inline pointer operator -> () const$/;"	f	class:stx::btree::iterator
+operator ->	btree_bitmap_outoforder.h	/^        inline pointer operator -> () const$/;"	f	class:stx::btree::reverse_iterator
+operator <	btree.h	/^    inline bool operator < (const self_type& other) const$/;"	f	class:stx::btree
+operator <	btree_bitmap.h	/^							 inline bool operator < (const self_type& other) const$/;"	f	class:stx::btree
+operator <	btree_bitmap_noslotuse.h	/^							 inline bool operator < (const self_type& other) const$/;"	f	class:stx::btree
+operator <	btree_bitmap_outoforder.h	/^    inline bool operator < (const self_type& other) const$/;"	f	class:stx::btree
+operator <	btree_multimap.h	/^    inline bool operator < (const self_type& other) const$/;"	f	class:stx::btree_multimap
+operator <=	btree.h	/^    inline bool operator <= (const self_type& other) const$/;"	f	class:stx::btree
+operator <=	btree_bitmap.h	/^							 inline bool operator <= (const self_type& other) const$/;"	f	class:stx::btree
+operator <=	btree_bitmap_noslotuse.h	/^							 inline bool operator <= (const self_type& other) const$/;"	f	class:stx::btree
+operator <=	btree_bitmap_outoforder.h	/^    inline bool operator <= (const self_type& other) const$/;"	f	class:stx::btree
+operator <=	btree_multimap.h	/^    inline bool operator <= (const self_type& other) const$/;"	f	class:stx::btree_multimap
+operator =	btree.h	/^    inline self_type& operator = (const self_type& other)$/;"	f	class:stx::btree
+operator =	btree_bitmap.h	/^							 inline self_type& operator = (const self_type& other)$/;"	f	class:stx::btree
+operator =	btree_bitmap_noslotuse.h	/^							 inline self_type& operator = (const self_type& other)$/;"	f	class:stx::btree
+operator =	btree_bitmap_outoforder.h	/^    inline self_type& operator = (const self_type& other)$/;"	f	class:stx::btree
+operator =	btree_multimap.h	/^    inline self_type& operator = (const self_type& other)$/;"	f	class:stx::btree_multimap
+operator ==	btree.h	/^        inline bool operator == (const const_iterator& x) const$/;"	f	class:stx::btree::const_iterator
+operator ==	btree.h	/^        inline bool operator == (const const_reverse_iterator& x) const$/;"	f	class:stx::btree::const_reverse_iterator
+operator ==	btree.h	/^        inline bool operator == (const iterator& x) const$/;"	f	class:stx::btree::iterator
+operator ==	btree.h	/^        inline bool operator == (const reverse_iterator& x) const$/;"	f	class:stx::btree::reverse_iterator
+operator ==	btree.h	/^    inline bool operator == (const self_type& other) const$/;"	f	class:stx::btree
+operator ==	btree_bitmap.h	/^										 inline bool operator == (const const_iterator& x) const$/;"	f	class:stx::btree::const_iterator
+operator ==	btree_bitmap.h	/^										 inline bool operator == (const const_reverse_iterator& x) const$/;"	f	class:stx::btree::const_reverse_iterator
+operator ==	btree_bitmap.h	/^										 inline bool operator == (const iterator& x) const$/;"	f	class:stx::btree::iterator
+operator ==	btree_bitmap.h	/^										 inline bool operator == (const reverse_iterator& x) const$/;"	f	class:stx::btree::reverse_iterator
+operator ==	btree_bitmap.h	/^							 inline bool operator == (const self_type& other) const$/;"	f	class:stx::btree
+operator ==	btree_bitmap_noslotuse.h	/^										 inline bool operator == (const const_iterator& x) const$/;"	f	class:stx::btree::const_iterator
+operator ==	btree_bitmap_noslotuse.h	/^										 inline bool operator == (const const_reverse_iterator& x) const$/;"	f	class:stx::btree::const_reverse_iterator
+operator ==	btree_bitmap_noslotuse.h	/^										 inline bool operator == (const iterator& x) const$/;"	f	class:stx::btree::iterator
+operator ==	btree_bitmap_noslotuse.h	/^										 inline bool operator == (const reverse_iterator& x) const$/;"	f	class:stx::btree::reverse_iterator
+operator ==	btree_bitmap_noslotuse.h	/^							 inline bool operator == (const self_type& other) const$/;"	f	class:stx::btree
+operator ==	btree_bitmap_outoforder.h	/^        inline bool operator == (const const_iterator& x) const$/;"	f	class:stx::btree::const_iterator
+operator ==	btree_bitmap_outoforder.h	/^        inline bool operator == (const const_reverse_iterator& x) const$/;"	f	class:stx::btree::const_reverse_iterator
+operator ==	btree_bitmap_outoforder.h	/^        inline bool operator == (const iterator& x) const$/;"	f	class:stx::btree::iterator
+operator ==	btree_bitmap_outoforder.h	/^        inline bool operator == (const reverse_iterator& x) const$/;"	f	class:stx::btree::reverse_iterator
+operator ==	btree_bitmap_outoforder.h	/^    inline bool operator == (const self_type& other) const$/;"	f	class:stx::btree
+operator ==	btree_multimap.h	/^    inline bool operator == (const self_type& other) const$/;"	f	class:stx::btree_multimap
+operator >	btree.h	/^    inline bool operator > (const self_type& other) const$/;"	f	class:stx::btree
+operator >	btree_bitmap.h	/^							 inline bool operator > (const self_type& other) const$/;"	f	class:stx::btree
+operator >	btree_bitmap_noslotuse.h	/^							 inline bool operator > (const self_type& other) const$/;"	f	class:stx::btree
+operator >	btree_bitmap_outoforder.h	/^    inline bool operator > (const self_type& other) const$/;"	f	class:stx::btree
+operator >	btree_multimap.h	/^    inline bool operator > (const self_type& other) const$/;"	f	class:stx::btree_multimap
+operator >=	btree.h	/^    inline bool operator >= (const self_type& other) const$/;"	f	class:stx::btree
+operator >=	btree_bitmap.h	/^							 inline bool operator >= (const self_type& other) const$/;"	f	class:stx::btree
+operator >=	btree_bitmap_noslotuse.h	/^							 inline bool operator >= (const self_type& other) const$/;"	f	class:stx::btree
+operator >=	btree_bitmap_outoforder.h	/^    inline bool operator >= (const self_type& other) const$/;"	f	class:stx::btree
+operator >=	btree_multimap.h	/^    inline bool operator >= (const self_type& other) const$/;"	f	class:stx::btree_multimap
+operator |=	btree.h	/^        inline result_t& operator |= (const result_t& other)$/;"	f	struct:stx::btree::result_t
+operator |=	btree_bitmap.h	/^								 inline result_t& operator |= (const result_t& other)$/;"	f	struct:stx::btree::result_t
+operator |=	btree_bitmap_noslotuse.h	/^								 inline result_t& operator |= (const result_t& other)$/;"	f	struct:stx::btree::result_t
+operator |=	btree_bitmap_outoforder.h	/^        inline result_t& operator |= (const result_t& other)$/;"	f	struct:stx::btree::result_t
+pair_to_value_type	btree.h	/^    typedef btree_pair_to_value<value_type, pair_type> pair_to_value_type;$/;"	t	class:stx::btree
+pair_to_value_type	btree_bitmap.h	/^							 typedef btree_pair_to_value<value_type, pair_type> pair_to_value_type;$/;"	t	class:stx::btree
+pair_to_value_type	btree_bitmap_noslotuse.h	/^							 typedef btree_pair_to_value<value_type, pair_type> pair_to_value_type;$/;"	t	class:stx::btree
+pair_to_value_type	btree_bitmap_outoforder.h	/^    typedef btree_pair_to_value<value_type, pair_type> pair_to_value_type;$/;"	t	class:stx::btree
+pair_type	btree.h	/^        typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::const_iterator
+pair_type	btree.h	/^        typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::const_reverse_iterator
+pair_type	btree.h	/^        typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::iterator
+pair_type	btree.h	/^        typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::reverse_iterator
+pair_type	btree.h	/^    typedef std::pair<key_type, data_type> pair_type;$/;"	t	class:stx::btree
+pair_type	btree_bitmap.h	/^									 typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::const_iterator
+pair_type	btree_bitmap.h	/^									 typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::const_reverse_iterator
+pair_type	btree_bitmap.h	/^									 typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::iterator
+pair_type	btree_bitmap.h	/^									 typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::reverse_iterator
+pair_type	btree_bitmap.h	/^							 typedef std::pair<key_type, data_type> pair_type;$/;"	t	class:stx::btree
+pair_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::const_iterator
+pair_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::const_reverse_iterator
+pair_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::iterator
+pair_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::reverse_iterator
+pair_type	btree_bitmap_noslotuse.h	/^							 typedef std::pair<key_type, data_type> pair_type;$/;"	t	class:stx::btree
+pair_type	btree_bitmap_outoforder.h	/^        typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::const_iterator
+pair_type	btree_bitmap_outoforder.h	/^        typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::const_reverse_iterator
+pair_type	btree_bitmap_outoforder.h	/^        typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::iterator
+pair_type	btree_bitmap_outoforder.h	/^        typedef typename btree::pair_type pair_type;$/;"	t	class:stx::btree::reverse_iterator
+pair_type	btree_bitmap_outoforder.h	/^    typedef std::pair<key_type, data_type> pair_type;$/;"	t	class:stx::btree
+pair_type	skiplist.h	/^				typedef std::pair<key_type, value_type> pair_type;$/;"	t	class:stx::skiplist
+pointer	btree.h	/^        typedef const value_type* pointer;$/;"	t	class:stx::btree::const_iterator
+pointer	btree.h	/^        typedef const value_type* pointer;$/;"	t	class:stx::btree::const_reverse_iterator
+pointer	btree.h	/^        typedef value_type* pointer;$/;"	t	class:stx::btree::iterator
+pointer	btree.h	/^        typedef value_type* pointer;$/;"	t	class:stx::btree::reverse_iterator
+pointer	btree_bitmap.h	/^									 typedef const value_type* pointer;$/;"	t	class:stx::btree::const_iterator
+pointer	btree_bitmap.h	/^									 typedef const value_type* pointer;$/;"	t	class:stx::btree::const_reverse_iterator
+pointer	btree_bitmap.h	/^									 typedef value_type* pointer;$/;"	t	class:stx::btree::iterator
+pointer	btree_bitmap.h	/^									 typedef value_type* pointer;$/;"	t	class:stx::btree::reverse_iterator
+pointer	btree_bitmap_noslotuse.h	/^									 typedef const value_type* pointer;$/;"	t	class:stx::btree::const_iterator
+pointer	btree_bitmap_noslotuse.h	/^									 typedef const value_type* pointer;$/;"	t	class:stx::btree::const_reverse_iterator
+pointer	btree_bitmap_noslotuse.h	/^									 typedef value_type* pointer;$/;"	t	class:stx::btree::iterator
+pointer	btree_bitmap_noslotuse.h	/^									 typedef value_type* pointer;$/;"	t	class:stx::btree::reverse_iterator
+pointer	btree_bitmap_outoforder.h	/^        typedef const value_type* pointer;$/;"	t	class:stx::btree::const_iterator
+pointer	btree_bitmap_outoforder.h	/^        typedef const value_type* pointer;$/;"	t	class:stx::btree::const_reverse_iterator
+pointer	btree_bitmap_outoforder.h	/^        typedef value_type* pointer;$/;"	t	class:stx::btree::iterator
+pointer	btree_bitmap_outoforder.h	/^        typedef value_type* pointer;$/;"	t	class:stx::btree::reverse_iterator
+prevleaf	btree.h	/^        leaf_node * prevleaf;$/;"	m	struct:stx::btree::leaf_node
+prevleaf	btree_bitmap.h	/^						 leaf_node * prevleaf;$/;"	m	struct:stx::btree::leaf_node
+prevleaf	btree_bitmap_noslotuse.h	/^						 leaf_node * prevleaf;$/;"	m	struct:stx::btree::leaf_node
+prevleaf	btree_bitmap_outoforder.h	/^        leaf_node * prevleaf;$/;"	m	struct:stx::btree::leaf_node
+print	btree.h	/^    void print(std::ostream& os) const$/;"	f	class:stx::btree
+print	btree_bitmap.h	/^							 void print(std::ostream& os) const$/;"	f	class:stx::btree
+print	btree_bitmap_noslotuse.h	/^							 void print(std::ostream& os) const$/;"	f	class:stx::btree
+print	btree_bitmap_outoforder.h	/^    void print(std::ostream& os) const$/;"	f	class:stx::btree
+print	btree_multimap.h	/^    void print(std::ostream& os) const$/;"	f	class:stx::btree_multimap
+print_height	skiplist.h	/^				void print_height(skiplist_t *sl)$/;"	f	class:stx::skiplist
+print_leaves	btree.h	/^    void print_leaves(std::ostream& os) const$/;"	f	class:stx::btree
+print_leaves	btree_bitmap.h	/^							 void print_leaves(std::ostream& os) const$/;"	f	class:stx::btree
+print_leaves	btree_bitmap_noslotuse.h	/^							 void print_leaves(std::ostream& os) const$/;"	f	class:stx::btree
+print_leaves	btree_bitmap_outoforder.h	/^    void print_leaves(std::ostream& os) const$/;"	f	class:stx::btree
+print_leaves	btree_multimap.h	/^    void print_leaves(std::ostream& os) const$/;"	f	class:stx::btree_multimap
+print_node	btree.h	/^    static void print_node(std::ostream& os, const node* node, unsigned int depth = 0, bool recursive = false)$/;"	f	class:stx::btree
+print_node	btree_bitmap.h	/^							 static void print_node(std::ostream& os, const node* node, unsigned int depth = 0, bool recursive = false)$/;"	f	class:stx::btree
+print_node	btree_bitmap_noslotuse.h	/^							 static void print_node(std::ostream& os, const node* node, unsigned int depth = 0, bool recursive = false)$/;"	f	class:stx::btree
+print_node	btree_bitmap_outoforder.h	/^    static void print_node(std::ostream& os, const node* node, unsigned int depth = 0, bool recursive = false)$/;"	f	class:stx::btree
+randseed	speedtest.cc	/^static const int randseed = 34234235;$/;"	v	file:
+rbegin	btree.h	/^    inline const_reverse_iterator rbegin() const$/;"	f	class:stx::btree
+rbegin	btree.h	/^    inline reverse_iterator rbegin()$/;"	f	class:stx::btree
+rbegin	btree_bitmap.h	/^							 inline const_reverse_iterator rbegin() const$/;"	f	class:stx::btree
+rbegin	btree_bitmap.h	/^							 inline reverse_iterator rbegin()$/;"	f	class:stx::btree
+rbegin	btree_bitmap_noslotuse.h	/^							 inline const_reverse_iterator rbegin() const$/;"	f	class:stx::btree
+rbegin	btree_bitmap_noslotuse.h	/^							 inline reverse_iterator rbegin()$/;"	f	class:stx::btree
+rbegin	btree_bitmap_outoforder.h	/^    inline const_reverse_iterator rbegin() const$/;"	f	class:stx::btree
+rbegin	btree_bitmap_outoforder.h	/^    inline reverse_iterator rbegin()$/;"	f	class:stx::btree
+rbegin	btree_multimap.h	/^    inline const_reverse_iterator rbegin() const$/;"	f	class:stx::btree_multimap
+rbegin	btree_multimap.h	/^    inline reverse_iterator rbegin()$/;"	f	class:stx::btree_multimap
+reference	btree.h	/^        typedef const value_type& reference;$/;"	t	class:stx::btree::const_iterator
+reference	btree.h	/^        typedef const value_type& reference;$/;"	t	class:stx::btree::const_reverse_iterator
+reference	btree.h	/^        typedef value_type& reference;$/;"	t	class:stx::btree::iterator
+reference	btree.h	/^        typedef value_type& reference;$/;"	t	class:stx::btree::reverse_iterator
+reference	btree_bitmap.h	/^									 typedef const value_type& reference;$/;"	t	class:stx::btree::const_iterator
+reference	btree_bitmap.h	/^									 typedef const value_type& reference;$/;"	t	class:stx::btree::const_reverse_iterator
+reference	btree_bitmap.h	/^									 typedef value_type& reference;$/;"	t	class:stx::btree::iterator
+reference	btree_bitmap.h	/^									 typedef value_type& reference;$/;"	t	class:stx::btree::reverse_iterator
+reference	btree_bitmap_noslotuse.h	/^									 typedef const value_type& reference;$/;"	t	class:stx::btree::const_iterator
+reference	btree_bitmap_noslotuse.h	/^									 typedef const value_type& reference;$/;"	t	class:stx::btree::const_reverse_iterator
+reference	btree_bitmap_noslotuse.h	/^									 typedef value_type& reference;$/;"	t	class:stx::btree::iterator
+reference	btree_bitmap_noslotuse.h	/^									 typedef value_type& reference;$/;"	t	class:stx::btree::reverse_iterator
+reference	btree_bitmap_outoforder.h	/^        typedef const value_type& reference;$/;"	t	class:stx::btree::const_iterator
+reference	btree_bitmap_outoforder.h	/^        typedef const value_type& reference;$/;"	t	class:stx::btree::const_reverse_iterator
+reference	btree_bitmap_outoforder.h	/^        typedef value_type& reference;$/;"	t	class:stx::btree::iterator
+reference	btree_bitmap_outoforder.h	/^        typedef value_type& reference;$/;"	t	class:stx::btree::reverse_iterator
+rend	btree.h	/^    inline const_reverse_iterator rend() const$/;"	f	class:stx::btree
+rend	btree.h	/^    inline reverse_iterator rend()$/;"	f	class:stx::btree
+rend	btree_bitmap.h	/^							 inline const_reverse_iterator rend() const$/;"	f	class:stx::btree
+rend	btree_bitmap.h	/^							 inline reverse_iterator rend()$/;"	f	class:stx::btree
+rend	btree_bitmap_noslotuse.h	/^							 inline const_reverse_iterator rend() const$/;"	f	class:stx::btree
+rend	btree_bitmap_noslotuse.h	/^							 inline reverse_iterator rend()$/;"	f	class:stx::btree
+rend	btree_bitmap_outoforder.h	/^    inline const_reverse_iterator rend() const$/;"	f	class:stx::btree
+rend	btree_bitmap_outoforder.h	/^    inline reverse_iterator rend()$/;"	f	class:stx::btree
+rend	btree_multimap.h	/^    inline const_reverse_iterator rend() const$/;"	f	class:stx::btree_multimap
+rend	btree_multimap.h	/^    inline reverse_iterator rend()$/;"	f	class:stx::btree_multimap
+reorgnization	skiplist_multimap.h	/^		inline void reorgnization()$/;"	f	class:stx::skiplist_multimap
+repeatuntil	speedtest.cc	/^unsigned int repeatuntil;$/;"	v
+reset	btree_bitmap.h	/^						 void reset()$/;"	f	struct:stx::btree::leaf_node
+reset	btree_bitmap_noslotuse.h	/^						 void reset()$/;"	f	struct:stx::btree::leaf_node
+reset	skiplist.h	/^					void reset()$/;"	f	struct:stx::skiplist::nvram_node
+restore	btree.h	/^    bool restore(std::istream& is)$/;"	f	class:stx::btree
+restore	btree_bitmap.h	/^							 bool restore(std::istream& is)$/;"	f	class:stx::btree
+restore	btree_bitmap_noslotuse.h	/^							 bool restore(std::istream& is)$/;"	f	class:stx::btree
+restore	btree_bitmap_outoforder.h	/^    bool restore(std::istream& is)$/;"	f	class:stx::btree
+restore	btree_multimap.h	/^    bool restore(std::istream& is)$/;"	f	class:stx::btree_multimap
+restore_node	btree.h	/^    node * restore_node(std::istream& is)$/;"	f	class:stx::btree
+restore_node	btree_bitmap.h	/^							 node * restore_node(std::istream& is)$/;"	f	class:stx::btree
+restore_node	btree_bitmap_noslotuse.h	/^							 node * restore_node(std::istream& is)$/;"	f	class:stx::btree
+restore_node	btree_bitmap_outoforder.h	/^    node * restore_node(std::istream& is)$/;"	f	class:stx::btree
+result_flags_t	btree.h	/^    enum result_flags_t$/;"	g	class:stx::btree
+result_flags_t	btree_bitmap.h	/^							 enum result_flags_t$/;"	g	class:stx::btree
+result_flags_t	btree_bitmap_noslotuse.h	/^							 enum result_flags_t$/;"	g	class:stx::btree
+result_flags_t	btree_bitmap_outoforder.h	/^    enum result_flags_t$/;"	g	class:stx::btree
+result_t	btree.h	/^        inline explicit result_t(result_flags_t f = btree_ok)$/;"	f	struct:stx::btree::result_t
+result_t	btree.h	/^        inline result_t(result_flags_t f, const key_type& k)$/;"	f	struct:stx::btree::result_t
+result_t	btree.h	/^    struct result_t$/;"	s	class:stx::btree
+result_t	btree_bitmap.h	/^								 inline explicit result_t(result_flags_t f = btree_ok)$/;"	f	struct:stx::btree::result_t
+result_t	btree_bitmap.h	/^								 inline result_t(result_flags_t f, const key_type& k)$/;"	f	struct:stx::btree::result_t
+result_t	btree_bitmap.h	/^							 struct result_t$/;"	s	class:stx::btree
+result_t	btree_bitmap_noslotuse.h	/^								 inline explicit result_t(result_flags_t f = btree_ok)$/;"	f	struct:stx::btree::result_t
+result_t	btree_bitmap_noslotuse.h	/^								 inline result_t(result_flags_t f, const key_type& k)$/;"	f	struct:stx::btree::result_t
+result_t	btree_bitmap_noslotuse.h	/^							 struct result_t$/;"	s	class:stx::btree
+result_t	btree_bitmap_outoforder.h	/^        inline explicit result_t(result_flags_t f = btree_ok)$/;"	f	struct:stx::btree::result_t
+result_t	btree_bitmap_outoforder.h	/^        inline result_t(result_flags_t f, const key_type& k)$/;"	f	struct:stx::btree::result_t
+result_t	btree_bitmap_outoforder.h	/^    struct result_t$/;"	s	class:stx::btree
+reverse_iterator	btree.h	/^        inline reverse_iterator()$/;"	f	class:stx::btree::reverse_iterator
+reverse_iterator	btree.h	/^        inline reverse_iterator(const iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::reverse_iterator
+reverse_iterator	btree.h	/^        inline reverse_iterator(typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::reverse_iterator
+reverse_iterator	btree.h	/^    class reverse_iterator$/;"	c	class:stx::btree
+reverse_iterator	btree_bitmap.h	/^										 inline reverse_iterator()$/;"	f	class:stx::btree::reverse_iterator
+reverse_iterator	btree_bitmap.h	/^										 inline reverse_iterator(const iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::reverse_iterator
+reverse_iterator	btree_bitmap.h	/^										 inline reverse_iterator(typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::reverse_iterator
+reverse_iterator	btree_bitmap.h	/^							 class reverse_iterator$/;"	c	class:stx::btree
+reverse_iterator	btree_bitmap_noslotuse.h	/^										 inline reverse_iterator()$/;"	f	class:stx::btree::reverse_iterator
+reverse_iterator	btree_bitmap_noslotuse.h	/^										 inline reverse_iterator(const iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::reverse_iterator
+reverse_iterator	btree_bitmap_noslotuse.h	/^										 inline reverse_iterator(typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::reverse_iterator
+reverse_iterator	btree_bitmap_noslotuse.h	/^							 class reverse_iterator$/;"	c	class:stx::btree
+reverse_iterator	btree_bitmap_outoforder.h	/^        inline reverse_iterator()$/;"	f	class:stx::btree::reverse_iterator
+reverse_iterator	btree_bitmap_outoforder.h	/^        inline reverse_iterator(const iterator& it) \/\/ NOLINT$/;"	f	class:stx::btree::reverse_iterator
+reverse_iterator	btree_bitmap_outoforder.h	/^        inline reverse_iterator(typename btree::leaf_node* l, unsigned short s)$/;"	f	class:stx::btree::reverse_iterator
+reverse_iterator	btree_bitmap_outoforder.h	/^    class reverse_iterator$/;"	c	class:stx::btree
+reverse_iterator	btree_multimap.h	/^    typedef typename btree_impl::reverse_iterator reverse_iterator;$/;"	t	class:stx::btree_multimap
+rmb	nv_backend.h	15;"	d
+rs	skiplist.h	/^				static const int rs = 12345678;$/;"	m	class:stx::skiplist
+run	speedtest.cc	/^		void run(unsigned int items)$/;"	f	class:Test_Set_Find
+run	speedtest.cc	/^		void run(unsigned int items)$/;"	f	class:Test_Set_Insert
+run	speedtest.cc	/^		void run(unsigned int items)$/;"	f	class:Test_Set_InsertFindDelete
+run	speedtest.cc	/^    void run(unsigned int items)$/;"	f	class:Test_Map_Find
+run	speedtest.cc	/^    void run(unsigned int items)$/;"	f	class:Test_Map_Insert
+run	speedtest.cc	/^    void run(unsigned int items)$/;"	f	class:Test_Map_InsertFindDelete
+same	btree.h	/^        inline bool same(const struct dump_header& o) const$/;"	f	struct:stx::btree::dump_header
+same	btree_bitmap.h	/^								 inline bool same(const struct dump_header& o) const$/;"	f	struct:stx::btree::dump_header
+same	btree_bitmap_noslotuse.h	/^								 inline bool same(const struct dump_header& o) const$/;"	f	struct:stx::btree::dump_header
+same	btree_bitmap_outoforder.h	/^        inline bool same(const struct dump_header& o) const$/;"	f	struct:stx::btree::dump_header
+self_type	btree.h	/^                  traits, allow_duplicates, allocator_type, used_as_set> self_type;$/;"	t	class:stx::btree
+self_type	btree_bitmap.h	/^									 traits, allow_duplicates, allocator_type, used_as_set> self_type;$/;"	t	class:stx::btree
+self_type	btree_bitmap_noslotuse.h	/^									 traits, allow_duplicates, allocator_type, used_as_set> self_type;$/;"	t	class:stx::btree
+self_type	btree_bitmap_outoforder.h	/^                  traits, allow_duplicates, allocator_type, used_as_set> self_type;$/;"	t	class:stx::btree
+self_type	btree_multimap.h	/^    typedef btree_multimap<key_type, data_type, key_compare, traits, allocator_type> self_type;$/;"	t	class:stx::btree_multimap
+self_type	skiplist_multimap.h	/^	typedef skiplist_multimap<key_type, value_type, key_compare, traits, allocator_type> self_type;$/;"	t	class:stx::skiplist_multimap
+selfverify	btree.h	/^    static const bool selfverify = false;$/;"	m	class:stx::btree_default_map_traits
+selfverify	btree.h	/^    static const bool selfverify = false;$/;"	m	class:stx::btree_default_set_traits
+selfverify	btree.h	/^    static const bool selfverify = traits::selfverify;$/;"	m	class:stx::btree
+selfverify	btree_bitmap.h	/^							 static const bool selfverify = traits::selfverify;$/;"	m	class:stx::btree
+selfverify	btree_bitmap.h	/^				static const bool selfverify = false;$/;"	m	class:stx::btree_default_map_traits
+selfverify	btree_bitmap.h	/^				static const bool selfverify = false;$/;"	m	class:stx::btree_default_set_traits
+selfverify	btree_bitmap_noslotuse.h	/^							 static const bool selfverify = traits::selfverify;$/;"	m	class:stx::btree
+selfverify	btree_bitmap_noslotuse.h	/^				static const bool selfverify = false;$/;"	m	class:stx::btree_default_map_traits
+selfverify	btree_bitmap_noslotuse.h	/^				static const bool selfverify = false;$/;"	m	class:stx::btree_default_set_traits
+selfverify	btree_bitmap_outoforder.h	/^    static const bool selfverify = false;$/;"	m	class:stx::btree_default_map_traits
+selfverify	btree_bitmap_outoforder.h	/^    static const bool selfverify = false;$/;"	m	class:stx::btree_default_set_traits
+selfverify	btree_bitmap_outoforder.h	/^    static const bool selfverify = traits::selfverify;$/;"	m	class:stx::btree
+selfverify	btree_multimap.h	/^    static const bool selfverify = btree_impl::selfverify;$/;"	m	class:stx::btree_multimap
+selfverify	skiplist.h	/^			static const bool selfverify = false;$/;"	m	class:stx::skiplist_default_set_traits
+selfverify	speedtest.cc	/^	public: static const bool selfverify = false;$/;"	m	class:btree_traits_speed	file:
+set	skiplist.h	/^					inline int set(key_type key, value_type value) {$/;"	f	struct:stx::skiplist::nvram_node
+set	speedtest.cc	/^		SetType set;$/;"	m	class:Test_Set_Find	file:
+set_slot	btree.h	/^        inline void set_slot(unsigned short slot, const key_type& key)$/;"	f	struct:stx::btree::leaf_node
+set_slot	btree.h	/^        inline void set_slot(unsigned short slot, const pair_type& value)$/;"	f	struct:stx::btree::leaf_node
+set_slot	btree_bitmap.h	/^						 inline void set_slot(unsigned short slot, const key_type& key)$/;"	f	struct:stx::btree::leaf_node
+set_slot	btree_bitmap.h	/^						 inline void set_slot(unsigned short slot, const pair_type& value)$/;"	f	struct:stx::btree::leaf_node
+set_slot	btree_bitmap_noslotuse.h	/^						 inline void set_slot(unsigned short slot, const key_type& key)$/;"	f	struct:stx::btree::leaf_node
+set_slot	btree_bitmap_noslotuse.h	/^						 inline void set_slot(unsigned short slot, const pair_type& value)$/;"	f	struct:stx::btree::leaf_node
+set_slot	btree_bitmap_outoforder.h	/^        inline void set_slot(unsigned short slot, const key_type& key)$/;"	f	struct:stx::btree::leaf_node
+set_slot	btree_bitmap_outoforder.h	/^        inline void set_slot(unsigned short slot, const pair_type& value)$/;"	f	struct:stx::btree::leaf_node
+shift_left_inner	btree.h	/^    static void shift_left_inner(inner_node* left, inner_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_left_inner	btree_bitmap.h	/^							 static void shift_left_inner(inner_node* left, inner_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_left_inner	btree_bitmap_noslotuse.h	/^							 static void shift_left_inner(inner_node* left, inner_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_left_inner	btree_bitmap_outoforder.h	/^    static void shift_left_inner(inner_node* left, inner_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_left_leaf	btree.h	/^    static result_t shift_left_leaf(leaf_node* left, leaf_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_left_leaf	btree_bitmap.h	/^							 static result_t shift_left_leaf(leaf_node* left, leaf_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_left_leaf	btree_bitmap_noslotuse.h	/^							 static result_t shift_left_leaf(leaf_node* left, leaf_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_left_leaf	btree_bitmap_outoforder.h	/^    static result_t shift_left_leaf(leaf_node* left, leaf_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_right_inner	btree.h	/^    static void shift_right_inner(inner_node* left, inner_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_right_inner	btree_bitmap.h	/^							 static void shift_right_inner(inner_node* left, inner_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_right_inner	btree_bitmap_noslotuse.h	/^							 static void shift_right_inner(inner_node* left, inner_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_right_inner	btree_bitmap_outoforder.h	/^    static void shift_right_inner(inner_node* left, inner_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_right_leaf	btree.h	/^    static void shift_right_leaf(leaf_node* left, leaf_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_right_leaf	btree_bitmap.h	/^							 static void shift_right_leaf(leaf_node* left, leaf_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_right_leaf	btree_bitmap_noslotuse.h	/^							 static void shift_right_leaf(leaf_node* left, leaf_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+shift_right_leaf	btree_bitmap_outoforder.h	/^    static void shift_right_leaf(leaf_node* left, leaf_node* right, inner_node* parent, unsigned int parentslot)$/;"	f	class:stx::btree
+signature	btree.h	/^        char           signature[12];$/;"	m	struct:stx::btree::dump_header
+signature	btree_bitmap.h	/^								 char           signature[12];$/;"	m	struct:stx::btree::dump_header
+signature	btree_bitmap_noslotuse.h	/^								 char           signature[12];$/;"	m	struct:stx::btree::dump_header
+signature	btree_bitmap_outoforder.h	/^        char           signature[12];$/;"	m	struct:stx::btree::dump_header
+size	btree.h	/^    inline size_type size() const$/;"	f	class:stx::btree
+size	btree_bitmap.h	/^							 inline size_type size() const$/;"	f	class:stx::btree
+size	btree_bitmap_noslotuse.h	/^							 inline size_type size() const$/;"	f	class:stx::btree
+size	btree_bitmap_outoforder.h	/^    inline size_type size() const$/;"	f	class:stx::btree
+size	btree_multimap.h	/^    inline size_type size() const$/;"	f	class:stx::btree_multimap
+size_type	btree.h	/^    typedef size_t size_type;$/;"	t	class:stx::btree
+size_type	btree_bitmap.h	/^							 typedef size_t size_type;$/;"	t	class:stx::btree
+size_type	btree_bitmap_noslotuse.h	/^							 typedef size_t size_type;$/;"	t	class:stx::btree
+size_type	btree_bitmap_outoforder.h	/^    typedef size_t size_type;$/;"	t	class:stx::btree
+size_type	btree_multimap.h	/^    typedef typename btree_impl::size_type size_type;$/;"	t	class:stx::btree_multimap
+size_type	skiplist.h	/^				typedef size_t size_type;$/;"	t	class:stx::skiplist
+skiplist	skiplist.h	/^		class skiplist$/;"	c	namespace:stx
+skiplist_default_set_traits	skiplist.h	/^		class skiplist_default_set_traits$/;"	c	namespace:stx
+skiplist_impl	skiplist_multimap.h	/^	typedef stx::skiplist<key_type, value_type, traits> skiplist_impl;$/;"	t	class:stx::skiplist_multimap
+skiplist_multimap	skiplist_multimap.h	/^		skiplist_multimap()$/;"	f	class:stx::skiplist_multimap
+skiplist_multimap	skiplist_multimap.h	/^class skiplist_multimap$/;"	c	namespace:stx
+skiplist_t	skiplist.h	/^				} skiplist_t ;$/;"	t	class:stx::skiplist	typeref:struct:stx::skiplist::sl
+skiplist_traits_speed	speedtest.cc	/^class skiplist_traits_speed : stx::skiplist_default_set_traits<unsigned int>$/;"	c	file:
+sl	skiplist.h	/^				typedef struct sl {$/;"	s	class:stx::skiplist
+sl	skiplist_multimap.h	/^	typedef typename skiplist_impl::skiplist_t sl;$/;"	t	class:stx::skiplist_multimap
+sl_alloc	skiplist.h	/^				skiplist_t *sl_alloc (const datatype_t *type) {$/;"	f	class:stx::skiplist
+sl_destroy	skiplist.h	/^				void sl_destroy(skiplist_t *sl)$/;"	f	class:stx::skiplist
+sl_free	skiplist.h	/^				int sl_free (skiplist_t *sl) {$/;"	f	class:stx::skiplist
+sl_insert	skiplist.h	/^				value_type sl_insert(skiplist_t *sl, key_type new_key, value_type new_val, nvnode_t *nv_node = NULL)$/;"	f	class:stx::skiplist
+sl_iter	skiplist.h	/^				struct sl_iter {$/;"	s	class:stx::skiplist
+sl_iter_begin	skiplist.h	/^				sl_iter * sl_iter_begin(skiplist_t *sl, key_type key) {$/;"	f	class:stx::skiplist
+sl_iter_free	skiplist.h	/^				void sl_iter_free ( sl_iter *iter) {$/;"	f	class:stx::skiplist
+sl_iter_next	skiplist.h	/^				value_type sl_iter_next(sl_iter *iter, key_type * key_ptr) {$/;"	f	class:stx::skiplist
+sl_lookup	skiplist.h	/^				value_type sl_lookup(skiplist_t *sl, key_type key) {$/;"	f	class:stx::skiplist
+slist	skiplist_multimap.h	/^	sl * slist;$/;"	m	class:stx::skiplist_multimap
+slotdata	btree.h	/^        data_type slotdata[used_as_set ? 1 : leafslotmax];$/;"	m	struct:stx::btree::leaf_node
+slotdata	btree_bitmap.h	/^						 data_type slotdata[used_as_set ? 1 : leafslotmax];$/;"	m	struct:stx::btree::leaf_node
+slotdata	btree_bitmap_noslotuse.h	/^						 data_type slotdata[used_as_set ? 1 : leafslotmax];$/;"	m	struct:stx::btree::leaf_node
+slotdata	btree_bitmap_outoforder.h	/^        data_type slotdata[used_as_set ? 1 : leafslotmax];$/;"	m	struct:stx::btree::leaf_node
+slotentry	skiplist.h	/^					entry_t slotentry[leafslotmax];$/;"	m	struct:stx::skiplist::nvram_node
+slotkey	btree.h	/^        key_type  slotkey[leafslotmax];$/;"	m	struct:stx::btree::leaf_node
+slotkey	btree.h	/^        key_type slotkey[innerslotmax];$/;"	m	struct:stx::btree::inner_node
+slotkey	btree_bitmap.h	/^						 key_type  slotkey[leafslotmax];$/;"	m	struct:stx::btree::leaf_node
+slotkey	btree_bitmap.h	/^						 key_type slotkey[innerslotmax];$/;"	m	struct:stx::btree::inner_node
+slotkey	btree_bitmap_noslotuse.h	/^						 key_type  slotkey[leafslotmax];$/;"	m	struct:stx::btree::leaf_node
+slotkey	btree_bitmap_noslotuse.h	/^						 key_type slotkey[innerslotmax];$/;"	m	struct:stx::btree::inner_node
+slotkey	btree_bitmap_outoforder.h	/^        key_type  slotkey[leafslotmax];$/;"	m	struct:stx::btree::leaf_node
+slotkey	btree_bitmap_outoforder.h	/^        key_type slotkey[innerslotmax];$/;"	m	struct:stx::btree::inner_node
+slotuse	btree.h	/^        unsigned short slotuse;$/;"	m	struct:stx::btree::node
+slotuse	btree_bitmap.h	/^								 unsigned short slotuse;$/;"	m	struct:stx::btree::node
+slotuse	btree_bitmap_noslotuse.h	/^								 unsigned short slotuse;$/;"	m	struct:stx::btree::node
+slotuse	btree_bitmap_outoforder.h	/^        unsigned short slotuse;$/;"	m	struct:stx::btree::node
+split_inner_node	btree.h	/^    void split_inner_node(inner_node* inner, key_type* _newkey, node** _newinner, unsigned int addslot)$/;"	f	class:stx::btree
+split_inner_node	btree_bitmap.h	/^							 void split_inner_node(inner_node* inner, key_type* _newkey, node** _newinner, unsigned int addslot)$/;"	f	class:stx::btree
+split_inner_node	btree_bitmap_noslotuse.h	/^							 void split_inner_node(inner_node* inner, key_type* _newkey, node** _newinner, unsigned int addslot)$/;"	f	class:stx::btree
+split_inner_node	btree_bitmap_outoforder.h	/^    void split_inner_node(inner_node* inner, key_type* _newkey, node** _newinner, unsigned int addslot)$/;"	f	class:stx::btree
+split_leaf_node	btree.h	/^    void split_leaf_node(leaf_node* leaf, key_type* _newkey, node** _newleaf)$/;"	f	class:stx::btree
+split_leaf_node	btree_bitmap.h	/^							 void split_leaf_node(leaf_node* leaf, key_type* _newkey, node** _newleaf)$/;"	f	class:stx::btree
+split_leaf_node	btree_bitmap_noslotuse.h	/^							 void split_leaf_node(leaf_node* leaf, key_type* _newkey, node** _newleaf)$/;"	f	class:stx::btree
+split_leaf_node	btree_bitmap_outoforder.h	/^    void split_leaf_node(leaf_node* leaf, key_type* _newkey, node** _newleaf)$/;"	f	class:stx::btree
+split_leaf_node	skiplist.h	/^			    nvnode_t *split_leaf_node(skiplist_t *sl, key_type *max_key, key_type *min_key, $/;"	f	class:stx::skiplist
+split_leaf_node_org	btree.h	/^    void split_leaf_node_org(leaf_node* leaf, key_type* _newkey, node** _newleaf)$/;"	f	class:stx::btree
+split_leaf_node_org	btree_bitmap_outoforder.h	/^    void split_leaf_node_org(leaf_node* leaf, key_type* _newkey, node** _newleaf)$/;"	f	class:stx::btree
+stx	btree.h	/^namespace stx {$/;"	n
+stx	btree_bitmap.h	/^namespace stx {$/;"	n
+stx	btree_bitmap_noslotuse.h	/^namespace stx {$/;"	n
+stx	btree_bitmap_outoforder.h	/^namespace stx {$/;"	n
+stx	btree_multimap.h	/^namespace stx {$/;"	n
+stx	skiplist.h	/^namespace stx {$/;"	n
+stx	skiplist_multimap.h	/^namespace stx{$/;"	n
+sum	skiplist.h	/^					key_type sum; \/\/sum of all the key in the leaf node$/;"	m	struct:stx::skiplist::dram_node
+swap	btree.h	/^    void swap(self_type& from)$/;"	f	class:stx::btree
+swap	btree_bitmap.h	/^							 void swap(self_type& from)$/;"	f	class:stx::btree
+swap	btree_bitmap_noslotuse.h	/^							 void swap(self_type& from)$/;"	f	class:stx::btree
+swap	btree_bitmap_outoforder.h	/^    void swap(self_type& from)$/;"	f	class:stx::btree
+swap	btree_multimap.h	/^    void swap(self_type& from)$/;"	f	class:stx::btree_multimap
+temp_value	btree.h	/^        mutable value_type temp_value;$/;"	m	class:stx::btree::const_iterator
+temp_value	btree.h	/^        mutable value_type temp_value;$/;"	m	class:stx::btree::const_reverse_iterator
+temp_value	btree.h	/^        mutable value_type temp_value;$/;"	m	class:stx::btree::iterator
+temp_value	btree.h	/^        mutable value_type temp_value;$/;"	m	class:stx::btree::reverse_iterator
+temp_value	btree_bitmap.h	/^									 mutable value_type temp_value;$/;"	m	class:stx::btree::const_iterator
+temp_value	btree_bitmap.h	/^									 mutable value_type temp_value;$/;"	m	class:stx::btree::const_reverse_iterator
+temp_value	btree_bitmap.h	/^									 mutable value_type temp_value;$/;"	m	class:stx::btree::iterator
+temp_value	btree_bitmap.h	/^									 mutable value_type temp_value;$/;"	m	class:stx::btree::reverse_iterator
+temp_value	btree_bitmap_noslotuse.h	/^									 mutable value_type temp_value;$/;"	m	class:stx::btree::const_iterator
+temp_value	btree_bitmap_noslotuse.h	/^									 mutable value_type temp_value;$/;"	m	class:stx::btree::const_reverse_iterator
+temp_value	btree_bitmap_noslotuse.h	/^									 mutable value_type temp_value;$/;"	m	class:stx::btree::iterator
+temp_value	btree_bitmap_noslotuse.h	/^									 mutable value_type temp_value;$/;"	m	class:stx::btree::reverse_iterator
+temp_value	btree_bitmap_outoforder.h	/^        mutable value_type temp_value;$/;"	m	class:stx::btree::const_iterator
+temp_value	btree_bitmap_outoforder.h	/^        mutable value_type temp_value;$/;"	m	class:stx::btree::const_reverse_iterator
+temp_value	btree_bitmap_outoforder.h	/^        mutable value_type temp_value;$/;"	m	class:stx::btree::iterator
+temp_value	btree_bitmap_outoforder.h	/^        mutable value_type temp_value;$/;"	m	class:stx::btree::reverse_iterator
+testrunner_loop	speedtest.cc	/^void testrunner_loop(std::ostream& os, unsigned int items)$/;"	f
+timestamp	speedtest.cc	/^static inline double timestamp()$/;"	f	file:
+traits	btree.h	/^    typedef _Traits traits;$/;"	t	class:stx::btree
+traits	btree_bitmap.h	/^						 typedef _Traits traits;$/;"	t	class:stx::btree
+traits	btree_bitmap_noslotuse.h	/^						 typedef _Traits traits;$/;"	t	class:stx::btree
+traits	btree_bitmap_outoforder.h	/^    typedef _Traits traits;$/;"	t	class:stx::btree
+traits	btree_multimap.h	/^    typedef _Traits traits;$/;"	t	class:stx::btree_multimap
+traits	skiplist.h	/^				typedef _Traits traits;$/;"	t	class:stx::skiplist
+traits	skiplist_multimap.h	/^	typedef _Traits traits;$/;"	t	class:stx::skiplist_multimap
+tree	btree_multimap.h	/^    btree_impl tree;$/;"	m	class:stx::btree_multimap
+tree_stats	btree.h	/^        inline tree_stats()$/;"	f	struct:stx::btree::tree_stats
+tree_stats	btree.h	/^    struct tree_stats$/;"	s	class:stx::btree
+tree_stats	btree_bitmap.h	/^								 inline tree_stats()$/;"	f	struct:stx::btree::tree_stats
+tree_stats	btree_bitmap.h	/^							 struct tree_stats$/;"	s	class:stx::btree
+tree_stats	btree_bitmap_noslotuse.h	/^								 inline tree_stats()$/;"	f	struct:stx::btree::tree_stats
+tree_stats	btree_bitmap_noslotuse.h	/^							 struct tree_stats$/;"	s	class:stx::btree
+tree_stats	btree_bitmap_outoforder.h	/^        inline tree_stats()$/;"	f	struct:stx::btree::tree_stats
+tree_stats	btree_bitmap_outoforder.h	/^    struct tree_stats$/;"	s	class:stx::btree
+tree_stats	btree_multimap.h	/^    typedef typename btree_impl::tree_stats tree_stats;$/;"	t	class:stx::btree_multimap
+type	skiplist.h	/^					const datatype_t *type;$/;"	m	struct:stx::skiplist::sl
+unlink	skiplist.h	/^enum unlink {$/;"	g
+upper_bound	btree.h	/^    const_iterator upper_bound(const key_type& key) const$/;"	f	class:stx::btree
+upper_bound	btree.h	/^    iterator upper_bound(const key_type& key)$/;"	f	class:stx::btree
+upper_bound	btree_bitmap.h	/^							 const_iterator upper_bound(const key_type& key) const$/;"	f	class:stx::btree
+upper_bound	btree_bitmap.h	/^							 iterator upper_bound(const key_type& key)$/;"	f	class:stx::btree
+upper_bound	btree_bitmap_noslotuse.h	/^							 const_iterator upper_bound(const key_type& key) const$/;"	f	class:stx::btree
+upper_bound	btree_bitmap_noslotuse.h	/^							 iterator upper_bound(const key_type& key)$/;"	f	class:stx::btree
+upper_bound	btree_bitmap_outoforder.h	/^    const_iterator upper_bound(const key_type& key) const$/;"	f	class:stx::btree
+upper_bound	btree_bitmap_outoforder.h	/^    iterator upper_bound(const key_type& key)$/;"	f	class:stx::btree
+upper_bound	btree_multimap.h	/^    const_iterator upper_bound(const key_type& key) const$/;"	f	class:stx::btree_multimap
+upper_bound	btree_multimap.h	/^    iterator upper_bound(const key_type& key)$/;"	f	class:stx::btree_multimap
+used_as_set	btree.h	/^    static const bool used_as_set = _UsedAsSet;$/;"	m	class:stx::btree
+used_as_set	btree_bitmap.h	/^						 static const bool used_as_set = _UsedAsSet;$/;"	m	class:stx::btree
+used_as_set	btree_bitmap_noslotuse.h	/^						 static const bool used_as_set = _UsedAsSet;$/;"	m	class:stx::btree
+used_as_set	btree_bitmap_outoforder.h	/^    static const bool used_as_set = _UsedAsSet;$/;"	m	class:stx::btree
+value	skiplist.h	/^					value_type value;$/;"	m	struct:stx::skiplist::kv_entry
+value_comp	btree.h	/^    inline value_compare value_comp() const$/;"	f	class:stx::btree
+value_comp	btree_bitmap.h	/^							 inline value_compare value_comp() const$/;"	f	class:stx::btree
+value_comp	btree_bitmap_noslotuse.h	/^							 inline value_compare value_comp() const$/;"	f	class:stx::btree
+value_comp	btree_bitmap_outoforder.h	/^    inline value_compare value_comp() const$/;"	f	class:stx::btree
+value_comp	btree_multimap.h	/^    inline value_compare value_comp() const$/;"	f	class:stx::btree_multimap
+value_compare	btree.h	/^        inline explicit value_compare(key_compare kc)$/;"	f	class:stx::btree::value_compare
+value_compare	btree.h	/^    class value_compare$/;"	c	class:stx::btree
+value_compare	btree_bitmap.h	/^									 inline explicit value_compare(key_compare kc)$/;"	f	class:stx::btree::value_compare
+value_compare	btree_bitmap.h	/^							 class value_compare$/;"	c	class:stx::btree
+value_compare	btree_bitmap_noslotuse.h	/^									 inline explicit value_compare(key_compare kc)$/;"	f	class:stx::btree::value_compare
+value_compare	btree_bitmap_noslotuse.h	/^							 class value_compare$/;"	c	class:stx::btree
+value_compare	btree_bitmap_outoforder.h	/^        inline explicit value_compare(key_compare kc)$/;"	f	class:stx::btree::value_compare
+value_compare	btree_bitmap_outoforder.h	/^    class value_compare$/;"	c	class:stx::btree
+value_compare	btree_multimap.h	/^    typedef typename btree_impl::value_compare value_compare;$/;"	t	class:stx::btree_multimap
+value_type	btree.h	/^        typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::const_iterator
+value_type	btree.h	/^        typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::const_reverse_iterator
+value_type	btree.h	/^        typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::iterator
+value_type	btree.h	/^        typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::reverse_iterator
+value_type	btree.h	/^    typedef _Value value_type;$/;"	t	class:stx::btree
+value_type	btree_bitmap.h	/^									 typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::const_iterator
+value_type	btree_bitmap.h	/^									 typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::const_reverse_iterator
+value_type	btree_bitmap.h	/^									 typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::iterator
+value_type	btree_bitmap.h	/^									 typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::reverse_iterator
+value_type	btree_bitmap.h	/^						 typedef _Value value_type;$/;"	t	class:stx::btree
+value_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::const_iterator
+value_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::const_reverse_iterator
+value_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::iterator
+value_type	btree_bitmap_noslotuse.h	/^									 typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::reverse_iterator
+value_type	btree_bitmap_noslotuse.h	/^						 typedef _Value value_type;$/;"	t	class:stx::btree
+value_type	btree_bitmap_outoforder.h	/^        typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::const_iterator
+value_type	btree_bitmap_outoforder.h	/^        typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::const_reverse_iterator
+value_type	btree_bitmap_outoforder.h	/^        typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::iterator
+value_type	btree_bitmap_outoforder.h	/^        typedef typename btree::value_type value_type;$/;"	t	class:stx::btree::reverse_iterator
+value_type	btree_bitmap_outoforder.h	/^    typedef _Value value_type;$/;"	t	class:stx::btree
+value_type	btree_multimap.h	/^    typedef std::pair<key_type, data_type> value_type;$/;"	t	class:stx::btree_multimap
+value_type	skiplist.h	/^				typedef _Value value_type;$/;"	t	class:stx::skiplist
+value_type	skiplist_multimap.h	/^	typedef _Value value_type;$/;"	t	class:stx::skiplist_multimap
+vec	speedtest.cc	/^	vector<unsigned int> vec;$/;"	m	class:Test_Map_Find	file:
+verify	btree.h	/^    void verify() const$/;"	f	class:stx::btree
+verify	btree_bitmap.h	/^							 void verify() const$/;"	f	class:stx::btree
+verify	btree_bitmap_noslotuse.h	/^							 void verify() const$/;"	f	class:stx::btree
+verify	btree_bitmap_outoforder.h	/^    void verify() const$/;"	f	class:stx::btree
+verify	btree_multimap.h	/^    void verify() const$/;"	f	class:stx::btree_multimap
+verify_leaflinks	btree.h	/^    void verify_leaflinks() const$/;"	f	class:stx::btree
+verify_leaflinks	btree_bitmap.h	/^							 void verify_leaflinks() const$/;"	f	class:stx::btree
+verify_leaflinks	btree_bitmap_noslotuse.h	/^							 void verify_leaflinks() const$/;"	f	class:stx::btree
+verify_leaflinks	btree_bitmap_outoforder.h	/^    void verify_leaflinks() const$/;"	f	class:stx::btree
+verify_node	btree.h	/^    void verify_node(const node* n, key_type* minkey, key_type* maxkey, tree_stats& vstats) const$/;"	f	class:stx::btree
+verify_node	btree_bitmap.h	/^							 void verify_node(const node* n, key_type* minkey, key_type* maxkey, tree_stats& vstats) const$/;"	f	class:stx::btree
+verify_node	btree_bitmap_noslotuse.h	/^							 void verify_node(const node* n, key_type* minkey, key_type* maxkey, tree_stats& vstats) const$/;"	f	class:stx::btree
+verify_node	btree_bitmap_outoforder.h	/^    void verify_node(const node* n, key_type* minkey, key_type* maxkey, tree_stats& vstats) const$/;"	f	class:stx::btree
+version	btree.h	/^        unsigned short version;$/;"	m	struct:stx::btree::dump_header
+version	btree_bitmap.h	/^								 unsigned short version;$/;"	m	struct:stx::btree::dump_header
+version	btree_bitmap_noslotuse.h	/^								 unsigned short version;$/;"	m	struct:stx::btree::dump_header
+version	btree_bitmap_outoforder.h	/^        unsigned short version;$/;"	m	struct:stx::btree::dump_header
+vmp	btree.h	/^	VMEM *vmp;$/;"	m	class:stx::btree
+vmp	btree_bitmap.h	/^							 VMEM *vmp;$/;"	m	class:stx::btree
+vmp	btree_bitmap_noslotuse.h	/^							 VMEM *vmp;$/;"	m	class:stx::btree
+vmp	btree_bitmap_outoforder.h	/^	VMEM *vmp;$/;"	m	class:stx::btree
+vmp	skiplist.h	/^					VMEM *vmp;$/;"	m	struct:stx::skiplist::sl
+wmb	nv_backend.h	16;"	d
+~btree	btree.h	/^    inline ~btree()$/;"	f	class:stx::btree
+~btree	btree_bitmap.h	/^							 inline ~btree()$/;"	f	class:stx::btree
+~btree	btree_bitmap_noslotuse.h	/^							 inline ~btree()$/;"	f	class:stx::btree
+~btree	btree_bitmap_outoforder.h	/^    inline ~btree()$/;"	f	class:stx::btree
+~btree_multimap	btree_multimap.h	/^    inline ~btree_multimap()$/;"	f	class:stx::btree_multimap
+~skiplist_multimap	skiplist_multimap.h	/^	~skiplist_multimap()$/;"	f	class:stx::skiplist_multimap

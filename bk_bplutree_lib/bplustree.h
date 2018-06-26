@@ -31,12 +31,14 @@ struct list_head {
         struct list_head *prev, *next;
 };
 
+//초기화시 첫 노드의 prev, next 모두 일단 자기 자신을 가리킴 
 static inline void list_init(struct list_head *link)
 {
         link->prev = link;
         link->next = link;
 }
 
+// link가 추가 하고자 하는 list_head* : funda ADD function  
 static inline void
 __list_add(struct list_head *link, struct list_head *prev, struct list_head *next)
 {
@@ -46,6 +48,7 @@ __list_add(struct list_head *link, struct list_head *prev, struct list_head *nex
         prev->next = link;
 }
 
+// funda DELETE function 
 static inline void __list_del(struct list_head *prev, struct list_head *next)
 {
         prev->next = next;
@@ -57,6 +60,7 @@ static inline void list_add(struct list_head *link, struct list_head *prev)
         __list_add(link, prev, prev->next);
 }
 
+// list에 tail로 추가시 : head->prev를 추가하는link의 prev로, head를 추가하는 link의 next로insert
 static inline void list_add_tail(struct list_head *link, struct list_head *head)
 {
 	__list_add(link, head->prev, head);
@@ -73,6 +77,7 @@ static inline int list_empty(const struct list_head *head)
 	return head->next == head;
 }
 
+// off_t 는 long형 integer 
 typedef struct bplus_node {
         off_t self;
         off_t parent;

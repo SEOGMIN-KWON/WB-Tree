@@ -18,11 +18,13 @@ enum {
         INVALID_OFFSET = 0xdeadbeef,
 };
 
+// BPLUS_TREE_LEAF == 0 ?
 enum {
         BPLUS_TREE_LEAF,
         BPLUS_TREE_NON_LEAF = 1,
 };
 
+// LEFT_SIBLING == 0 ?
 enum {
         LEFT_SIBLING,
         RIGHT_SIBLING = 1,
@@ -32,12 +34,15 @@ enum {
 #define offset_ptr(node) ((char *) (node) + sizeof(*node))
 #define key(node) ((key_t *)offset_ptr(node))
 #define data(node) ((long *)(offset_ptr(node) + _max_entries * sizeof(key_t)))
+
+// what does it mean "#define sub(node)"
 #define sub(node) ((off_t *)(offset_ptr(node) + (_max_order - 1) * sizeof(key_t)))
 
 static int _block_size;
 static int _max_entries;
 static int _max_order;
 
+// node가 leaf 이면true reutrn 
 static inline int is_leaf(struct bplus_node *node)
 {
         return node->type == BPLUS_TREE_LEAF;
@@ -93,6 +98,7 @@ static inline void cache_defer(struct bplus_tree *tree, struct bplus_node *node)
         tree->used[i] = 0;
 }
 
+// bplus tree node 1개 초기화: funda NODE_INITIALIZATION 
 static struct bplus_node *node_new(struct bplus_tree *tree)
 {
         struct bplus_node *node = cache_refer(tree);
@@ -104,6 +110,7 @@ static struct bplus_node *node_new(struct bplus_tree *tree)
         return node;
 }
 
+// non-leaf node initialization
 static inline struct bplus_node *non_leaf_new(struct bplus_tree *tree)
 {
         struct bplus_node *node = node_new(tree);
@@ -111,6 +118,7 @@ static inline struct bplus_node *non_leaf_new(struct bplus_tree *tree)
         return node;
 }
 
+// leaf node initialization 
 static inline struct bplus_node *leaf_new(struct bplus_tree *tree)
 {
         struct bplus_node *node = node_new(tree);

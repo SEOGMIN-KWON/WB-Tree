@@ -36,6 +36,7 @@ enum {
 #define data(node) ((long *)(offset_ptr(node) + _max_entries * sizeof(key_t)))
 
 // what does it mean "#define sub(node)"
+// MOVE cuurent node -> next node : HOW? node size + (max-1)* #_of_keys
 #define sub(node) ((off_t *)(offset_ptr(node) + (_max_order - 1) * sizeof(key_t)))
 
 static int _block_size;
@@ -126,6 +127,7 @@ static inline struct bplus_node *leaf_new(struct bplus_tree *tree)
         return node;
 }
 
+// 특정 node를 storage에서 읽어와 caching후 return  
 static struct bplus_node *node_fetch(struct bplus_tree *tree, off_t offset)
 {
         if (offset == INVALID_OFFSET) {
@@ -133,11 +135,14 @@ static struct bplus_node *node_fetch(struct bplus_tree *tree, off_t offset)
         }
 
         struct bplus_node *node = cache_refer(tree);
+		// file의 offset위치에서 _block_size 만큼 읽어 node에 저장 
         int len = pread(tree->fd, node, _block_size, offset);
+		// len가 _block_size가 아니면 program 종료 
         assert(len == _block_size);
         return node;
 }
 
+// 특정 node를 storage에서 읽어와 caching하지 않고 return 
 static struct bplus_node *node_seek(struct bplus_tree *tree, off_t offset)
 {
         if (offset == INVALID_OFFSET) {
@@ -145,7 +150,7 @@ static struct bplus_node *node_seek(struct bplus_tree *tree, off_t offset)
         }
 
         int i;
-        for (i = 0; i < MIN_CACHE_NUM; i++) {
+        for (i = 0; i < MIN_CACHE_NUM; i++) { 
                 if (!tree->used[i]) {
                         char *buf = tree->caches + _block_size * i;
                         int len = pread(tree->fd, buf, _block_size, offset);
@@ -156,15 +161,19 @@ static struct bplus_node *node_seek(struct bplus_tree *tree, off_t offset)
         assert(0);
 }
 
+// tree에서 node가 caching되어 있던 cache 비워줌  
 static inline void node_flush(struct bplus_tree *tree, struct bplus_node *node)
 {
         if (node != NULL) {
+			    // node->self에 node의 내용을 _block_size byte만큼 write 
                 int len = pwrite(tree->fd, node, _block_size, node->self);
                 assert(len == _block_size);
+				// tree의 node가 caching되어있는 cache를 비움 
                 cache_defer(tree, node);
         }
 }
 
+// new node를 node->self에 할당 후, return node->self
 static off_t new_node_append(struct bplus_tree *tree, struct bplus_node *node)
 {
         /* assign new offset to the new node */
@@ -181,22 +190,24 @@ static off_t new_node_append(struct bplus_tree *tree, struct bplus_node *node)
         return node->self;
 }
 
+// node를 delete 하고, node를 free block의 tail로 add 
 static void node_delete(struct bplus_tree *tree, struct bplus_node *node,
                 	struct bplus_node *left, struct bplus_node *right)
 {
         if (left != NULL) {
-                if (right != NULL) {
+                if (right != NULL) { // delete할 node의 prev, next 모두 존재 
                         left->next = right->self;
                         right->prev = left->self;
-                        node_flush(tree, right);
-                } else {
+                        node_flush(tree, right); // next가 caching된 cache 비워줌
+                } else { // delete할 node의 prev만 존재 i.e delete할 node == last node인 경우
                         left->next = INVALID_OFFSET;
                 }
-                node_flush(tree, left);
+                node_flush(tree, left); // prev가 caching된 cache 비워줌 
         } else {
-                if (right != NULL) {
+				// delete할 node의 next만 존재 i.e delete할 nocde == first node인 경우
+                if (right != NULL) { 
                         right->prev = INVALID_OFFSET;
-                        node_flush(tree, right);
+                        node_flush(tree, right); // next가 caching된 cache 비워줌 
                 }
         }
 
@@ -1186,7 +1197,7 @@ static void node_key_dump(struct bplus_node *node)
         if (is_leaf(node)) {
                 printf("leaf:");
                 for (i = 0; i < node->children; i++) {
-                        printf(" %d", key(node)[i]);
+                        printf(" %d", key(node)[i]); //children의 시작 주소인듯 
                 }
         } else {
                 printf("node:");

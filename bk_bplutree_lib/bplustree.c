@@ -221,6 +221,7 @@ static void node_delete(struct bplus_tree *tree, struct bplus_node *node,
         cache_defer(tree, node);
 }
 
+// parent 
 static inline void sub_node_update(struct bplus_tree *tree, struct bplus_node *parent,
                 		   int index, struct bplus_node *sub_node)
 {
@@ -260,18 +261,22 @@ static long bplus_tree_search(struct bplus_tree *tree, key_t key)
         return ret;
 }
 
+// node를 기준으로 왼쪽에 left를 삽입
 static void left_node_add(struct bplus_tree *tree, struct bplus_node *node, struct bplus_node *left)
 {
-        new_node_append(tree, left);
+		// 일단, 받아온 left를 new node로 
+		new_node_append(tree, left);
 
+		// node->prev를 fetch & caching
         struct bplus_node *prev = node_fetch(tree, node->prev);
-        if (prev != NULL) {
+        if (prev != NULL) { // node의 prev가 존재할 때 
                 prev->next = left->self;
                 left->prev = prev->self;
-                node_flush(tree, prev);
+                node_flush(tree, prev); // caching되어있던 prev를 해제
         } else {
                 left->prev = INVALID_OFFSET;
         }
+		// 기존 node의 왼쪽에 삽입한 left와 기존 node를 연결
         left->next = node->self;
         node->prev = left->self;
 }
@@ -330,19 +335,24 @@ static key_t non_leaf_split_left(struct bplus_tree *tree, struct bplus_node *nod
         key_t split_key;
 
         /* split = [m/2] */
+		/* each internal node must have at least "the # of split" children */"
         int split = (_max_order + 1) / 2;
 
         /* split as left sibling */
+		/* node를기준으로 왼쪽에 left 삽입 */
         left_node_add(tree, node, left);
 
         /* calculate split nodes' children (sum as (order + 1))*/
         int pivot = insert;
-        left->children = split;
-        node->children = _max_order - split + 1;
+        left->children = split; //새로 만든 left에 at least children assign
+        node->children = _max_order - split + 1; //기존 node의 children 수 coordinate
 
         /* sum = left->children = pivot + (split - pivot - 1) + 1 */
         /* replicate from key[0] to key[insert] in original node */
+
+		// node의 key[0]-> left의 key[0] : insert하는 key size만큼
         memmove(&key(left)[0], &key(node)[0], pivot * sizeof(key_t));
+		// 
         memmove(&sub(left)[0], &sub(node)[0], pivot * sizeof(off_t));
 
         /* replicate from key[insert] to key[split - 1] in original node */

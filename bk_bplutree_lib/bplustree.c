@@ -272,27 +272,31 @@ static void left_node_add(struct bplus_tree *tree, struct bplus_node *node, stru
         if (prev != NULL) { // node의 prev가 존재할 때 
                 prev->next = left->self;
                 left->prev = prev->self;
-                node_flush(tree, prev); // caching되어있던 prev를 해제
+                node_flush(tree, prev); // caching 되어있던 prev를 해제
         } else {
                 left->prev = INVALID_OFFSET;
         }
-		// 기존 node의 왼쪽에 삽입한 left와 기존 node를 연결
+		// 기존 node의 왼쪽에 삽입한 left와 기존 node를 연결 마무리
         left->next = node->self;
         node->prev = left->self;
 }
 
+// node를 기준으로 오른쪽에 right를삽입 
 static void right_node_add(struct bplus_tree *tree, struct bplus_node *node, struct bplus_node *right)
 {
-        new_node_append(tree, right);
+		// 일단, 받아온 right를 new node로 
+		new_node_append(tree, right);
 
+		// node->next를 fetch & caching 
         struct bplus_node *next = node_fetch(tree, node->next);
-        if (next != NULL) {
+        if (next != NULL) { // node의 next가 존재할 때 
                 next->prev = right->self;
                 right->next = next->self;
-                node_flush(tree, next);
+                node_flush(tree, next); // caching 되어있던 next를 해제
         } else {
                 right->next = INVALID_OFFSET;
         }
+		// 기존 node의 오른쪽에 삽입한 right와 기존 node 연결 마무리
         right->prev = node->self;
         node->next = right->self;
 }

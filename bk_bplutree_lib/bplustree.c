@@ -31,12 +31,13 @@ enum {
 };
 
 #define ADDR_STR_WIDTH 16
+// node의 시작 주소 + node 크기
 #define offset_ptr(node) ((char *) (node) + sizeof(*node))
+// node meta data 바로 뒤에 key의 시작 주소 
 #define key(node) ((key_t *)offset_ptr(node))
+// leaf node 일 때 : data를 가르키는 m개의 key들이 따라나옴 
 #define data(node) ((long *)(offset_ptr(node) + _max_entries * sizeof(key_t)))
-
-// what does it mean "#define sub(node)"
-// MOVE cuurent node -> next node : HOW? node size + (max-1)* #_of_keys
+// non-leaf node 일 때: child를 가르키는 (m-1)개의 key들이 따라나옴
 #define sub(node) ((off_t *)(offset_ptr(node) + (_max_order - 1) * sizeof(key_t)))
 
 static int _block_size;
@@ -49,6 +50,7 @@ static inline int is_leaf(struct bplus_node *node)
         return node->type == BPLUS_TREE_LEAF;
 }
 
+// key==target 에 해당하는 node의 index를 return 
 static int key_binary_search(struct bplus_node *node, key_t target)
 {
         key_t *arr = key(node);
@@ -91,6 +93,7 @@ static inline struct bplus_node *cache_refer(struct bplus_tree *tree)
         assert(0);
 }
 
+// block[i]의 내용을 NVVM으로 내리고 그 위치의 cache는 비움 
 static inline void cache_defer(struct bplus_tree *tree, struct bplus_node *node)
 {
         /* return the node cache borrowed from */
@@ -142,7 +145,7 @@ static struct bplus_node *node_fetch(struct bplus_tree *tree, off_t offset)
         return node;
 }
 
-// 특정 node를 storage에서 읽어와 caching하지 않고 return 
+// 특정 node를 offset 위치의 storage에서 읽어와 (caching하지 않고)return 
 static struct bplus_node *node_seek(struct bplus_tree *tree, off_t offset)
 {
         if (offset == INVALID_OFFSET) {
@@ -151,7 +154,7 @@ static struct bplus_node *node_seek(struct bplus_tree *tree, off_t offset)
 
         int i;
         for (i = 0; i < MIN_CACHE_NUM; i++) { 
-                if (!tree->used[i]) {
+                if (!tree->used[i]) { // caching되어 있지 않을 때
                         char *buf = tree->caches + _block_size * i;
                         int len = pread(tree->fd, buf, _block_size, offset);
                         assert(len == _block_size);
@@ -221,13 +224,16 @@ static void node_delete(struct bplus_tree *tree, struct bplus_node *node,
         cache_defer(tree, node);
 }
 
-// parent 
+// non-leaf node일 때, index위치의 sub_node update  
 static inline void sub_node_update(struct bplus_tree *tree, struct bplus_node *parent,
                 		   int index, struct bplus_node *sub_node)
 {
         assert(sub_node->self != INVALID_OFFSET);
+		// parent node에서 update할 sub_node를 가리키는 key의 위치에 sub_node insert
         sub(parent)[index] = sub_node->self;
+		// update할 sub_node parent를 설정
         sub_node->parent = parent->self;
+		// 
         node_flush(tree, sub_node);
 }
 
@@ -239,16 +245,19 @@ static inline void sub_node_flush(struct bplus_tree *tree, struct bplus_node *pa
         node_flush(tree, sub_node);
 }
 
+// tree에서 key에 mapping 된  
 static long bplus_tree_search(struct bplus_tree *tree, key_t key)
 {
         int ret = -1;
+		// 일단, tree의 root를 read
         struct bplus_node *node = node_seek(tree, tree->root);
-        while (node != NULL) {
+        while (node != NULL) { // root != NULL 이면 
+				// key에 해당하는 node의 index search 
                 int i = key_binary_search(node, key);
-                if (is_leaf(node)) {
+                if (is_leaf(node)) { // leaf node일 때
                         ret = i >= 0 ? data(node)[i] : -1;
                         break;
-                } else {
+                } else {			 // non-leaf node일 때 
                         if (i >= 0) {
                                 node = node_seek(tree, sub(node)[i + 1]);
                         } else {
@@ -339,7 +348,7 @@ static key_t non_leaf_split_left(struct bplus_tree *tree, struct bplus_node *nod
         key_t split_key;
 
         /* split = [m/2] */
-		/* each internal node must have at least "the # of split" children */"
+		/* each internal node must have at least "the # of split" children */
         int split = (_max_order + 1) / 2;
 
         /* split as left sibling */
@@ -1120,8 +1129,11 @@ struct bplus_tree *bplus_tree_init(char *filename, int block_size)
         }
 
         _block_size = block_size;
+
         _max_order = (block_size - sizeof(node)) / (sizeof(key_t) + sizeof(off_t));
+
         _max_entries = (block_size - sizeof(node)) / (sizeof(key_t) + sizeof(long));
+
         if (_max_order <= 2) {
                 fprintf(stderr, "block size is too small for one node!\n");
                 return NULL;

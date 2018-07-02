@@ -182,9 +182,11 @@ static inline void node_flush(struct bplus_tree *tree, struct bplus_node *node)
 static off_t new_node_append(struct bplus_tree *tree, struct bplus_node *node)
 {
         /* assign new offset to the new node */
-        if (list_empty(&tree->free_blocks)) {
-                node->self = tree->file_size;
-                tree->file_size += _block_size;
+        if (list_empty(&tree->free_blocks)) { // If No free block-!!
+				// 기존 tree의 file size 를 node->self에 assign
+				node->self = tree->file_size;
+				// tree의 file size update: node크기(block size) 만큼을 add
+				tree->file_size += _block_size;
         } else {
                 struct free_block *block;
                 block = list_first_entry(&tree->free_blocks, struct free_block, link);

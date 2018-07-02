@@ -77,18 +77,7 @@ static inline int list_empty(const struct list_head *head)
 	return head->next == head;
 }
 
-// off_t 는 long형 integer 
-typedef struct bplus_node {
-        off_t self;
-        off_t parent;
-        off_t prev;
-        off_t next;
-        int type;
-        /* If leaf node, it specifies  count of entries,
-         * if non-leaf node, it specifies count of children(branches) */
-        int children;
-} bplus_node;
-
+/* space effieciency를 위해 physically fixed인 아래 structure 사용 안함 */
 /*
 struct bplus_non_leaf {
         off_t self;
@@ -112,6 +101,18 @@ struct bplus_leaf {
         long data[BPLUS_MAX_ENTRIES];
 };
 */
+
+// off_t 는 long형 integer 
+typedef struct bplus_node {
+        off_t self;
+        off_t parent;
+        off_t prev;
+        off_t next;
+        int type;
+        /* If leaf node, it specifies  count of entries,
+         * if non-leaf node, it specifies count of children(branches) */
+        int children;
+} bplus_node;
 
 typedef struct free_block {
         struct list_head link;

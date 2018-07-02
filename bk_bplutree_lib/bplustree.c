@@ -50,7 +50,7 @@ static inline int is_leaf(struct bplus_node *node)
         return node->type == BPLUS_TREE_LEAF;
 }
 
-// key==target 에 해당하는 node의 index를 return 
+// 하나의 node안에서key==target 에 해당하는 node의 index를 return 
 static int key_binary_search(struct bplus_node *node, key_t target)
 {
         key_t *arr = key(node);
@@ -74,12 +74,14 @@ static int key_binary_search(struct bplus_node *node, key_t target)
         }
 }
 
+// parent node내에서 key에 대응하는 index를 찾아 return  
 static inline int parent_key_index(struct bplus_node *parent, key_t key)
 {
         int index = key_binary_search(parent, key);
         return index >= 0 ? index : -index - 2;
 }
 
+// tree내 unused cache에data를 caching후caching된 node addr return 
 static inline struct bplus_node *cache_refer(struct bplus_tree *tree)
 {
         int i;

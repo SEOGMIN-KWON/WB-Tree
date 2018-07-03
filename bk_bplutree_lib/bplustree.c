@@ -189,6 +189,7 @@ static off_t new_node_append(struct bplus_tree *tree, struct bplus_node *node)
 				tree->file_size += _block_size;
         } else {
                 struct free_block *block;
+				// 제일 앞에 있는 free block의 위치인 off_t offset을 갖고 오기  
                 block = list_first_entry(&tree->free_blocks, struct free_block, link);
                 list_del(&block->link);
                 node->self = block->offset;

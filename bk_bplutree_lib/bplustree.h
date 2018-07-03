@@ -9,6 +9,7 @@
  * of sibling, parent and node seeking */
 #define MIN_CACHE_NUM 5
 
+/* LINUX에서의 container_of macro 함수 응용 */
 #define list_entry(ptr, type, member) \
         ((type *)((char *)(ptr) - (size_t)(&((type *)0)->member)))
 

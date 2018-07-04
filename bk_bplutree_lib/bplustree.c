@@ -88,6 +88,8 @@ static inline struct bplus_node *cache_refer(struct bplus_tree *tree)
         for (i = 0; i < MIN_CACHE_NUM; i++) {
                 if (!tree->used[i]) {
                         tree->used[i] = 1;
+						// cache refer op: tree->cahces pointer + i*block_size
+						// cache defer op 때 이걸 토대로 해제 해줘야함
                         char *buf = tree->caches + _block_size * i;
                         return (struct bplus_node *) buf;
                 }
@@ -100,7 +102,9 @@ static inline void cache_defer(struct bplus_tree *tree, struct bplus_node *node)
 {
         /* return the node cache borrowed from */
         char *buf = (char *) node;
-        int i = (buf - tree->caches) / _block_size;
+
+		// cache refer op: tree->cahces pointer + i*block_size 이므로 
+		int i = (buf - tree->caches) / _block_size;
         tree->used[i] = 0;
 }
 
@@ -238,15 +242,19 @@ static inline void sub_node_update(struct bplus_tree *tree, struct bplus_node *p
         sub(parent)[index] = sub_node->self;
 		// update할 sub_node parent를 설정
         sub_node->parent = parent->self;
-		// 
+		// sub_node->self에 data write후, cache에서는 evict out시킴
         node_flush(tree, sub_node);
 }
 
+// sub_node를 sub_node->self에 assing후, cache에서 evict out
 static inline void sub_node_flush(struct bplus_tree *tree, struct bplus_node *parent, off_t sub_offset)
 {
+		// sub_offset 위치의 node를sub_node로caching후 읽어옴
         struct bplus_node *sub_node = node_fetch(tree, sub_offset);
         assert(sub_node != NULL);
+		// sub_node의 parent assign
         sub_node->parent = parent->self;
+		// sub_node->self 에 sub_node assign 후 cache에서 evict out
         node_flush(tree, sub_node);
 }
 

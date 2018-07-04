@@ -49,13 +49,14 @@ __list_add(struct list_head *link, struct list_head *prev, struct list_head *nex
         prev->next = link;
 }
 
-// funda DELETE function 
+// funda DELETE function : prev와 next 사이의 리스트 헤드 제거 
 static inline void __list_del(struct list_head *prev, struct list_head *next)
 {
         prev->next = next;
         next->prev = prev;
 }
 
+// link를 prev와 prev->next 리스트 헤드 사이에 추가
 static inline void list_add(struct list_head *link, struct list_head *prev)
 {
         __list_add(link, prev, prev->next);
@@ -67,12 +68,14 @@ static inline void list_add_tail(struct list_head *link, struct list_head *head)
 	__list_add(link, head->prev, head);
 }
 
+// 헤드 리스트 link를 리스트에서 제거하고, link를 초기화: link->prev,next 모두 link 자신을 가리킴
 static inline void list_del(struct list_head *link)
 {
         __list_del(link->prev, link->next);
         list_init(link);
 }
 
+// 리스트 헤드 list를 이용해 리스트가 비었는지 check : empty면 !0인 값을 return 
 static inline int list_empty(const struct list_head *head)
 {
 	return head->next == head;

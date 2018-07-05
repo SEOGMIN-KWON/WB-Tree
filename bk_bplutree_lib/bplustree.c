@@ -54,6 +54,7 @@ static inline int is_leaf(struct bplus_node *node)
 static int key_binary_search(struct bplus_node *node, key_t target)
 {
         key_t *arr = key(node);
+		// non-leaf node이면 key 개수를 줘야 하므로 node->children-1 인 듯 
         int len = is_leaf(node) ? node->children : node->children - 1;
         int low = -1;
         int high = len;
@@ -67,7 +68,7 @@ static int key_binary_search(struct bplus_node *node, key_t target)
                 }
         }
 
-        if (high >= len || arr[high] != target) {
+        if (high >= len || arr[high] != target) { // 해당 node내에서 target key를 못 찾았을 때
                 return -high - 1;
         } else {
                 return high;
@@ -151,7 +152,7 @@ static struct bplus_node *node_fetch(struct bplus_tree *tree, off_t offset)
         return node;
 }
 
-// 특정 node를 offset 위치의 storage에서 읽어와 (caching하지 않고)return 
+// 특정 node를 offset 위치의 storage에서 읽어와 (caching하고?!)return 
 static struct bplus_node *node_seek(struct bplus_tree *tree, off_t offset)
 {
         if (offset == INVALID_OFFSET) {
@@ -187,7 +188,7 @@ static off_t new_node_append(struct bplus_tree *tree, struct bplus_node *node)
 {
         /* assign new offset to the new node */
         if (list_empty(&tree->free_blocks)) { // If No free block-!!
-				// 기존 tree의 file size 를 node->self에 assign
+				// 기존 tree의 file size 를 node->self에 assign: 이 node 자체를 tree로 구성?!
 				node->self = tree->file_size;
 				// tree의 file size update: node크기(block size) 만큼을 add
 				tree->file_size += _block_size;
@@ -246,7 +247,7 @@ static inline void sub_node_update(struct bplus_tree *tree, struct bplus_node *p
         node_flush(tree, sub_node);
 }
 
-// sub_node를 sub_node->self에 assing후, cache에서 evict out
+// sub_node를 sub_node->self에 assign후, cache에서 evict out
 static inline void sub_node_flush(struct bplus_tree *tree, struct bplus_node *parent, off_t sub_offset)
 {
 		// sub_offset 위치의 node를sub_node로caching후 읽어옴
@@ -258,7 +259,7 @@ static inline void sub_node_flush(struct bplus_tree *tree, struct bplus_node *pa
         node_flush(tree, sub_node);
 }
 
-// tree에서 key에 mapping 된  
+// tree에서 key에 mapping 된 data의 위치를 return  
 static long bplus_tree_search(struct bplus_tree *tree, key_t key)
 {
         int ret = -1;
@@ -268,12 +269,13 @@ static long bplus_tree_search(struct bplus_tree *tree, key_t key)
 				// key에 해당하는 node의 index search 
                 int i = key_binary_search(node, key);
                 if (is_leaf(node)) { // leaf node일 때
+						// i-th key에 mapping된 data 위치 return 
                         ret = i >= 0 ? data(node)[i] : -1;
                         break;
-                } else {			 // non-leaf node일 때 
-                        if (i >= 0) {
+                } else {			 // non-leaf node일 때: leaf node일 때까지 keep going! 
+                        if (i >= 0) { // (i+1)-th sub_node로 moving 
                                 node = node_seek(tree, sub(node)[i + 1]);
-                        } else {
+                        } else {      // node자체를 이동해서 다시 node_seek call
                                 i = -i - 1;
                                 node = node_seek(tree, sub(node)[i]);
                         }
@@ -326,33 +328,37 @@ static void right_node_add(struct bplus_tree *tree, struct bplus_node *node, str
 static key_t non_leaf_insert(struct bplus_tree *tree, struct bplus_node *node,
                              struct bplus_node *l_ch, struct bplus_node *r_ch, key_t key);
 
+// 
 static int parent_node_build(struct bplus_tree *tree, struct bplus_node *l_ch,
                              struct bplus_node *r_ch, key_t key)
 {
+		// left child, right child의 parent 모두 
         if (l_ch->parent == INVALID_OFFSET && r_ch->parent == INVALID_OFFSET) {
                 /* new parent */
                 struct bplus_node *parent = non_leaf_new(tree);
                 key(parent)[0] = key;
                 sub(parent)[0] = l_ch->self;
                 sub(parent)[1] = r_ch->self;
-                parent->children = 2;
+                parent->children = 2; // l_ch & r_ch
                 /* write new parent and update root */
                 tree->root = new_node_append(tree, parent);
                 l_ch->parent = parent->self;
                 r_ch->parent = parent->self;
                 tree->level++;
-                /* flush parent, left and right child */
+                /* flush parent, left and right child => cahce 비우기 */
                 node_flush(tree, l_ch);
                 node_flush(tree, r_ch);
                 node_flush(tree, parent);
                 return 0;
-        } else if (r_ch->parent == INVALID_OFFSET) {
+        } else if (r_ch->parent == INVALID_OFFSET) { // left_child의 parent만 valid 할 때
                 return non_leaf_insert(tree, node_fetch(tree, l_ch->parent), l_ch, r_ch, key);
-        } else {
+        } else { // right child만 valid 할 때 
                 return non_leaf_insert(tree, node_fetch(tree, r_ch->parent), l_ch, r_ch, key);
         }
 }
 
+/* insert new key&sub_node(pointer) and split :left, node로 ADN 
+ * return split key : split 후의 node의 시작 위치 */
 static key_t non_leaf_split_left(struct bplus_tree *tree, struct bplus_node *node,
                 	         struct bplus_node *left, struct bplus_node *l_ch,
                 	         struct bplus_node *r_ch, key_t key, int insert)
@@ -369,46 +375,63 @@ static key_t non_leaf_split_left(struct bplus_tree *tree, struct bplus_node *nod
         left_node_add(tree, node, left);
 
         /* calculate split nodes' children (sum as (order + 1))*/
-        int pivot = insert;
+        int pivot = insert; // pivot이 new insert의 location!!
         left->children = split; //새로 만든 left에 at least children assign
         node->children = _max_order - split + 1; //기존 node의 children 수 coordinate
 
         /* sum = left->children = pivot + (split - pivot - 1) + 1 */
         /* replicate from key[0] to key[insert] in original node */
 
-		// node의 key[0]-> left의 key[0] : insert하는 key size만큼
+		// node의 key[0]->left의 key[0] : index range: 0~(pivot-1)
         memmove(&key(left)[0], &key(node)[0], pivot * sizeof(key_t));
-		// 
+		// node의 pointer[0]->left의 pointer[0] : index range:0~(pivot-1) 
         memmove(&sub(left)[0], &sub(node)[0], pivot * sizeof(off_t));
 
         /* replicate from key[insert] to key[split - 1] in original node */
+		
+		// node의 key[pivot]->left의 key[pivot+1] : index range: (pivot+1)~(split-1)
         memmove(&key(left)[pivot + 1], &key(node)[pivot], (split - pivot - 1) * sizeof(key_t));
+		// node의 pointer[pivot]->left의 pointer[pivot+1] : index range: (pivot+1)~(split-1)
         memmove(&sub(left)[pivot + 1], &sub(node)[pivot], (split - pivot - 1) * sizeof(off_t));
+		
+		/* index : pivot은 not yet */
 
         /* flush sub-nodes of the new splitted left node */
-        for (i = 0; i < left->children; i++) {
-                if (i != pivot && i != pivot + 1) {
+        for (i = 0; i < left->children; i++) { // left의 child수 만큼
+                if (i != pivot && i != pivot + 1) { 
+			// left가 parent인 pointer들 flush시키기: left[i]위치에 assign후 cache에서 evict out
                         sub_node_flush(tree, left, sub(left)[i]);
                 }
         }
 
         /* insert new key and sub-nodes and locate the split key */
+		/* index : pivot에 new key와 sub-node insert */
         key(left)[pivot] = key;
-        if (pivot == split - 1) {
+
+        if (pivot == split - 1) { // new를 insert함으로써 non-leaf node의 최소 조건을 만족시킬때
                 /* left child in split left node and right child in original right one */
+
+				// left에서는 pivot위치에 l_ch를 가리키는 pointer로 update 
                 sub_node_update(tree, left, pivot, l_ch);
+				// node에서는 시작위치(index:0)에 r_ch를 가리키는 pointer로 update
                 sub_node_update(tree, node, 0, r_ch);
+				// split key는 받아온 key 그대로 설정
                 split_key = key;
-        } else {
+        } else { // non-leaf node의 최소 조건을 만족시키지 못할 때
                 /* both new children in split left node */
+				
+				// l_ch, r_ch 둘다 left에 넣어줘야함 
                 sub_node_update(tree, left, pivot, l_ch);
                 sub_node_update(tree, left, pivot + 1, r_ch);
+				// node의 첫번째 위치에는 split전 node에서 split-1를 넣어줌!
                 sub(node)[0] = sub(node)[split - 1];
+				// split key는 split전 node의 index : split-2로 설정 
                 split_key = key(node)[split - 2];
         }
 
         /* sum = node->children = 1 + (node->children - 1) */
         /* right node left shift from key[split - 1] to key[children - 2] */
+		// split후, node[0]의 key와 node[1]의 pointer부터 Re-coordination-!! 
         memmove(&key(node)[0], &key(node)[split - 1], (node->children - 1) * sizeof(key_t));
         memmove(&sub(node)[1], &sub(node)[split], (node->children - 1) * sizeof(off_t));
 
@@ -519,14 +542,17 @@ static int non_leaf_insert(struct bplus_tree *tree, struct bplus_node *node,
         insert = -insert - 1;
 
         /* node is full */
-        if (node->children == _max_order) {
+        if (node->children == _max_order) { // max_order: 가질 수 있는 최대 자식 수 
                 key_t split_key;
                 /* split = [m/2] */
                 int split = (node->children + 1) / 2;
+				// sibling으로 new node 할당 받음 
                 struct bplus_node *sibling = non_leaf_new(tree);
                 if (insert < split) {
+						// node 왼쪽에 sibling insert
                         split_key = non_leaf_split_left(tree, node, sibling, l_ch, r_ch, key, insert);
                 } else if (insert == split) {
+						// node 오른쪽에 sibling insert
                         split_key = non_leaf_split_right1(tree, node, sibling, l_ch, r_ch, key, insert);
                 } else {
                         split_key = non_leaf_split_right2(tree, node, sibling, l_ch, r_ch, key, insert);

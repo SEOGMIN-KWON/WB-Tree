@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC   -shared -Wl,-soname,libbplustree.so.1 -o libbplustree.so.1.0 CMakeFiles/bplustree.dir/bplustree.c.o 

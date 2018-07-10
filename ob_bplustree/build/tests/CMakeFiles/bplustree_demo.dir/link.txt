@@ -1,0 +1,1 @@
+/usr/bin/cc  -O2 -Wall -Werror -Wextra   CMakeFiles/bplustree_demo.dir/bplustree_demo.c.o  -o ../bin/bplustree_demo -rdynamic ../lib/libbplustree.so.1.0 -Wl,-rpath,/home/dcslab/WB-Tree/ob_bplustree/build/lib 

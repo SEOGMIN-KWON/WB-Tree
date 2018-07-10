@@ -381,12 +381,16 @@ static key_t non_leaf_split_left(struct bplus_tree *tree, struct bplus_node *nod
 		printf("non_leaf_split_left\n");
 
         /* split as left sibling */
+		printf("%p is split as %p 's left sibling\n",left,node);
         left_node_add(tree, node, left);
 
         /* calculate split nodes' children (sum as (order + 1))*/
         int pivot = insert;
         left->children = split;
         node->children = _max_order - split + 1;
+
+		// print pivot
+		printf("pivot is %d\n",pivot);
 
         /* sum = left->children = pivot + (split - pivot - 1) + 1 */
         /* replicate from key[0] to key[insert] in original node */
@@ -398,6 +402,7 @@ static key_t non_leaf_split_left(struct bplus_tree *tree, struct bplus_node *nod
         memmove(&sub(left)[pivot + 1], &sub(node)[pivot], (split - pivot - 1) * sizeof(off_t));
 
         /* flush sub-nodes of the new splitted left node */
+		printf("flush sub-nodes of the new splitted left node: the # of left-chlidren is %d\n",left->children);
         for (i = 0; i < left->children; i++) {
                 if (i != pivot && i != pivot + 1) {
                         sub_node_flush(tree, left, sub(left)[i]);
@@ -405,19 +410,30 @@ static key_t non_leaf_split_left(struct bplus_tree *tree, struct bplus_node *nod
         }
 
         /* insert new key and sub-nodes and locate the split key */
+		printf("insert new key & sub-nodes & locate the split key\n");
         key(left)[pivot] = key;
+		
+		// print key
+		printf("key is %d\n",key(left[pivot]));
+
         if (pivot == split - 1) {
+				// print "pivot == split -1 case"
+				printf("pviot == split -1\n");
                 /* left child in split left node and right child in original right one */
                 sub_node_update(tree, left, pivot, l_ch);
                 sub_node_update(tree, node, 0, r_ch);
                 split_key = key;
         } else {
+				// print "pivot != split-1 case"
+				printf("pivot != split-1\n");
                 /* both new children in split left node */
                 sub_node_update(tree, left, pivot, l_ch);
                 sub_node_update(tree, left, pivot + 1, r_ch);
                 sub(node)[0] = sub(node)[split - 1];
                 split_key = key(node)[split - 2];
         }
+		// print split_key
+		printf("split_key is %d\n",split_key);
 
         /* sum = node->children = 1 + (node->children - 1) */
         /* right node left shift from key[split - 1] to key[children - 2] */
@@ -461,6 +477,10 @@ static key_t non_leaf_split_right1(struct bplus_tree *tree, struct bplus_node *n
         for (i = pivot + 2; i < right->children; i++) {
                 sub_node_flush(tree, right, sub(right)[i]);
         }
+		
+		// print non_leaf_split_right1
+		printf("non_leaf_split_right1: right[0]에 l_ch, r_ch\n");
+		printf("node->children: %d, right->children: %d, max-order+1: %d\n",node->children, right->children, (_max_order+1));
 
         return split_key;
 }
@@ -505,6 +525,11 @@ static key_t non_leaf_split_right2(struct bplus_tree *tree, struct bplus_node *n
                         sub_node_flush(tree, right, sub(right)[i]);
                 }
         }
+
+		// print non_leaf_split_right2
+		printf("non_leaf_split_right2: right[pivot]에 l_ch, r_ch\n");
+		printf("node->children: %d, right->children: %d, max-order+1: %d\n",node->children, right->children, (_max_order+1));
+		printf("sub(right)[pivot]==l_ch: %d,  sub(right[privot+1]==r_ch: %d", (sub(right)[pivot]==l_ch), (sub(right)[pivot+1]==r_ch));
 
         return split_key;
 }

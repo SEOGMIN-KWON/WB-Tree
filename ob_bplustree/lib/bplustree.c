@@ -339,7 +339,8 @@ static int parent_node_build(struct bplus_tree *tree, struct bplus_node *l_ch,
                 sub(parent)[1] = r_ch->self;
                 parent->children = 2;
 
-				printf("new parent is build- l_ch : %p, r_ch : %p\n", sub(parent)[0], sub(parent[1]));
+				printf("new parent is build- l_ch : %ld, r_ch : %ld\n", sub(parent)[0].self
+							, sub(parent)[1].self);
 
                 /* write new parent and update root */
                 tree->root = new_node_append(tree, parent);
@@ -347,8 +348,8 @@ static int parent_node_build(struct bplus_tree *tree, struct bplus_node *l_ch,
                 r_ch->parent = parent->self;
                 tree->level++;
 
-				printf("update root - new root : %p\n",tree->root);
-				printf("update tree's lv - new lv : :d\n",tree->level);
+				printf("update root - new root : %ld\n",tree->root);
+				printf("update tree's lv - new lv  :%d\n",tree->level);
 
                 /* flush parent, left and right child */
 				printf("node flush: l_ch. r_ch, parent\n");

@@ -357,7 +357,7 @@ static int parent_node_build(struct bplus_tree *tree, struct bplus_node *l_ch,
         }
 }
 
-/* insert new key&sub_node(pointer) and split :left, node로 ADN 
+/* insert new key&sub_node(pointer) and split :left, node로 AND 
  * return split key : split 후의 node의 시작 위치 */
 static key_t non_leaf_split_left(struct bplus_tree *tree, struct bplus_node *node,
                 	         struct bplus_node *left, struct bplus_node *l_ch,
@@ -438,6 +438,7 @@ static key_t non_leaf_split_left(struct bplus_tree *tree, struct bplus_node *nod
         return split_key;
 }
 
+// split: node-right then assign l_ch, r_ch into right[first]
 static key_t non_leaf_split_right1(struct bplus_tree *tree, struct bplus_node *node,
                         	   struct bplus_node *right, struct bplus_node *l_ch,
                         	   struct bplus_node *r_ch, key_t key, int insert)
@@ -476,6 +477,8 @@ static key_t non_leaf_split_right1(struct bplus_tree *tree, struct bplus_node *n
         return split_key;
 }
 
+
+// split: node-right then assign l_ch, r_ch into right[insert]
 static key_t non_leaf_split_right2(struct bplus_tree *tree, struct bplus_node *node,
                         	   struct bplus_node *right, struct bplus_node *l_ch,
                         	   struct bplus_node *r_ch, key_t key, int insert)
@@ -520,6 +523,7 @@ static key_t non_leaf_split_right2(struct bplus_tree *tree, struct bplus_node *n
         return split_key;
 }
 
+// w/o node split : assign l_ch into node[insert] and r_ch into node[insert+1]
 static void non_leaf_simple_insert(struct bplus_tree *tree, struct bplus_node *node,
                         	   struct bplus_node *l_ch, struct bplus_node *r_ch,
                         	   key_t key, int insert)
@@ -533,6 +537,7 @@ static void non_leaf_simple_insert(struct bplus_tree *tree, struct bplus_node *n
         node->children++;
 }
 
+// The outest : non-leaf node를insert
 static int non_leaf_insert(struct bplus_tree *tree, struct bplus_node *node,
                 	   struct bplus_node *l_ch, struct bplus_node *r_ch, key_t key)
 {
@@ -548,23 +553,23 @@ static int non_leaf_insert(struct bplus_tree *tree, struct bplus_node *node,
                 int split = (node->children + 1) / 2;
 				// sibling으로 new node 할당 받음 
                 struct bplus_node *sibling = non_leaf_new(tree);
-                if (insert < split) {
+                if (insert < split) { // case1
 						// node 왼쪽에 sibling insert
                         split_key = non_leaf_split_left(tree, node, sibling, l_ch, r_ch, key, insert);
-                } else if (insert == split) {
+                } else if (insert == split) { // case2
 						// node 오른쪽에 sibling insert
                         split_key = non_leaf_split_right1(tree, node, sibling, l_ch, r_ch, key, insert);
-                } else {
+                } else { // case3
                         split_key = non_leaf_split_right2(tree, node, sibling, l_ch, r_ch, key, insert);
                 }
 
                 /* build new parent */
-                if (insert < split) {
+                if (insert < split) { // case1: sibling<=l_ch, node<=r_ch
                         return parent_node_build(tree, sibling, node, split_key);
-                } else {
+                } else {			  // case2&3: node<=l_ch, sibling<=r_ch
                         return parent_node_build(tree, node, sibling, split_key);
                 }
-        } else {
+        } else { // node is not full 
                 non_leaf_simple_insert(tree, node, l_ch, r_ch, key, insert);
                 node_flush(tree, node);
         }

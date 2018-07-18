@@ -417,7 +417,7 @@ static key_t non_leaf_split_left(struct bplus_tree *tree, struct bplus_node *nod
                 sub_node_update(tree, node, 0, r_ch);
 				// split key는 받아온 key 그대로 설정
                 split_key = key;
-        } else { // non-leaf node의 최소 조건을 만족시키지 못할 때
+        } else { // left[pivot]left에서의 last entry가 아닐 경우 
                 /* both new children in split left node */
 				
 				// l_ch, r_ch 둘다 left에 넣어줘야함 

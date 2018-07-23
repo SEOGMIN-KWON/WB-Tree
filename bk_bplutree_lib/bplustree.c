@@ -328,8 +328,8 @@ static void right_node_add(struct bplus_tree *tree, struct bplus_node *node, str
 static key_t non_leaf_insert(struct bplus_tree *tree, struct bplus_node *node,
                              struct bplus_node *l_ch, struct bplus_node *r_ch, key_t key);
 
-// 
-static int parent_node_build(struct bplus_tree *tree, struct bplus_node *l_ch,
+// 각 node의 parent 설정  
+ktatic int parent_node_build(struct bplus_tree *tree, struct bplus_node *l_ch,
                              struct bplus_node *r_ch, key_t key)
 {
 		// left child, right child의 parent 모두 
@@ -576,6 +576,8 @@ static int non_leaf_insert(struct bplus_tree *tree, struct bplus_node *node,
         return 0;
 }
 
+/* leaf split라 data copy execute */
+/* left children: split개, leaf chlidren: max_entries - (split-1)개 */
 static key_t leaf_split_left(struct bplus_tree *tree, struct bplus_node *leaf,
                 	     struct bplus_node *left, key_t key, long data, int insert)
 {
@@ -610,6 +612,8 @@ static key_t leaf_split_left(struct bplus_tree *tree, struct bplus_node *leaf,
         return key(leaf)[0];
 }
 
+/* leaf split와 data copy execute  */
+/* leaf children: split개, right children: max_entries - (split-1)개 */ 
 static key_t leaf_split_right(struct bplus_tree *tree, struct bplus_node *leaf,
                 	      struct bplus_node *right, key_t key, long data, int insert)
 {
@@ -640,6 +644,7 @@ static key_t leaf_split_right(struct bplus_tree *tree, struct bplus_node *leaf,
         return key(right)[0];
 }
 
+/* without node split */
 static void leaf_simple_insert(struct bplus_tree *tree, struct bplus_node *leaf,
                 	       key_t key, long data, int insert)
 {

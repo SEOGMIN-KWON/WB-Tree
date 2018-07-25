@@ -655,6 +655,7 @@ static void leaf_simple_insert(struct bplus_tree *tree, struct bplus_node *leaf,
         leaf->children++;
 }
 
+/* leaf_insert TOP-level Version */
 static int leaf_insert(struct bplus_tree *tree, struct bplus_node *leaf, key_t key, long data)
 {
         /* Search key location */

@@ -339,8 +339,7 @@ static int parent_node_build(struct bplus_tree *tree, struct bplus_node *l_ch,
                 sub(parent)[1] = r_ch->self;
                 parent->children = 2;
 
-				printf("new parent is build- l_ch : %ld, r_ch : %ld\n", sub(parent)[0].self
-							, sub(parent)[1].self);
+				printf("new parent is build- l_ch : %ld, r_ch : %ld\n",sub(parent)[0], sub(parent)[1]);
 
                 /* write new parent and update root */
                 tree->root = new_node_append(tree, parent);
@@ -413,9 +412,9 @@ static key_t non_leaf_split_left(struct bplus_tree *tree, struct bplus_node *nod
         /* insert new key and sub-nodes and locate the split key */
 		printf("insert new key & sub-nodes & locate the split key\n");
         key(left)[pivot] = key;
-		
 		// print key
-		printf("key is %d\n",key(left[pivot]));
+		//key_t temp = key(left[pivot]);
+		printf("key is %ld\n", key(left)[pivot]);
 
         if (pivot == split - 1) {
 				// print "pivot == split -1 case"

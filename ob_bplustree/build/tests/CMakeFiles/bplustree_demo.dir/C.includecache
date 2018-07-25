@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/bplustree.h
+
+/home/dcslab/WB-Tree/ob_bplustree/tests/bplustree_demo.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+bplustree.h
+/home/dcslab/WB-Tree/ob_bplustree/tests/bplustree.h
+

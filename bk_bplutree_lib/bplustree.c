@@ -436,7 +436,7 @@ static key_t non_leaf_split_left(struct bplus_tree *tree, struct bplus_node *nod
         memmove(&sub(node)[1], &sub(node)[split], (node->children - 1) * sizeof(off_t));
 
         return split_key;
-}
+} //
 
 // split: node-right then assign l_ch, r_ch into right[first]
 static key_t non_leaf_split_right1(struct bplus_tree *tree, struct bplus_node *node,
